@@ -2,3 +2,7 @@ C:\Users\lenovo\Documents\APU\Asignaturas\LPOO2\Ejemplos\LPOOII_GRUPO08\ClasesBa
 C:\Users\lenovo\Documents\APU\Asignaturas\LPOO2\Ejemplos\LPOOII_GRUPO08\ClasesBase\bin\Debug\ClasesBase.pdb
 C:\Users\lenovo\Documents\APU\Asignaturas\LPOO2\Ejemplos\LPOOII_GRUPO08\ClasesBase\obj\Debug\ClasesBase.dll
 C:\Users\lenovo\Documents\APU\Asignaturas\LPOO2\Ejemplos\LPOOII_GRUPO08\ClasesBase\obj\Debug\ClasesBase.pdb
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\bin\Debug\ClasesBase.dll
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\bin\Debug\ClasesBase.pdb
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\obj\Debug\ClasesBase.dll
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\obj\Debug\ClasesBase.pdb
