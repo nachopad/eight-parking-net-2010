@@ -13,3 +13,20 @@ C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GR
 C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\GestionAdmin.g.cs
 C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\GestionOperador.baml
 C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\GestionOperador.g.cs
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.exe
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.pdb
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\bin\Debug\Vistas.exe
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\bin\Debug\Vistas.pdb
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\GestionAdmin.baml
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\GestionOperador.baml
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\MainWindow.baml
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\VehiculosPlaya.baml
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\GestionAdmin.g.cs
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\GestionOperador.g.cs
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\MainWindow.g.cs
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\VehiculosPlaya.g.cs
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\App.g.cs
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas_MarkupCompile.cache
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.g.resources
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.Properties.Resources.resources
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.csproj.GenerateResource.Cache

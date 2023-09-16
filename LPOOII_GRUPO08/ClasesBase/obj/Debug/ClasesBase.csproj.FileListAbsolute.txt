@@ -6,3 +6,7 @@ C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GR
 C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\bin\Debug\ClasesBase.pdb
 C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\obj\Debug\ClasesBase.dll
 C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\obj\Debug\ClasesBase.pdb
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\bin\Debug\ClasesBase.dll
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\bin\Debug\ClasesBase.pdb
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\obj\Debug\ClasesBase.dll
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\obj\Debug\ClasesBase.pdb
