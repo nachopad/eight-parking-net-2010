@@ -1,0 +1,16 @@
+﻿<Window x:Class="Vistas.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Login" Height="300" Width="300" BorderBrush="Black" Background="#FF696161">
+    <Grid Background="Black">
+        <Label Content="LOGIN" Height="33"  Name="label1" VerticalAlignment="Top" Width="56" DataContext="{Binding}" IsEnabled="True" FontWeight="Bold" FontSize="15" Foreground="White" HorizontalAlignment="Center" Margin="110,12,112,0" />
+        <Rectangle Height="148" Margin="0,59,0,54" Name="rectangle1" Stroke="#FFFF5C00" VerticalAlignment="Center" />
+        <Label Content="Usuario" Height="26" Margin="-8,114,164,0" Name="label2" VerticalAlignment="Top" Foreground="White" HorizontalAlignment="Center" Width="122" HorizontalContentAlignment="Center" />
+        <Label Content="Contraseña" Height="26" Margin="12,161,164,0" Name="label3" VerticalAlignment="Top" Foreground="White" HorizontalAlignment="Center" Width="102" HorizontalContentAlignment="Center" />
+        <Image Height="43" HorizontalAlignment="Left" Margin="120,59,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="46" Source="/Vistas;component/Images/cliente.png" ClipToBounds="False" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="120,117,0,0" Name="textBoxUser" VerticalAlignment="Top" Width="120" Background="#FF696161" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="120,164,0,0" Name="textBoxPsw" VerticalAlignment="Top" Width="120" Background="#FF696161" />
+        <Button Content="Ingresar" Height="23" HorizontalAlignment="Left" Margin="165,226,0,0" Name="buttonAceptar" VerticalAlignment="Top" Width="75" Background="#FF696161" BorderBrush="#FF382E2E" Foreground="#FFEBD9D9" Click="buttonAceptar_Click" />
+        <Button Content="Salir" Height="23" HorizontalAlignment="Left" Margin="39,226,0,0" Name="button1" VerticalAlignment="Top" Width="75" Background="#FF696161" BorderBrush="#FF382E2E" Foreground="#FFEBD9D9" />
+    </Grid>
+</Window>
