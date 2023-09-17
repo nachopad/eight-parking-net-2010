@@ -30,3 +30,5 @@ C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GR
 C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\VehiculosPlaya.g.cs
 C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\MenuPrincipal.baml
 C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\MenuPrincipal.g.cs
+C:\Users\Lilia\Documents\Visual Studio 2010\Projects\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.exe
+C:\Users\Lilia\Documents\Visual Studio 2010\Projects\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.pdb
