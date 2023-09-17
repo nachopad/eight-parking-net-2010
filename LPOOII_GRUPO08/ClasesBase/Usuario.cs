@@ -13,6 +13,10 @@ namespace ClasesBase
         private string nombre;
         private string rol;
 
+        public Usuario(string userName,string password,string apellido,string nombre,string rol) { 
+        
+        }
+
         public string UserName
         {
             get { return userName; }
