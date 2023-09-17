@@ -29,6 +29,8 @@ namespace Vistas
 
         private void Button_CerrarSesion(object sender, RoutedEventArgs e)
         {
+            Login ventanaLogin = new Login();
+            ventanaLogin.Show();
             this.Close();
         }
 
@@ -46,6 +48,13 @@ namespace Vistas
             canv_Vehiculo.Visibility = Visibility.Visible;
             canv_Estacionamiento.Visibility = Visibility.Hidden;
             canv_Cliente.Visibility = Visibility.Hidden;
+        }
+
+        private void btnGestionarSectores_Click(object sender, RoutedEventArgs e)
+        {
+            VehiculosPlaya vehiculosPlaya = new VehiculosPlaya();
+            vehiculosPlaya.Show();
+            this.Close();
         }
     }
 }

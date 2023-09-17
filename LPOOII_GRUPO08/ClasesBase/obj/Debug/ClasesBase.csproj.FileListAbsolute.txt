@@ -10,3 +10,7 @@ D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\bin\Debug\ClasesBase.dll
 D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\bin\Debug\ClasesBase.pdb
 D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\obj\Debug\ClasesBase.dll
 D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\obj\Debug\ClasesBase.pdb
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\bin\Debug\ClasesBase.dll
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\bin\Debug\ClasesBase.pdb
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\obj\Debug\ClasesBase.dll
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\obj\Debug\ClasesBase.pdb

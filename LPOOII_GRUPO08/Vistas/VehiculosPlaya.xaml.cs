@@ -26,17 +26,13 @@ namespace Vistas
         public VehiculosPlaya()
         {
             InitializeComponent();
-
             Loaded += VehiculosPlaya_Loaded;
-         
-
         }
-       private void VehiculosPlaya_Loaded(object sender, RoutedEventArgs e)
-    {
-        e7.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString(ocupado));
-    }
 
-        
+       private void VehiculosPlaya_Loaded(object sender, RoutedEventArgs e)
+       {
+            e7.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString(ocupado));
+       }
 
         private void Button_click(object sender, RoutedEventArgs e)
         {
@@ -46,19 +42,21 @@ namespace Vistas
             switch (backgroundBrush.Color.ToString())
             {
                 case disponible:
-                    MessageBox.Show("Sector Disponible, registrar entrada");
+                    MessageBox.Show("Sector Disponible, registrar entrada", "Disponible", MessageBoxButton.OK, MessageBoxImage.Information);
                     break;
                 case deshabilitado:
-                    MessageBox.Show("Sector deshabilitado");
+                    MessageBox.Show("Sector deshabilitado", "Deshabilitado", MessageBoxButton.OK, MessageBoxImage.Information);
                     break;
                 case ocupado:
-                    MessageBox.Show("Sector Ocupado, registrar salida");
+                    MessageBox.Show("Sector Ocupado, registrar salida", "Ocupado", MessageBoxButton.OK, MessageBoxImage.Information);
                     break;
             }
         }
 
         private void salir_Click(object sender, RoutedEventArgs e)
         {
+            MenuPrincipal menuPrincipal = new MenuPrincipal();
+            menuPrincipal.Show();
             this.Close();
         }
        

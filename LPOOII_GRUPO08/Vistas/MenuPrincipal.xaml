@@ -1,7 +1,7 @@
 ﻿<Window x:Class="Vistas.MenuPrincipal"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MenuPrincipal" Height="300" Width="500">
+        Title="Menú Principal" Height="300" Width="500" WindowStartupLocation="CenterScreen">
     <Window.Resources>
         <Style x:Key="EstiloBoton1" TargetType="{x:Type Button}">
             <Style.Triggers>
@@ -41,7 +41,7 @@
             <Canvas Grid.Column="0" Grid.Row="1" HorizontalAlignment="Right" Width="150" Name="canv_Sectore">
                 <Label Foreground="White" Canvas.Left="19">Gestión de Sectores</Label>
                 <Image Source="/Images/sectores.png" Width="35" Canvas.Top="25" Canvas.Left="57.5"></Image>
-                <Button Width="75" Canvas.Top="63" Canvas.Left="37.5" Background="#FF343434" Foreground="White" BorderBrush="{x:Null}" Name="btnGestionarSectores" Style="{StaticResource EstiloBoton1}">Gestionar</Button>
+                <Button Width="75" Canvas.Top="63" Canvas.Left="37.5" Background="#FF343434" Foreground="White" BorderBrush="{x:Null}" Name="btnGestionarSectores" Style="{StaticResource EstiloBoton1}" Click="btnGestionarSectores_Click">Gestionar</Button>
             </Canvas>
             <!-- Gestionar Estacionamiento | Operador -->
             <Canvas Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" Name="canv_Estacionamiento">

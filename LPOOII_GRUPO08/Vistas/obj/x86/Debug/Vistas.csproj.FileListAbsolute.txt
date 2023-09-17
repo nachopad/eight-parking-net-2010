@@ -32,3 +32,23 @@ C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GR
 C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\MenuPrincipal.g.cs
 C:\Users\Lilia\Documents\Visual Studio 2010\Projects\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.exe
 C:\Users\Lilia\Documents\Visual Studio 2010\Projects\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.pdb
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.exe
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.pdb
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.csprojResolveAssemblyReference.cache
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Login.baml
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\MainWindow.baml
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\MenuPrincipal.baml
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\VehiculosPlaya.baml
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Login.g.cs
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\MainWindow.g.cs
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\MenuPrincipal.g.cs
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\VehiculosPlaya.g.cs
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\App.g.cs
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas_MarkupCompile.cache
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.g.resources
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.Properties.Resources.resources
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.csproj.GenerateResource.Cache
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\bin\Debug\Vistas.exe
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\bin\Debug\Vistas.pdb
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\bin\Debug\ClasesBase.dll
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\bin\Debug\ClasesBase.pdb

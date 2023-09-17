@@ -13,8 +13,12 @@ namespace ClasesBase
         private string nombre;
         private string rol;
 
-        public Usuario(string userName,string password,string apellido,string nombre,string rol) { 
-        
+        public Usuario(string userName,string password,string apellido,string nombre,string rol) {
+            this.userName = userName;
+            this.password = password;
+            this.apellido = apellido;
+            this.nombre = nombre;
+            this.rol = rol;
         }
 
         public string UserName

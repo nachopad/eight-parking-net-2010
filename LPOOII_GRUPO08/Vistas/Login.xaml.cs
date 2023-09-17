@@ -34,17 +34,23 @@ namespace Vistas
 
             Usuario buscarUsu = listUsers.Find(p => p.UserName.Equals(textBoxUser.Text));
 
-
-            if (buscarUsu != null && buscarUsu.Password.Equals(textBoxPsw.Text))
+            if (buscarUsu != null && buscarUsu.Password.Equals(textBoxPsw.Password))
             {
-                MessageBox.Show("Bienvenido " + buscarUsu.Rol + " " + buscarUsu.Nombre);
-
+                MessageBox.Show("Bienvenido al Sistema " + buscarUsu.Nombre, "Acceso concedido", MessageBoxButton.OK);
+                MenuPrincipal menuPrincipal = new MenuPrincipal();
+                menuPrincipal.Show();
+                this.Close();
             }
             else
             {
-                MessageBox.Show("Usuario o Contraseña no son validos");
+                MessageBox.Show("El usuario y/o contraseña no son válidos. Vuelve a intentarlo.", "Error al iniciar sesión", MessageBoxButton.OK, MessageBoxImage.Hand);
             }
 
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
         }
     }
 }
