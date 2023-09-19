@@ -41,5 +41,12 @@ namespace Vistas
                 MessageBox.Show("Nombre:  " + cliente.Nombre + " - Apellido: " + cliente.Apellido + " - DNI: " + cliente.ClienteDNI + " - Telefono: " + cliente.Telefono);
             }
         }
+
+        private void btnSalir_Click(object sender, RoutedEventArgs e)
+        {
+            MenuPrincipal menuPrincipal = new MenuPrincipal("2");
+            menuPrincipal.Show();
+            this.Close();
+        }
     }
 }

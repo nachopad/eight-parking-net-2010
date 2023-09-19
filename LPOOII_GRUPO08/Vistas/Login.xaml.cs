@@ -37,7 +37,7 @@ namespace Vistas
             if (buscarUsu != null && buscarUsu.Password.Equals(textBoxPsw.Password))
             {
                 MessageBox.Show("Bienvenido al Sistema " + buscarUsu.Nombre, "Acceso concedido", MessageBoxButton.OK);
-                MenuPrincipal menuPrincipal = new MenuPrincipal();
+                MenuPrincipal menuPrincipal = new MenuPrincipal(buscarUsu.Rol);
                 menuPrincipal.Show();
                 this.Close();
             }

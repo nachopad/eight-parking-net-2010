@@ -35,7 +35,7 @@
             <Canvas Grid.Column="0" Grid.Row="1" HorizontalAlignment="Right" Width="150" Name="canv_Cliente">
                 <Label Foreground="White" Canvas.Left="19">Gestión de Clientes</Label>
                 <Image Source="/Images/cliente.png" Width="35" Canvas.Top="25" Canvas.Left="57.5"></Image>
-                <Button Width="75" Canvas.Top="63" Canvas.Left="37.5" Background="#FF343434" Foreground="White" BorderBrush="{x:Null}" Name="btnGestionarClientes" Style="{StaticResource EstiloBoton1}">Gestionar</Button>
+                <Button Width="75" Canvas.Top="63" Canvas.Left="37.5" Background="#FF343434" Foreground="White" BorderBrush="{x:Null}" Name="btnGestionarClientes" Style="{StaticResource EstiloBoton1}" Click="btnGestionarClientes_Click">Gestionar</Button>
             </Canvas>
             <!-- Gestionar Sectores | Administrador  -->
             <Canvas Grid.Column="0" Grid.Row="1" HorizontalAlignment="Right" Width="150" Name="canv_Sectore">
@@ -54,7 +54,7 @@
             <Canvas Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" Name="canv_Vehiculo">
                 <Label Foreground="White" Canvas.Left="21">Tipos de Vehiculos</Label>
                 <Image Source="/Images/vehiculo.png" Width="35" Canvas.Top="25" Canvas.Left="57.5"></Image>
-                <Button Width="75" Canvas.Top="63" Canvas.Left="37.5" Background="#FF343434" Foreground="White" BorderBrush="{x:Null}" Name="btnGestionarVehiculos" Style="{StaticResource EstiloBoton1}">Gestionar</Button>
+                <Button Width="75" Canvas.Top="63" Canvas.Left="37.5" Background="#FF343434" Foreground="White" BorderBrush="{x:Null}" Name="btnGestionarVehiculos" Style="{StaticResource EstiloBoton1}" Click="btnGestionarVehiculos_Click">Gestionar</Button>
             </Canvas>
         </Grid>
     </DockPanel>
