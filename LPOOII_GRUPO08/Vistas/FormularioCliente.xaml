@@ -1,0 +1,36 @@
+﻿<Window x:Class="Vistas.FormularioCliente"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Formulario" Height="340" Width="336" WindowStartupLocation="CenterScreen">
+
+    <DockPanel Background="#FF101010" Grid.ColumnSpan="3" Grid.RowSpan="3">
+        <Border BorderBrush="Silver" BorderThickness="1" Height="40" VerticalAlignment="Top" DockPanel.Dock="Top">
+            <Label Content="Registro de Cliente" FontWeight="Bold" Height="37" Name="label1" Foreground="#FFF5EFEF" VerticalContentAlignment="Center" FlowDirection="LeftToRight" HorizontalContentAlignment="Center" FontSize="14" />
+        </Border>
+        <Grid Height="255">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="19*" />
+                <RowDefinition Height="67*" />
+                <RowDefinition Height="61*" />
+                <RowDefinition Height="75*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="154*" />
+                <ColumnDefinition Width="160*" />
+            </Grid.ColumnDefinitions>
+            <Label Content="DNI" Grid.Row="1" Height="32" HorizontalAlignment="Left" Margin="62,4,0,0" Name="lblDNI" VerticalAlignment="Top" Width="94" Foreground="#FFFFF2F2" Grid.ColumnSpan="2" />
+            <Label Content="Apellido" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="62,40,0,0" Name="lblApellido" VerticalAlignment="Top" Width="94" Foreground="#FFFFF5F5" Grid.ColumnSpan="2" />
+            <Label Content="Nombre" Grid.Row="2" Height="28" HorizontalAlignment="Left" Margin="62,0,0,0" Name="lblNombre" VerticalAlignment="Top" Width="94" Foreground="#FFFFFCFC" Grid.ColumnSpan="2" />
+            <Label Content="Telefono" Grid.Row="2" Height="28" HorizontalAlignment="Left" Margin="62,29,0,0" Name="lblNumero" VerticalAlignment="Top" Width="94" Foreground="White" Grid.ColumnSpan="2" />
+
+            <TextBox Grid.Column="1" Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="14,8,0,0" Name="txtDNI" VerticalAlignment="Top" Width="120"  Background="#FF696161" Foreground="White" />
+            <TextBox Background="#FF696161" Foreground="White" Height="23" HorizontalAlignment="Left" Margin="15,44,0,0" Name="txtApellido" VerticalAlignment="Top" Width="120" Grid.Column="1" Grid.Row="1" />
+            <TextBox Grid.Column="1" Grid.Row="2" Height="23" HorizontalAlignment="Left" Margin="14,0,0,0" Name="txtNombre" VerticalAlignment="Top" Width="120"  Background="#FF696161" Foreground="White" />
+            <TextBox Background="#FF696161" Foreground="White" Height="23" HorizontalAlignment="Left" Margin="14,33,0,0" Name="txtTelefono" VerticalAlignment="Top" Width="120" Grid.Column="1" Grid.Row="2" />
+
+            <Button Content="Registrar" Grid.ColumnSpan="2" Grid.Row="3" Width="75" Background="#FFCB4E00" Foreground="White" Name="btnRegistrar"  Margin="115,32,124,26" Click="btnRegistrar_Click" />
+        </Grid>
+
+
+    </DockPanel>
+</Window>
