@@ -30,7 +30,7 @@ namespace Vistas
 
             if (txtApellido.Text.Equals("") || txtDNI.Text.Equals("") || txtNombre.Text.Equals("") || txtTelefono.Text.Equals(""))
             {
-                MessageBox.Show("Debe ingresar todos los datos solicitados");
+                MessageBox.Show("Debe ingresar todos los datos solicitados", "Datos incompletos", MessageBoxButton.OK, MessageBoxImage.Hand);
             }
             else
             {
@@ -38,7 +38,7 @@ namespace Vistas
                 cliente.Nombre = txtNombre.Text;
                 cliente.Apellido = txtApellido.Text;
                 cliente.Telefono = txtTelefono.Text;
-                MessageBox.Show("Nombre:  " + cliente.Nombre + " - Apellido: " + cliente.Apellido + " - DNI: " + cliente.ClienteDNI + " - Telefono: " + cliente.Telefono);
+                MessageBox.Show("Nombre:  " + cliente.Nombre + " - Apellido: " + cliente.Apellido + " - DNI: " + cliente.ClienteDNI + " - Telefono: " + cliente.Telefono, "Datos registrados", MessageBoxButton.OK);
             }
         }
 

@@ -1,0 +1,36 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style TargetType="{x:Type Button}" x:Key="EstiloBotonTildado">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate>
+                    <Grid>
+                        <Ellipse Width="{TemplateBinding Width}" 
+                        Height="{TemplateBinding Height}" Stroke="DarkGray" 
+                        VerticalAlignment="Top" 
+                        HorizontalAlignment="Left" Fill="#FFCB4E00" />
+                        <TextBlock Text="✔" FontSize="20" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type Button}" x:Key="EstiloBotonCancelado">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate>
+                    <Grid>
+                        <Ellipse Width="{TemplateBinding Width}" 
+                        Height="{TemplateBinding Height}" Stroke="DarkGray" 
+                        VerticalAlignment="Top" 
+                        HorizontalAlignment="Left" Fill="#FFCB4E00" />
+                        <TextBlock Text="✘" FontSize="26" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>

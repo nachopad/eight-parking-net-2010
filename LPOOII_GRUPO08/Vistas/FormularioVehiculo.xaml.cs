@@ -29,14 +29,21 @@ namespace Vistas
             TipoVehiculo vehiculo = new TipoVehiculo();
             if (txtDescripcion.Text.Equals("") || txtTarifa.Text.Equals(""))
             {
-                MessageBox.Show("Debe ingresar todos los valores");
+                MessageBox.Show("Debe ingresar todos los valores", "Datos incompletos", MessageBoxButton.OK, MessageBoxImage.Hand);
             }
             else
             {
                 vehiculo.Descripcion = txtDescripcion.Text;
                 vehiculo.Tarifa = decimal.Parse(txtTarifa.Text);
-                MessageBox.Show("Descripcion del vehiculo: " + vehiculo.Descripcion + " - Tarifa del vehiculo: " + vehiculo.Tarifa);
+                MessageBox.Show("Descripcion del vehiculo: " + vehiculo.Descripcion + " - Tarifa del vehiculo: " + vehiculo.Tarifa, "Datos registrados", MessageBoxButton.OK);
             }
+        }
+
+        private void btnSalir_Click(object sender, RoutedEventArgs e)
+        {
+            MenuPrincipal menuPrincipal = new MenuPrincipal("1");
+            menuPrincipal.Show();
+            this.Close();
         }
     }
 }
