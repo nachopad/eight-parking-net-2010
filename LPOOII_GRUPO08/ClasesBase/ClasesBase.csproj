@@ -45,6 +45,7 @@
     <Compile Include="Sector.cs" />
     <Compile Include="Ticket.cs" />
     <Compile Include="TipoVehiculo.cs" />
+    <Compile Include="TrabajarTiposVehiculo.cs" />
     <Compile Include="Usuario.cs" />
   </ItemGroup>
   <ItemGroup>
