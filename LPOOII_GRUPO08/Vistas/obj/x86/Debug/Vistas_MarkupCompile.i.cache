@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\
 Vistas
 none
 false
 DEBUG;TRACE
-C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\App.xaml
-8-720529540
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\App.xaml
+9208590386
 
-11-803973447
-13-140262260
-Estilos.xaml;FormularioCliente.xaml;FormularioVehiculo.xaml;Login.xaml;MainWindow.xaml;MenuPrincipal.xaml;Plantillas.xaml;VehiculosPlaya.xaml;
+12-1670543
+13-1616766090
+Estilos.xaml;FormularioCliente.xaml;FormularioVehiculo.xaml;Login.xaml;loginControl.xaml;MainWindow.xaml;MenuPrincipal.xaml;Plantillas.xaml;VehiculosPlaya.xaml;
 
-False
+True
 

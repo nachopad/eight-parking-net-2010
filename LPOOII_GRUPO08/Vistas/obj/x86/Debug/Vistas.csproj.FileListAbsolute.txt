@@ -103,3 +103,9 @@ D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FormularioCliente.g.cs
 D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FormularioVehiculo.g.cs
 D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Login.g.cs
 D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\MenuPrincipal.g.cs
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Estilos.baml
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Plantillas.baml
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\loginControl.baml
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\loginControl.g.cs
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas_MarkupCompile.lref
