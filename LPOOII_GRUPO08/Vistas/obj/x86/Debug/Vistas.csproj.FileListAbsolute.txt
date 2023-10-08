@@ -115,3 +115,10 @@ C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Gen
 C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas_MarkupCompile.lref
 C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\TiposVehiculoWindow.baml
 C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\TiposVehiculoWindow.g.cs
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\loginControl.baml
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Plantillas.baml
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\TiposVehiculoWindow.baml
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\loginControl.g.cs
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\TiposVehiculoWindow.g.cs
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas_MarkupCompile.lref
