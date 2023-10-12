@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="EstadoSector.xaml.cs">
+      <DependentUpon>EstadoSector.xaml</DependentUpon>
+    </Compile>
     <Compile Include="FormularioCliente.xaml.cs">
       <DependentUpon>FormularioCliente.xaml</DependentUpon>
     </Compile>
@@ -73,9 +76,16 @@
     <Compile Include="TiposVehiculoWindow.xaml.cs">
       <DependentUpon>TiposVehiculoWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ValidarCliente.xaml.cs">
+      <DependentUpon>ValidarCliente.xaml</DependentUpon>
+    </Compile>
     <Compile Include="VehiculosPlaya.xaml.cs">
       <DependentUpon>VehiculosPlaya.xaml</DependentUpon>
     </Compile>
+    <Page Include="EstadoSector.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Estilos.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -117,6 +127,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="TiposVehiculoWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ValidarCliente.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
