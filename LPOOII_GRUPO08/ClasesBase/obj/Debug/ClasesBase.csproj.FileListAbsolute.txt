@@ -16,3 +16,8 @@ C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\obj\Debug\Cla
 C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\obj\Debug\ClasesBase.pdb
 C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\obj\Debug\ClasesBase.csprojResolveAssemblyReference.cache
 C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\obj\Debug\ClasesBase.csprojResolveAssemblyReference.cache
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\bin\Debug\ClasesBase.dll
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\bin\Debug\ClasesBase.pdb
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\obj\Debug\ClasesBase.csprojResolveAssemblyReference.cache
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\obj\Debug\ClasesBase.dll
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\obj\Debug\ClasesBase.pdb

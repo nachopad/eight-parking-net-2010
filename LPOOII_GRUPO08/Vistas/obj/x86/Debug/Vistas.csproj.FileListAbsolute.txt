@@ -130,3 +130,9 @@ D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\loginControl.g.cs
 D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\TiposVehiculoWindow.g.cs
 D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
 D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas_MarkupCompile.lref
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\EstadoSector.baml
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\TiposVehiculoWindow.baml
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ValidarCliente.baml
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\EstadoSector.g.cs
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\TiposVehiculoWindow.g.cs
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ValidarCliente.g.cs
