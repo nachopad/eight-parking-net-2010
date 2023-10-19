@@ -22,6 +22,8 @@ namespace Vistas
         public FormularioCliente()
         {
             InitializeComponent();
+            Cliente cliente = new Cliente();
+            this.DataContext = cliente; 
         }
 
         private void btnRegistrar_Click(object sender, RoutedEventArgs e)
@@ -47,6 +49,11 @@ namespace Vistas
             MenuPrincipal menuPrincipal = new MenuPrincipal("2");
             menuPrincipal.Show();
             this.Close();
+        }
+
+        private void txtDNI_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

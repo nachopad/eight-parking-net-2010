@@ -136,3 +136,5 @@ C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\
 C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\EstadoSector.g.cs
 C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\TiposVehiculoWindow.g.cs
 C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ValidarCliente.g.cs
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ValidarCliente.baml
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ValidarCliente.g.cs

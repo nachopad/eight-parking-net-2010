@@ -41,6 +41,16 @@
     <Style x:Key="TextBoxAltaCliente" TargetType="TextBox">
         <Setter Property="Background" Value="#FF696161" />
         <Setter Property="Foreground" Value="White" />
+        <Style.Triggers>
+            <Trigger Property="Validation.HasError" Value="true">
+                <Setter Property="ToolTip" Value="{Binding RelativeSource={RelativeSource Self}, Path=(Validation.Errors)[0].ErrorContent}" />
+                <Setter Property="BorderBrush" Value="Red" />
+                <Setter Property="BorderThickness" Value="1" />
+                <Setter Property="Background" Value="Red" />
+            </Trigger>
+        </Style.Triggers>
     </Style>
+    
+    
     
 </ResourceDictionary>
