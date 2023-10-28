@@ -1,11 +1,18 @@
 ﻿<Window x:Class="Vistas.EstadoSector"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:svc="clr-namespace:Vistas"
         Title="EstadoSector" Height="300" Width="300">
+
+
     <Window.Resources>
         <XmlDataProvider x:Key="Tiempos" Source="Tiempos.xml"  XPath="/tiempos/tiempo" ></XmlDataProvider>
+        <svc:ConversorDeEstados x:Key="miConversorDeEstados" />
     </Window.Resources>
+
     <Grid Background="Black">
-                <ComboBox Width="150" Height="30" Name="comboBoxTiempos" ItemsSource="{Binding Source={StaticResource Tiempos}}" DisplayMemberPath="@duracion" SelectedValuePath="@duracion" Margin="67,165,61,66" />
+        <ComboBox Width="150" Height="30" Name="comboBoxTiempos" ItemsSource="{Binding Source={StaticResource Tiempos}}" DisplayMemberPath="@duracion" SelectedValuePath="@duracion" Margin="67,71,61,160" />
+        <Rectangle Fill="{Binding Path=SelectedValue, ElementName=comboBoxTiempos, Converter={StaticResource ResourceKey=miConversorDeEstados}}" Margin="67,138,61,24" />
     </Grid>
+
 </Window>

@@ -55,6 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ConversorDeEstados.cs" />
     <Compile Include="EstadoSector.xaml.cs">
       <DependentUpon>EstadoSector.xaml</DependentUpon>
     </Compile>
