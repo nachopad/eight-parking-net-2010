@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ABMUsuarios.xaml.cs">
+      <DependentUpon>ABMUsuarios.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ConversorDeEstados.cs" />
     <Compile Include="EstadoSector.xaml.cs">
       <DependentUpon>EstadoSector.xaml</DependentUpon>
@@ -86,6 +89,10 @@
     <Compile Include="VehiculosPlaya.xaml.cs">
       <DependentUpon>VehiculosPlaya.xaml</DependentUpon>
     </Compile>
+    <Page Include="ABMUsuarios.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="EstadoSector.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
