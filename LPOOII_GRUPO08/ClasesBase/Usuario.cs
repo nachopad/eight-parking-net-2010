@@ -41,7 +41,10 @@ namespace ClasesBase
         public int IdUsuario
         {
             get { return idUsuario; }
-            set { idUsuario = value; }
+            set { 
+                idUsuario = value;
+                NotifyPropertyChanged("IdUsuario");
+            }
         }
 
         public string UserName
@@ -110,6 +113,7 @@ namespace ClasesBase
                 nombre.GetHashCode() +
                 rol.GetHashCode();
         }
+
 
     }
 

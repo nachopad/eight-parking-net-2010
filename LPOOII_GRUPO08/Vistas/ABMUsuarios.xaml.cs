@@ -30,6 +30,7 @@ namespace Vistas
 
         CollectionView Vista;
         ObservableCollection<Usuario> listUsuario;
+        int index = 0;
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
@@ -41,11 +42,13 @@ namespace Vistas
         private void btnPrimero_Click(object sender, RoutedEventArgs e)
         {
             Vista.MoveCurrentToFirst();
+            index = 0;
         }
 
         private void btnUltimo_Click(object sender, RoutedEventArgs e)
         {
             Vista.MoveCurrentToLast();
+            index = listUsuario.Count - 1;
         }
 
         private void btnAnterior_Click(object sender, RoutedEventArgs e)
@@ -54,6 +57,11 @@ namespace Vistas
             if (Vista.IsCurrentBeforeFirst)
             {
                 Vista.MoveCurrentToLast();
+                index = listUsuario.Count - 1;
+            }
+            else
+            {
+                index--;
             }
         }
 
@@ -63,6 +71,45 @@ namespace Vistas
             if (Vista.IsCurrentAfterLast)
             {
                 Vista.MoveCurrentToFirst();
+                index = 0;
+            }
+            else
+            {
+                index++;
+            }
+        }
+
+        private void btnNuevo_Click(object sender, RoutedEventArgs e)
+        {
+            formularioUsuario formularioUsuario = new formularioUsuario();
+            this.Hide();
+            formularioUsuario.Show();
+        }
+
+        private void btnEliminar_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBoxResult result = MessageBox.Show("¿Estás seguro de que quieres eliminar este usuario?", "Confirmación", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+            if (result == MessageBoxResult.Yes)
+            {
+                TrabajarUsuarios.eliminarUsuario(listUsuario[index].IdUsuario);
+                listUsuario.RemoveAt(index);
+            }
+        }
+
+        private void btnGuardar_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBoxResult result = MessageBox.Show("¿Estás seguro de que quieres modificar este usuario?", "Confirmación", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+            if (result == MessageBoxResult.Yes)
+            {
+                if (listUsuario[index].Nombre != "" && listUsuario[index].Apellido != "" && listUsuario[index].UserName != "" && listUsuario[index].Password != "" && listUsuario[index].Rol != "")
+                {
+                    TrabajarUsuarios.modificarUsuario(listUsuario[index]);
+                }
+                else
+                {
+                    MessageBox.Show("Debe completar todos los campos para realizar la modificación", "Advertencia", MessageBoxButton.OK, MessageBoxImage.Warning);
+
+                }
             }
         }
         
