@@ -21,68 +21,50 @@ namespace Vistas
     /// 
     public partial class ABMUsuarios : Window
     {
-        int idUsuario = 0;
-        int indice = 0;
-
-        private readonly TrabajarUsuarios trabajarUsuarios = new TrabajarUsuarios();
-        public ObservableCollection<Usuario> usuarios { get; set; }
 
         public ABMUsuarios()
         {
             InitializeComponent();
-            usuarios = trabajarUsuarios.TraerUsuario();
-            mostrarUsuarios();
-        }
-
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
             
         }
 
-        private void mostrarUsuarios()
-        {
-            // Enlace de los textbox con la colección
-            idUsuario = usuarios[indice].IdUsuario;
-            txtUsername.DataContext = usuarios[indice].UserName;
-            txtPassword.DataContext = usuarios[indice].Password;
-            txtApellido.DataContext = usuarios[indice].Apellido;
-            txtNombre.DataContext = usuarios[indice].Nombre;
-            txtRol.DataContext = usuarios[indice].Rol;
+        CollectionView Vista;
+        ObservableCollection<Usuario> listUsuario;
 
-            //Enlace de los textbox con la colección
-            txtUsername.Text = usuarios[indice].UserName;
-            txtPassword.Text = usuarios[indice].Password;
-            txtApellido.Text = usuarios[indice].Apellido;
-            txtNombre.Text = usuarios[indice].Nombre;
-            txtRol.Text = usuarios[indice].Rol;
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            ObjectDataProvider odp = (ObjectDataProvider)this.Resources["LIST_USER"];
+            listUsuario = odp.Data as ObservableCollection<Usuario>;
+            Vista = (CollectionView)CollectionViewSource.GetDefaultView(grid_content.DataContext);
         }
 
         private void btnPrimero_Click(object sender, RoutedEventArgs e)
         {
-            indice = 0;
-            mostrarUsuarios();
-        }
-
-        private void btnAnterior_Click(object sender, RoutedEventArgs e)
-        {
-            if (indice != 0)
-                indice = indice - 1;
-            mostrarUsuarios();
-        }
-
-        private void btnSiguiente_Click(object sender, RoutedEventArgs e)
-        {
-            if (indice < usuarios.Count - 1)
-                indice++;
-            mostrarUsuarios();
+            Vista.MoveCurrentToFirst();
         }
 
         private void btnUltimo_Click(object sender, RoutedEventArgs e)
         {
-            indice = usuarios.Count - 1;
-            mostrarUsuarios();
+            Vista.MoveCurrentToLast();
         }
 
+        private void btnAnterior_Click(object sender, RoutedEventArgs e)
+        {
+            Vista.MoveCurrentToPrevious();
+            if (Vista.IsCurrentBeforeFirst)
+            {
+                Vista.MoveCurrentToLast();
+            }
+        }
+
+        private void btnSiguiente_Click(object sender, RoutedEventArgs e)
+        {
+            Vista.MoveCurrentToNext();
+            if (Vista.IsCurrentAfterLast)
+            {
+                Vista.MoveCurrentToFirst();
+            }
+        }
         
     }
 }
