@@ -6,14 +6,22 @@
              mc:Ignorable="d" 
              d:DesignHeight="271" d:DesignWidth="300">
     <Grid Background="Black">
-        <Label Content="LOGIN" Height="33"  Name="label1" VerticalAlignment="Top" Width="56" DataContext="{Binding}" IsEnabled="True" FontWeight="Bold" FontSize="15" Foreground="White" HorizontalAlignment="Center" Margin="110,12,112,0" />
-        <Rectangle Height="148" Margin="0,59,0,54" Name="rectangle1" Stroke="#FFFF5C00" VerticalAlignment="Center" />
-        <Label Content="Usuario" Height="26" Margin="-8,114,164,0" Name="label2" VerticalAlignment="Top" Foreground="White" HorizontalAlignment="Center" Width="122" HorizontalContentAlignment="Center" />
-        <Label Content="Contraseña" Height="26" Margin="12,161,164,0" Name="label3" VerticalAlignment="Top" Foreground="White" HorizontalAlignment="Center" Width="102" HorizontalContentAlignment="Center" />
-        <Image Height="43" HorizontalAlignment="Left" Margin="120,59,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="46" Source="/Vistas;component/Images/cliente.png" ClipToBounds="False" />
-        <TextBox Height="23" HorizontalAlignment="Left" Margin="120,117,0,0" Name="textBoxUser" VerticalAlignment="Top" Width="120" Background="#FF696161" FontSize="13" FontWeight="Bold" Foreground="White" />
-        <PasswordBox Height="23" HorizontalAlignment="Left" Margin="120,164,0,0" Name="textBoxPsw" VerticalAlignment="Top" Width="120" Background="#FF696161" FontSize="13" FontWeight="Bold" Foreground="White" />
-        <Button Content="Ingresar" Height="23" HorizontalAlignment="Right" Margin="0,226,60,0" Name="buttonAceptar" VerticalAlignment="Top" Width="75" Background="#FF696161" BorderBrush="#FF382E2E" Foreground="#FFEBD9D9" Click="buttonAceptar_Click" />
-        <Button Content="Salir" Height="23" HorizontalAlignment="Left" Margin="39,226,0,0" Name="button1" VerticalAlignment="Top" Width="75" Background="#FF696161" BorderBrush="#FF382E2E" Foreground="#FFEBD9D9" Click="button1_Click" />
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Label Content="LOGIN" Name="label1" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" FontSize="15" Foreground="White"/>
+        <StackPanel Grid.Row="1" VerticalAlignment="Center">
+            <Image Height="43" Width="46" Name="image1" Stretch="Fill" Source="/Vistas;component/Images/cliente.png" HorizontalAlignment="Center"/>
+            <Label Content="Usuario" Name="label2" Foreground="White" HorizontalAlignment="Center"/>
+            <TextBox Height="23" Name="textBoxUser" Width="120" Background="#FF696161" FontSize="13" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"/>
+            <Label Content="Contraseña" Name="label3" Foreground="White" HorizontalAlignment="Center"/>
+            <PasswordBox Height="23" Name="textBoxPsw" Width="120" Background="#FF696161" FontSize="13" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Content="Ingresar" Name="buttonAceptar" Height="23" Width="75" Background="#FF696161" BorderBrush="#FF382E2E" Foreground="#FFEBD9D9" Margin="10" Click="buttonAceptar_Click"/>
+            <Button Content="Salir" Name="button1" Height="23" Width="75" Background="#FF696161" BorderBrush="#FF382E2E" Foreground="#FFEBD9D9" Margin="10" Click="button1_Click"/>
+        </StackPanel>
     </Grid>
 </UserControl>

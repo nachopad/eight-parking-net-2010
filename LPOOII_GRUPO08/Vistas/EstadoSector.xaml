@@ -9,10 +9,20 @@
         <XmlDataProvider x:Key="Tiempos" Source="Tiempos.xml"  XPath="/tiempos/tiempo" ></XmlDataProvider>
         <svc:ConversorDeEstados x:Key="miConversorDeEstados" />
     </Window.Resources>
-
+    <!-- 
     <Grid Background="Black">
         <ComboBox Width="150" Height="30" Name="comboBoxTiempos" ItemsSource="{Binding Source={StaticResource Tiempos}}" DisplayMemberPath="@duracion" SelectedValuePath="@duracion" Margin="67,71,61,160" />
         <Rectangle Fill="{Binding Path=SelectedValue, ElementName=comboBoxTiempos, Converter={StaticResource ResourceKey=miConversorDeEstados}}" Margin="67,138,61,24" />
     </Grid>
+    -->
+    <Grid Background="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <ComboBox Grid.Row="0" Width="150" Height="30" Name="comboBoxTiempos" ItemsSource="{Binding Source={StaticResource Tiempos}}" DisplayMemberPath="@duracion" SelectedValuePath="@duracion" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Rectangle Grid.Row="1" Width="100" Height="100" Fill="{Binding Path=SelectedValue, ElementName=comboBoxTiempos, Converter={StaticResource ResourceKey=miConversorDeEstados}}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+    </Grid>
+
 
 </Window>

@@ -154,3 +154,13 @@ C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\
 C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ModificarCliente.g.cs
 C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\formularioUsuario.baml
 C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\formularioUsuario.g.cs
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ABMUsuarios.baml
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\formularioUsuario.baml
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ModificarCliente.baml
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ValidarCliente.baml
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ABMUsuarios.g.cs
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\EstadoSector.g.cs
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\formularioUsuario.g.cs
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ModificarCliente.g.cs
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ValidarCliente.g.cs
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\EstadoSector.baml
