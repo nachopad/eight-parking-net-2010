@@ -29,7 +29,7 @@ namespace Vistas
         private void CargarDatos()
         {
             var listaDeUsuarios = _trabajarUsuarios.TraerUsuario();
-            dataGrid1.ItemsSource = listaDeUsuarios;
+            dataGrid1.ItemsSource = listaDeUsuarios.OrderBy(u => u.UserName);//Ordena la grilla de forma ascendente UserName
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
