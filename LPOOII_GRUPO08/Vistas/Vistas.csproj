@@ -62,6 +62,9 @@
     <Compile Include="EstadoSector.xaml.cs">
       <DependentUpon>EstadoSector.xaml</DependentUpon>
     </Compile>
+    <Compile Include="FlowDocs.xaml.cs">
+      <DependentUpon>FlowDocs.xaml</DependentUpon>
+    </Compile>
     <Compile Include="FormularioCliente.xaml.cs">
       <DependentUpon>FormularioCliente.xaml</DependentUpon>
     </Compile>
@@ -104,6 +107,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Estilos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FlowDocs.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

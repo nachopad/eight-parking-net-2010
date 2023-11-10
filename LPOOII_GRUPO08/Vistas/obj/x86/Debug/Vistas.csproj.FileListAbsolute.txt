@@ -206,3 +206,9 @@ C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vista
 C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.csproj.GenerateResource.Cache
 C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoDeUsuarios.baml
 C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoDeUsuarios.g.cs
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FlowDocs.baml
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\formularioUsuario.baml
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoDeUsuarios.baml
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FlowDocs.g.cs
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\formularioUsuario.g.cs
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoDeUsuarios.g.cs
