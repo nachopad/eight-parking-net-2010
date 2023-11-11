@@ -73,7 +73,7 @@
                 </TextBox.Text>
             </TextBox>
 
-            <Button Content="Registrar" Grid.Row="3" Name="btnRegistrar" Margin="0,32,17,26"  Style="{StaticResource BotonAltaCliente}" HorizontalAlignment="Right" Width="75" />
+            <Button Content="Modificar" Grid.Row="3" Name="btnRegistrar" Margin="0,32,17,26"  Style="{StaticResource BotonAltaCliente}" HorizontalAlignment="Right" Width="75" />
             <Button Grid.Column="1" Grid.Row="3" Margin="15,32,0,26" Style="{StaticResource BotonAltaCliente}" Name="btnSalir" Click="btnSalir_Click" HorizontalAlignment="Left" Width="75">Salir</Button>
         </Grid>
 

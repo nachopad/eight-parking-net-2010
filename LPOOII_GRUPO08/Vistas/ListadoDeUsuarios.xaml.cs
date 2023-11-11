@@ -54,6 +54,12 @@ namespace Vistas
 
         }
 
+        private void btnVistaPrevia_Click(object sender, RoutedEventArgs e)
+        {
+            FlowDocs vistaPrevia = new FlowDocs();
+            vistaPrevia.Show();
+        }
+
 
     }
 }
