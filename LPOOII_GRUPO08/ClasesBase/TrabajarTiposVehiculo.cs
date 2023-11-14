@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Data;
 using System.Data.SqlClient;
+using System.Collections.ObjectModel;
 
 namespace ClasesBase
 {
@@ -22,6 +23,37 @@ namespace ClasesBase
                 adapter.Fill(dt);
             }
             return dt;
+        }
+
+        public ObservableCollection<TipoVehiculo> TraerTiposVehiculos2()
+        {
+            ObservableCollection<TipoVehiculo> vehiculos = new ObservableCollection<TipoVehiculo>();
+
+            // Conexión a la base de datos
+            string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\argca\\OneDrive\\Documentos\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
+            SqlConnection conexion = new SqlConnection(conexionString);
+            conexion.Open();
+
+            // Consulta a la base de datos
+            string consulta = "SELECT * FROM TipoVehiculo";
+            SqlCommand comando = new SqlCommand(consulta, conexion);
+            SqlDataReader reader = comando.ExecuteReader();
+
+            // Llenado de la colección
+            while (reader.Read())
+            {
+                TipoVehiculo tipo = new TipoVehiculo();
+                tipo.Descripcion = reader["descripcion"].ToString();
+                tipo.Tarifa = decimal.Parse(reader["tarifa"].ToString());
+                tipo.TVCodigo = int.Parse(reader["tv_codigo"].ToString());
+                vehiculos.Add(tipo);
+            }
+
+            // Cierre de la conexión
+            conexion.Close();
+            Console.WriteLine("Aqui abajo se vera el vehiculo");
+            Console.WriteLine(vehiculos[0].Descripcion);
+            return vehiculos;
         }
 
     }

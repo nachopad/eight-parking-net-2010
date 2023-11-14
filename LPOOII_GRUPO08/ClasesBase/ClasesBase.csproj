@@ -46,6 +46,8 @@
     <Compile Include="Ticket.cs" />
     <Compile Include="TipoVehiculo.cs" />
     <Compile Include="TrabajarCliente.cs" />
+    <Compile Include="TrabajarSector.cs" />
+    <Compile Include="TrabajarTicket.cs" />
     <Compile Include="TrabajarTiposVehiculo.cs" />
     <Compile Include="TrabajarUsuarios.cs" />
     <Compile Include="Usuario.cs" />

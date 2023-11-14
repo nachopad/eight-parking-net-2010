@@ -1,0 +1,45 @@
+﻿<Window x:Class="Vistas.RegistroEntrada"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         xmlns:svc="clr-namespace:ClasesBase;assembly=ClasesBase"
+        Title="RegistroEntrada" Height="386" Width="667" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+    <Window.Resources>
+        <ObjectDataProvider x:Key="LIST_VEHICULOS" ObjectType="{x:Type svc:TrabajarTiposVehiculo}" MethodName="TraerTiposVehiculos2"></ObjectDataProvider>
+        <ObjectDataProvider x:Key="LIST_SECTORES" ObjectType="{x:Type svc:TrabajarSector}" MethodName="TraerSectores"></ObjectDataProvider>
+    </Window.Resources>
+
+    <Grid Name="grid_content">
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="285,91,0,0" Name="txtHoraEntrada" VerticalAlignment="Top" Width="120" TextChanged="txtHoraEntrada_TextChanged" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="474,92,0,0" Name="txtMinutosEntrada" VerticalAlignment="Top" Width="120" TextChanged="txtMinutosEntrada_TextChanged" />
+        <DatePicker Height="25" HorizontalAlignment="Left" Margin="103,90,0,0" Name="dtpFechaIngreso" VerticalAlignment="Top" Width="115" SelectedDateChanged="dtpFechaIngreso_SelectedDateChanged" />
+        <Button Content="Registrar" Height="23" HorizontalAlignment="Left" Margin="232,297,0,0" Name="btnRegistrar" VerticalAlignment="Top" Width="75" Click="btnRegistrar_Click" />
+        <Label Content="Fecha Entrada" Height="28" HorizontalAlignment="Left" Margin="12,91,0,0" Name="lblFechaEntrada" VerticalAlignment="Top" />
+        <Label Content="Hora" Height="28" HorizontalAlignment="Left" Margin="232,89,0,0" Name="lblHoraIngreso" VerticalAlignment="Top" />
+        <Label Content="Minutos" Height="28" HorizontalAlignment="Left" Margin="415,90,0,0" Name="lblMinutosIngreso" VerticalAlignment="Top" />
+        <Label Content="Fecha Salida" Height="28" HorizontalAlignment="Left" Margin="12,125,0,0" Name="lblFechaSalida" VerticalAlignment="Top" />
+        <DatePicker Height="25" HorizontalAlignment="Left" Margin="103,128,0,0" Name="dtpFechaSalida" VerticalAlignment="Top" Width="115" SelectedDateChanged="dtpFechaSalida_SelectedDateChanged" />
+        <Label Content="Hora" Height="28" HorizontalAlignment="Left" Margin="232,125,0,0" Name="lblHoraSalida" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="285,130,0,0" Name="txtHoraSalida" VerticalAlignment="Top" Width="120" TextChanged="txtHoraSalida_TextChanged" />
+        <Label Content="Minutos" Height="28" HorizontalAlignment="Left" Margin="415,127,0,0" Name="lblMinutosSalida" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="474,130,0,0" Name="txtMinutosSalida" VerticalAlignment="Top" Width="120" TextChanged="txtMinutosSalida_TextChanged" />
+        <Label Content="DNI cliente" Height="28" HorizontalAlignment="Left" Margin="12,24,0,0" Name="lblDniCliente" VerticalAlignment="Top" Width="75" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="98,28,0,0" Name="txtDniCliente" VerticalAlignment="Top" Width="120" />
+        <Button Content="Registrar Cliente" Height="23" HorizontalAlignment="Left" Margin="355,297,0,0" Name="btnRegistrarCliente" VerticalAlignment="Top" Width="98" Click="button1_Click" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="98,176,0,0" Name="txtPatente" VerticalAlignment="Top" Width="120" />
+        <Label Content="Patente" Height="28" HorizontalAlignment="Left" Margin="12,172,0,0" Name="lblPatente" VerticalAlignment="Top" />
+        <Label Content="Sector" Height="28" HorizontalAlignment="Left" Margin="232,172,0,0" Name="lblSector" VerticalAlignment="Top" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="285,177,0,0" Name="cmbSector" VerticalAlignment="Top" Width="120"
+                  ItemsSource="{Binding Source={StaticResource LIST_SECTORES}}" DisplayMemberPath="Descripcion"/>
+
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="474,28,0,0" Name="cmbTipoVehiculo" VerticalAlignment="Top" Width="120" 
+              ItemsSource="{Binding Source={StaticResource LIST_VEHICULOS}}" DisplayMemberPath="Descripcion" SelectionChanged="cmbTipoVehiculo_SelectionChanged" />
+
+        <Label Content="Tipo de vehiculo" Height="28" HorizontalAlignment="Left" Margin="371,24,0,0" Name="label1" VerticalAlignment="Top" />
+        <Label Content="Tarifa" Height="28" HorizontalAlignment="Left" Margin="415,172,0,0" Name="lblTarifa" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="474,177,0,0" Name="txtTarifa" VerticalAlignment="Top" Width="120" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="285,238,0,0" Name="txtTotal" VerticalAlignment="Top" Width="120" />
+        <Label Content="Total" Height="28" HorizontalAlignment="Left" Margin="230,234,0,0" Name="lblTotal" VerticalAlignment="Top" />
+
+    </Grid>
+
+</Window>

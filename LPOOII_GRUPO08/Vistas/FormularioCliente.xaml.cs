@@ -40,6 +40,8 @@ namespace Vistas
                 cliente.Nombre = txtNombre.Text;
                 cliente.Apellido = txtApellido.Text;
                 cliente.Telefono = txtTelefono.Text;
+                TrabajarCliente trabajarCliente = new TrabajarCliente();
+                trabajarCliente.registrarCliente(cliente);
                 MessageBox.Show("Nombre:  " + cliente.Nombre + " - Apellido: " + cliente.Apellido + " - DNI: " + cliente.ClienteDNI + " - Telefono: " + cliente.Telefono, "Datos registrados", MessageBoxButton.OK);
             }
         }

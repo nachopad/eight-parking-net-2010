@@ -13,7 +13,7 @@ namespace ClasesBase
         {
             Cliente cliente = new Cliente();
             //string connectionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\lenovo\\Documents\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
-            string connectionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\maxi1\\OneDrive\\Documentos\\Programacion LPOO II\\TP1LPOO II\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
+            string connectionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\argca\\OneDrive\\Documentos\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
             
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -38,5 +38,25 @@ namespace ClasesBase
 
             return cliente;
         }
+
+        public void registrarCliente(Cliente cliente)
+        {
+            string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\argca\\OneDrive\\Documentos\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
+            SqlConnection cnn = new SqlConnection(conexionString);
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandText = "RegistrarCliente";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Connection = cnn;
+            cmd.Parameters.AddWithValue("@apellido", cliente.Apellido);
+            cmd.Parameters.AddWithValue("@dni", cliente.ClienteDNI);
+            cmd.Parameters.AddWithValue("@nombre", cliente.Nombre);
+            cmd.Parameters.AddWithValue("@telefono", cliente.Telefono);
+
+            cnn.Open();
+            cmd.ExecuteNonQuery();
+            cnn.Close();
+
+        }
+
     }
 }
