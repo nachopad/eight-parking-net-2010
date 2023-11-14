@@ -15,18 +15,24 @@
     </Window.Resources>
 
     <Grid>
-        <ListView ItemsSource="{Binding Source= {StaticResource ResourceKey= VIEW_LIST_USERS}}" Margin="0,0,0,77">
-            <ListView.View>
-                <GridView>
-                    <GridView.Columns>
-                        <GridViewColumn Header="Apellido" DisplayMemberBinding="{Binding Path= Apellido}" Width="100"></GridViewColumn>
-                        <GridViewColumn Header="Nombre" DisplayMemberBinding="{Binding Path= Nombre}" Width="100"></GridViewColumn>
-                        <GridViewColumn Header="Usuario" DisplayMemberBinding="{Binding Path= UserName}" Width="100"></GridViewColumn>
-                        <GridViewColumn Header="Contraseña" DisplayMemberBinding="{Binding Path= Password}" Width="100"></GridViewColumn>
-                    </GridView.Columns>
-                </GridView>
-            </ListView.View>
-        </ListView>
-        <Button Content="Imprimir" Height="23" HorizontalAlignment="Center" Margin="167,213,162,0" Name="button1" VerticalAlignment="Top" Width="75" />
+        <FlowDocumentReader Name="flowDocumentReader">
+            <FlowDocument>
+                <Paragraph>           
+                    <ListView ItemsSource="{Binding Source= {StaticResource ResourceKey= VIEW_LIST_USERS}}" Margin="0,0,0,77">
+                        <ListView.View>
+                            <GridView>
+                                <GridView.Columns>
+                                    <GridViewColumn Header="Apellido" DisplayMemberBinding="{Binding Path= Apellido}" Width="100"></GridViewColumn>
+                                    <GridViewColumn Header="Nombre" DisplayMemberBinding="{Binding Path= Nombre}" Width="100"></GridViewColumn>
+                                    <GridViewColumn Header="Usuario" DisplayMemberBinding="{Binding Path= UserName}" Width="100"></GridViewColumn>
+                                    <GridViewColumn Header="Contraseña" DisplayMemberBinding="{Binding Path= Password}" Width="100"></GridViewColumn>
+                                </GridView.Columns>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </Paragraph>
+            </FlowDocument>
+        </FlowDocumentReader>
+        <Button Content="Imprimir" Height="23" HorizontalAlignment="Center" Margin="167,213,162,0" Name="button1" VerticalAlignment="Top" Width="75" Click="Imprimir_Click" />
     </Grid>
 </Window>
