@@ -25,16 +25,19 @@ namespace Vistas
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            TrabajarTicket tt = new TrabajarTicket();
+            Ticket ticket = new Ticket();
+            ticket = tt.obtenerUltimoTicket();
             txbNombrePlayaEstacionamiento.Text = "PLAYA DE ESTACIONAMIENTO GRUPO 08";
             txbDireccion.Text = "DOMICILIO: " + "Alberdi 777  S.S De Jujuy";
             txbCuit.Text = "CUIT: " + "30-88888888-9";
             txbIibb.Text = "IIBB: " + "999";
-            txbNumeroTicket.Text = "TICKET #" + "1111";
-            txbPatente.Text = "PATENTE: " + "AB235A";
-            txbTipoVehiculo.Text = "TIPO VEHICULO: " + "Auto";
-            txbCliente.Text = "CLIENTE: " + "Juan Perez";
-            txbIngreso.Text = "HORA DE INGRESO: " + "10:40";
-            txbTarifa.Text = "TARIFA: " + "500";
+            txbNumeroTicket.Text = "TICKET #" + ticket.TicketNro;
+            txbPatente.Text = "PATENTE: " + ticket.Patente;
+            txbTipoVehiculo.Text = "TIPO VEHICULO: " + ticket.TvCodigo;
+            txbCliente.Text = "CLIENTE: " + ticket.ClienteDNI;
+            txbIngreso.Text = "HORA DE INGRESO: " + ticket.FechaHoraEnt;
+            txbTarifa.Text = "TARIFA: " + ticket.Tarifa;
             txbUsuario.Text = "USUARIO: " + "Operador";
         }
     }

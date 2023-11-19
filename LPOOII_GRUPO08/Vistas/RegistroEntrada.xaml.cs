@@ -48,6 +48,8 @@ namespace Vistas
                     Sector sector = (Sector)cmbSector.SelectedItem;
                     ticket.SectorCodigo = sector.SectorCodigo;
                     trabajarTicket.registrarTicket(ticket);
+                    FixedDocs vistaTicket = new FixedDocs();
+                    vistaTicket.Show();
                 }
                 else
                 {
