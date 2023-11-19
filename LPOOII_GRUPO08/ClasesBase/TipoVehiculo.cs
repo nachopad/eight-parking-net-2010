@@ -28,7 +28,7 @@ namespace ClasesBase
             get { return tarifa; }
             set { tarifa = value; }
         }
-        public decimal Imagen
+        public string Imagen
         {
             get { return imagen; }
             set { imagen = value; }

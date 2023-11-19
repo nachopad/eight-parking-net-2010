@@ -27,3 +27,8 @@ C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\obj\Debug\Clase
 C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\obj\Debug\ClasesBase.pdb
 C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\bin\Debug\ClasesBase.dll
 C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\bin\Debug\ClasesBase.pdb
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\obj\Debug\ClasesBase.dll
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\bin\Debug\ClasesBase.dll
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\bin\Debug\ClasesBase.pdb
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\obj\Debug\ClasesBase.pdb

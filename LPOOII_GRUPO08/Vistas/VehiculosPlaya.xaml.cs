@@ -55,8 +55,8 @@ namespace Vistas
 
         private void salir_Click(object sender, RoutedEventArgs e)
         {
-            MenuPrincipal menuPrincipal = new MenuPrincipal("1");
-            menuPrincipal.Show();
+            Zona zona = new Zona();
+            zona.Show();
             this.Close();
         }
        

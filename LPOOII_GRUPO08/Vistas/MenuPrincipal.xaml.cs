@@ -18,6 +18,9 @@ namespace Vistas
     /// </summary>
     public partial class MenuPrincipal : Window
     {
+        public MenuPrincipal()
+        { 
+        } 
         public MenuPrincipal(String rol)
         {
             InitializeComponent();
@@ -63,8 +66,8 @@ namespace Vistas
 
         private void btnGestionarSectores_Click(object sender, RoutedEventArgs e)
         {
-            VehiculosPlaya vehiculosPlaya = new VehiculosPlaya();
-            vehiculosPlaya.Show();
+            Zona zonasDisponibles = new Zona();
+            zonasDisponibles.Show();
             this.Close();
         }
 
