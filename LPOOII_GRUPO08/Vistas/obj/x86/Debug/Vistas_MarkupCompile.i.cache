@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\
 Vistas
 none
 false
 DEBUG;TRACE
-C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\App.xaml
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\App.xaml
 18-1479631240
 
-22-255332537
-13-140262260
+22154915949
+131463176476
 ABMUsuarios.xaml;EstadoSector.xaml;Estilos.xaml;FlowDocs.xaml;FormularioCliente.xaml;formularioUsuario.xaml;FormularioVehiculo.xaml;Login.xaml;loginControl.xaml;MainWindow.xaml;MenuPrincipal.xaml;ModificarCliente.xaml;Plantillas.xaml;RegistroEntrada.xaml;TiposVehiculoWindow.xaml;ValidarCliente.xaml;VehiculosPlaya.xaml;ListadoDeUsuarios.xaml;
 
-False
+True
 

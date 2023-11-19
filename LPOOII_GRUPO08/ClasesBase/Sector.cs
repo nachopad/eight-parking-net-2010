@@ -11,7 +11,7 @@ namespace ClasesBase
         private string descripcion;
         private string identificador;
         private bool habilitado;
-
+        private int zonaCodigo;
         public int SectorCodigo
         {
             get { return sectorCodigo; }
@@ -34,6 +34,11 @@ namespace ClasesBase
         {
             get { return habilitado; }
             set { habilitado = value; }
+        }
+        public int ZonaCodigo
+        {
+            get { return zonaCodigo; }
+            set { zonaCodigo = value; }
         }
     }
 }

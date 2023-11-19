@@ -10,7 +10,7 @@ namespace ClasesBase
         private int tvCodigo;
         private string descripcion;
         private decimal tarifa;
-
+        private string imagen;
         public int TVCodigo
         {
             get { return tvCodigo; }
@@ -28,5 +28,11 @@ namespace ClasesBase
             get { return tarifa; }
             set { tarifa = value; }
         }
+        public decimal Imagen
+        {
+            get { return imagen; }
+            set { imagen = value; }
+        }
+        
     }
 }
