@@ -64,5 +64,51 @@ namespace ClasesBase
 
             return ticket;
         }
+
+        public Ticket buscarTicketPorSector(int sectorCodigo)
+        {
+            Ticket ticketEncontrado = null;
+
+            // Conexión a la base de datos
+            string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\Cuno\\Documents\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
+            using (SqlConnection conexion = new SqlConnection(conexionString))
+            {
+                string consulta = "SELECT nro_ticket, fecha_hora_ent, fecha_hora_sal, cliente_dni, tv_codigo, patente, sector_codigo, duracion, tarifa, total FROM Ticket WHERE sector_codigo = @sectorCodigo";
+                SqlCommand comando = new SqlCommand(consulta, conexion);
+                comando.Parameters.AddWithValue("@sectorCodigo", sectorCodigo);
+
+                try
+                {
+                    conexion.Open();
+                    SqlDataReader reader = comando.ExecuteReader();
+
+                    if (reader.Read())
+                    {
+                        ticketEncontrado = new Ticket();
+                        // Asignación de valores al ticket encontrado
+                        ticketEncontrado.TicketNro = int.Parse(reader["nro_ticket"].ToString());
+                        ticketEncontrado.FechaHoraEnt = DateTime.Parse(reader["fecha_hora_ent"].ToString());
+                        ticketEncontrado.FechaHoraSal = DateTime.Parse(reader["fecha_hora_sal"].ToString());
+                        ticketEncontrado.ClienteDNI = reader["cliente_dni"].ToString();
+                        ticketEncontrado.TvCodigo = int.Parse(reader["tv_codigo"].ToString());
+                        ticketEncontrado.Patente = reader["patente"].ToString();
+                        ticketEncontrado.SectorCodigo = int.Parse(reader["sector_codigo"].ToString());
+                        ticketEncontrado.Duracion = double.Parse(reader["duracion"].ToString());
+                        ticketEncontrado.Tarifa = decimal.Parse(reader["tarifa"].ToString());
+                        ticketEncontrado.Total = decimal.Parse(reader["total"].ToString());
+                    }
+
+                    reader.Close();
+                }
+                catch (Exception ex)
+                {
+                    // Manejo de excepciones si ocurre alguna
+                    Console.WriteLine("Error al buscar ticket por sector: " + ex.Message);
+                }
+            }
+
+            return ticketEncontrado;
+        }
+
     }
 }

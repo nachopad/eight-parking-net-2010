@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\
 Vistas
 none
 false
 DEBUG;TRACE
-C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\App.xaml
-191404151412
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\App.xaml
+21308509128
 
-22-306895515
-131463176476
-ABMUsuarios.xaml;EstadoSector.xaml;Estilos.xaml;FlowDocs.xaml;FormularioCliente.xaml;formularioUsuario.xaml;FormularioVehiculo.xaml;Login.xaml;loginControl.xaml;MainWindow.xaml;MenuPrincipal.xaml;ModificarCliente.xaml;Plantillas.xaml;RegistroEntrada.xaml;TiposVehiculoWindow.xaml;ValidarCliente.xaml;VehiculosPlaya.xaml;ListadoDeUsuarios.xaml;Zona.xaml;
+25279335059
+13-140262260
+ABMUsuarios.xaml;EstadoSector.xaml;Estilos.xaml;FixedDocs.xaml;FlowDocs.xaml;FormularioCliente.xaml;formularioUsuario.xaml;FormularioVehiculo.xaml;ListadoDeSectores.xaml;Login.xaml;loginControl.xaml;MainWindow.xaml;MenuPrincipal.xaml;ModificarCliente.xaml;Plantillas.xaml;RegistroEntrada.xaml;TiposVehiculoWindow.xaml;ValidarCliente.xaml;VehiculosPlaya.xaml;ListadoDeUsuarios.xaml;Zona.xaml;
 
 False
 

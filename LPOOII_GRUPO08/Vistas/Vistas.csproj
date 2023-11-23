@@ -77,6 +77,9 @@
     <Compile Include="FormularioVehiculo.xaml.cs">
       <DependentUpon>FormularioVehiculo.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ListadoDeSectores.xaml.cs">
+      <DependentUpon>ListadoDeSectores.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
@@ -98,6 +101,7 @@
     <Compile Include="ValidarCliente.xaml.cs">
       <DependentUpon>ValidarCliente.xaml</DependentUpon>
     </Compile>
+    <Compile Include="var.cs" />
     <Compile Include="VehiculosPlaya.xaml.cs">
       <DependentUpon>VehiculosPlaya.xaml</DependentUpon>
     </Compile>
@@ -136,6 +140,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="FormularioVehiculo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ListadoDeSectores.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
