@@ -84,21 +84,28 @@ namespace ClasesBase
             var trabajarSector = new ClasesBase.TrabajarSector();
             var sectores = trabajarSector.TraerSectoresOcupados();
             var trabajarTicket = new ClasesBase.TrabajarTicket();
+            var trabajarCliente = new ClasesBase.TrabajarCliente();
+            var trabajarTipoVehiculo = new ClasesBase.TrabajarTiposVehiculo();
 
             foreach (var sector in sectores)
             {
                 if (!sector.Habilitado) // Si el sector no está habilitado (false)
                 {
+                    
+                    var ticket = trabajarTicket.buscarTicketPorSector(1);// ver en la base de datos porque no se asocia el ticket con el codigo_sector
+                    var cliente = trabajarCliente.ObtenerClientePorDni(ticket.ClienteDNI);
+                    var descripcion = trabajarTipoVehiculo.ObtenerDescripcionPorTarifa(ticket.Tarifa);
 
-                    var ticket = trabajarTicket.buscarTicketPorSector(sector.SectorCodigo);
+                    TimeSpan tiempoTranscurrido = DateTime.Now - ticket.FechaHoraEnt;
                     var datos = new
                     {
-                        Zona = "A", // Agrega lógica para obtener la zona si es necesario
-                        Sector = sector.SectorCodigo, // Usar el sector_codigo en el grid
-                        //ApellidoYNombre = ticket.ClienteDNI,
-                       // FechaHoraEntrada = DateTime.Now, // Ejemplo de fecha y hora de entrada
-                       // ApellidoYNombre = "", // Agrega lógica para obtener el apellido y nombre si es necesario
-                        // Agrega las otras propiedades de ser necesario
+                        Zona = "A", 
+                        Sector = sector.SectorCodigo, 
+                        ApellidoYNombre = cliente.Nombre+" "+cliente.Apellido, 
+                        FechaHoraEntrada = ticket.FechaHoraEnt,
+                        TipoVehiculo = descripcion,
+                        Patente = ticket.Patente,                  
+                        TiempoTranscurrido = tiempoTranscurrido,
                     };
 
                     listaDatos.Add(datos);

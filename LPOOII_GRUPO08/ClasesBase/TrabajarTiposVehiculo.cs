@@ -56,5 +56,33 @@ namespace ClasesBase
             return vehiculos;
         }
 
+        public string ObtenerDescripcionPorTarifa(decimal tarifaBuscada)
+        {
+            string descripcion = string.Empty;
+
+            // Conexión a la base de datos
+            string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\Cuno\\Documents\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
+            SqlConnection conexion = new SqlConnection(conexionString);
+            conexion.Open();
+
+            // Consulta a la base de datos
+            string consulta = "SELECT descripcion FROM TipoVehiculo WHERE tarifa = @TarifaBuscada";
+            SqlCommand comando = new SqlCommand(consulta, conexion);
+            comando.Parameters.AddWithValue("@TarifaBuscada", tarifaBuscada);
+
+            SqlDataReader reader = comando.ExecuteReader();
+
+            // Verificación de existencia de resultados y obtención de la descripción
+            if (reader.Read())
+            {
+                descripcion = reader["descripcion"].ToString();
+            }
+
+            // Cierre de la conexión
+            conexion.Close();
+
+            return descripcion;
+        }
+
     }
 }
