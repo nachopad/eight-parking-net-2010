@@ -63,6 +63,7 @@ namespace Vistas
         {
             canv_Sectore.Visibility = Visibility.Hidden;
             canv_Vehiculo.Visibility = Visibility.Hidden;
+            canv_usuario.Visibility = Visibility.Hidden;
             canv_Estacionamiento.Visibility = Visibility.Visible;
             canv_Cliente.Visibility = Visibility.Visible;
         }
@@ -71,6 +72,7 @@ namespace Vistas
         {
             canv_Sectore.Visibility = Visibility.Visible;
             canv_Vehiculo.Visibility = Visibility.Visible;
+            canv_usuario.Visibility = Visibility.Visible;
             canv_Estacionamiento.Visibility = Visibility.Hidden;
             canv_Cliente.Visibility = Visibility.Hidden;
         }

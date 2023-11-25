@@ -15,10 +15,10 @@
     <DockPanel Background="#FF101010">
         <DockPanel DockPanel.Dock="Left" Width="150">
             <TextBlock DockPanel.Dock="Top" Foreground="White" Height="50" Padding="14" TextAlignment="Center" FontWeight="Regular" FontSize="16" FontFamily="Segoe UI Emoji" Background="#FF2E2E2E">EIGHT</TextBlock>
-            <Button Height="50" DockPanel.Dock="Bottom" Background="#FF101010" Foreground="Red" BorderBrush="{x:Null}" Name="btnCerrarSesion" Click="Button_CerrarSesion">Cerrar Sesion</Button>
+            <Button Height="50" DockPanel.Dock="Bottom" BorderBrush="{x:Null}" Style="{StaticResource BotonCerrarSesion}" Name="btnCerrarSesion" Click="Button_CerrarSesion" Cursor="Hand">Cerrar Sesion</Button>
             <StackPanel Orientation="Vertical">
-                <Button Height="50" Background="#FF101010" Foreground="White" BorderBrush="{x:Null}" Name="btnOperador" Click="btnOperador_Click">Operador</Button>
-                <Button Height="50" Background="#FF101010" BorderBrush="{x:Null}" Foreground="White" Name="btnAdministrador" Click="btnAdministrador_Click">Administrador</Button>
+                <Button Height="50" Style="{StaticResource BotonOpcionesMenuPrincipal}" Name="btnOperador" Click="btnOperador_Click" Cursor="Hand">Operador</Button>
+                <Button Height="50" Style="{StaticResource BotonOpcionesMenuPrincipal}" Name="btnAdministrador" Click="btnAdministrador_Click" Cursor="Hand">Administrador</Button>
             </StackPanel>
         </DockPanel>
         <Grid DockPanel.Dock="Top" ShowGridLines="False">
@@ -37,17 +37,17 @@
             <Canvas Grid.Column="0" Grid.Row="1" HorizontalAlignment="Right" Width="150" Name="canv_Cliente">
                 <Label Foreground="White" Canvas.Left="19">Gestión de Clientes</Label>
                 <Image Source="/Images/cliente.png" Width="35" Canvas.Top="25" Canvas.Left="57.5"></Image>
-                <Button Width="75" Canvas.Top="63" Canvas.Left="37.5" Background="#FF343434" Foreground="White" BorderBrush="{x:Null}" Name="btnGestionarClientes" Style="{StaticResource EstiloBoton}" Click="btnGestionarClientes_Click">Gestionar</Button>
+                <Button Width="75" Canvas.Top="63" Canvas.Left="37.5" Name="btnGestionarClientes" Style="{StaticResource EstiloBoton}" Click="btnGestionarClientes_Click" Cursor="Hand">Gestionar</Button>
             </Canvas>
             <!-- Gestionar Sectores | Administrador  -->
             <Canvas Grid.Column="0" Grid.Row="1" HorizontalAlignment="Right" Width="150" Name="canv_Sectore">
                 <Label Foreground="White" Canvas.Left="19">Gestión de Sectores</Label>
                 <Image Source="/Images/sectores.png" Width="35" Canvas.Top="25" Canvas.Left="57.5"></Image>
-                <Button Width="75" Canvas.Top="63" Canvas.Left="37.5" Background="#FF343434" Foreground="White" BorderBrush="{x:Null}" Name="btnGestionarSectores" Style="{StaticResource EstiloBoton}" Click="btnGestionarSectores_Click">Gestionar</Button>
+                <Button Width="75" Canvas.Top="63" Canvas.Left="37.5" Name="btnGestionarSectores" Style="{StaticResource EstiloBoton}" Click="btnGestionarSectores_Click" Cursor="Hand">Gestionar</Button>
             </Canvas>
             <!-- Gestionar Usuarios | Administrador -->
             <Canvas Grid.Column="0" Grid.Row="2" HorizontalAlignment="Right" Width="150" Name="canv_usuario">
-                <Button Width="75" Background="#FF343434" Foreground="White" BorderBrush="{x:Null}" Name="btnGestionarUsuarios" Style="{StaticResource EstiloBoton}" Canvas.Top="63" Canvas.Left="37.5" Grid.Row="2" Click="btnGestionarUsuarios_Click">Gestionar</Button>
+                <Button Width="75" Name="btnGestionarUsuarios" Style="{StaticResource EstiloBoton}" Canvas.Top="63" Canvas.Left="37.5" Grid.Row="2" Click="btnGestionarUsuarios_Click" Cursor="Hand">Gestionar</Button>
                 <Image Source="/Images/cliente.png" Width="35" Canvas.Top="25" Canvas.Left="57.5" Grid.Row="2"></Image>
                 <Label Foreground="White" Width="75" Canvas.Top="0" Canvas.Left="37.5" Grid.Row="2" HorizontalContentAlignment="Center">Usuarios</Label>
             </Canvas>
@@ -55,14 +55,14 @@
             <Canvas Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" Name="canv_Estacionamiento">
                 <Label Foreground="White" Grid.ColumnSpan="2" Grid.Row="1">Gestión de Estacionamientos</Label>
                 <Image Source="/Images/estacionamienito.png" Width="35" Canvas.Top="25" Canvas.Left="57.5"></Image>
-                <Button Width="75" Canvas.Top="63" Canvas.Left="37.5" Background="#FF343434" Foreground="White" BorderBrush="{x:Null}" Name="btnGestionarEstacionamiento" Style="{StaticResource EstiloBoton}">Gestionar</Button>        
+                <Button Width="75" Canvas.Top="63" Canvas.Left="37.5" Name="btnGestionarEstacionamiento" Style="{StaticResource EstiloBoton}" Cursor="Hand">Gestionar</Button>        
             </Canvas>
 
             <!-- Gestionar Vehiculos | Administrador -->
             <Canvas Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" Name="canv_Vehiculo">
                 <Label Foreground="White" Canvas.Left="21">Tipos de Vehiculos</Label>
                 <Image Source="/Images/vehiculo.png" Width="35" Canvas.Top="25" Canvas.Left="57.5"></Image>
-                <Button Width="75" Canvas.Top="63" Canvas.Left="37.5" Background="#FF343434" Foreground="White" BorderBrush="{x:Null}" Name="btnGestionarVehiculos" Style="{StaticResource BotonTiposVehiculo}" Click="btnGestionarVehiculos_Click">Gestionar</Button>            
+                <Button Width="75" Canvas.Top="63" Canvas.Left="37.5" Name="btnGestionarVehiculos" Style="{StaticResource EstiloBoton}" Click="btnGestionarVehiculos_Click" Cursor="Hand">Gestionar</Button>            
             </Canvas>
         </Grid>
     </DockPanel>

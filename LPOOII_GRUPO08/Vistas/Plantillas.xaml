@@ -4,14 +4,19 @@
     <Style TargetType="{x:Type Button}" x:Key="EstiloBotonTildado">
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate>
+                <ControlTemplate TargetType="{x:Type Button}">
                     <Grid>
-                        <Ellipse Width="{TemplateBinding Width}" 
-                        Height="{TemplateBinding Height}" Stroke="DarkGray" 
-                        VerticalAlignment="Top" 
-                        HorizontalAlignment="Left" Fill="#FFCB4E00" />
-                        <TextBlock Text="✔" FontSize="20" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        <Ellipse x:Name="ellipse" Width="{TemplateBinding Width}" 
+                             Height="{TemplateBinding Height}" Stroke="DarkGray" 
+                             VerticalAlignment="Top" HorizontalAlignment="Left" Fill="#FFCB4E00" />
+                        <TextBlock Text="✔" FontSize="20" FontWeight="Bold" Foreground="White" 
+                               HorizontalAlignment="Center" VerticalAlignment="Center" />
                     </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="ellipse" Property="Fill" Value="#05FF00" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
@@ -20,17 +25,23 @@
     <Style TargetType="{x:Type Button}" x:Key="EstiloBotonCancelado">
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate>
+                <ControlTemplate TargetType="{x:Type Button}">
                     <Grid>
-                        <Ellipse Width="{TemplateBinding Width}" 
-                        Height="{TemplateBinding Height}" Stroke="DarkGray" 
-                        VerticalAlignment="Top" 
-                        HorizontalAlignment="Left" Fill="#FFCB4E00" />
-                        <TextBlock Text="✘" FontSize="26" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        <Ellipse x:Name="ellipse" Width="{TemplateBinding Width}" 
+                             Height="{TemplateBinding Height}" Stroke="DarkGray" 
+                             VerticalAlignment="Top" HorizontalAlignment="Left" Fill="#FFCB4E00" />
+                        <TextBlock Text="✘" FontSize="26" FontWeight="Bold" Foreground="White" 
+                               HorizontalAlignment="Center" VerticalAlignment="Center" />
                     </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="ellipse" Property="Fill" Value="#FF0000" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
     </Style>
+
 
 </ResourceDictionary>

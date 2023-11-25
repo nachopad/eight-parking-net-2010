@@ -5,6 +5,13 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
              d:DesignHeight="271" d:DesignWidth="300">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Estilos.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
     <Grid Background="Black">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -20,8 +27,8 @@
             <PasswordBox Height="23" Name="textBoxPsw" Width="120" Background="#FF696161" FontSize="13" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"/>
         </StackPanel>
         <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button Content="Ingresar" Name="buttonAceptar" Height="23" Width="75" Background="#FF696161" BorderBrush="#FF382E2E" Foreground="#FFEBD9D9" Margin="10" Click="buttonAceptar_Click"/>
-            <Button Content="Salir" Name="button1" Height="23" Width="75" Background="#FF696161" BorderBrush="#FF382E2E" Foreground="#FFEBD9D9" Margin="10" Click="button1_Click"/>
+            <Button Content="Ingresar" Name="buttonAceptar" Height="23" Width="75" Style="{StaticResource EstiloBoton}" Margin="10" Click="buttonAceptar_Click" Cursor="Hand" />
+            <Button Content="Salir" Name="button1" Height="23" Width="75" Style="{StaticResource EstiloBoton}" Margin="10" Click="button1_Click" Cursor="Hand" />
         </StackPanel>
     </Grid>
 </UserControl>
