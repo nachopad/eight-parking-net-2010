@@ -25,15 +25,19 @@ namespace Vistas
         {
             InitializeComponent();
             if(rol.Equals("1")){
+                //Administrador
                 canv_Sectore.Visibility = Visibility.Visible;
                 canv_Vehiculo.Visibility = Visibility.Visible;
+                canv_usuario.Visibility = Visibility.Visible;
                 canv_Estacionamiento.Visibility = Visibility.Hidden;
-                canv_Cliente.Visibility = Visibility.Hidden;
+                canv_Cliente.Visibility = Visibility.Hidden;              
                 btnAdministrador.Visibility = Visibility.Visible;
                 btnOperador.Visibility = Visibility.Hidden;
             }else if(rol.Equals("2")){
+                //Operador
                 canv_Sectore.Visibility = Visibility.Hidden;
                 canv_Vehiculo.Visibility = Visibility.Hidden;
+                canv_usuario.Visibility = Visibility.Hidden;
                 canv_Estacionamiento.Visibility = Visibility.Visible;
                 canv_Cliente.Visibility = Visibility.Visible;
                 btnAdministrador.Visibility = Visibility.Hidden;
@@ -43,9 +47,16 @@ namespace Vistas
 
         private void Button_CerrarSesion(object sender, RoutedEventArgs e)
         {
-            Login ventanaLogin = new Login();
-            ventanaLogin.Show();
+            // Crear una nueva ventana
+            Window nuevaVentana = new Window();
+            // Crear una instancia del control de usuario
+            loginControl login = new loginControl();
+            // Establecer el contenido de la nueva ventana como el control de usuario
+            nuevaVentana.Content = login;
+            // Mostrar la nueva ventana
+            nuevaVentana.Show();
             this.Close();
+            
         }
 
         private void btnOperador_Click(object sender, RoutedEventArgs e)
@@ -82,6 +93,13 @@ namespace Vistas
         {
             FormularioVehiculo formVehiculo = new FormularioVehiculo();
             formVehiculo.Show();
+            this.Close();
+        }
+
+        private void btnGestionarUsuarios_Click(object sender, RoutedEventArgs e)
+        {
+            ABMUsuarios abmUsuario = new ABMUsuarios();
+            abmUsuario.Show();
             this.Close();
         }
     }
