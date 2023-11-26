@@ -295,3 +295,13 @@ C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GR
 C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\AcercaDe.g.cs
 C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Presentacion.baml
 C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Presentacion.g.cs
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\AcercaDe.baml
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FixedDocs.baml
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoDeSectores.baml
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Presentacion.baml
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Zona.baml
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\AcercaDe.g.cs
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FixedDocs.g.cs
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoDeSectores.g.cs
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Presentacion.g.cs
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Zona.g.cs

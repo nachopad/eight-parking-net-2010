@@ -25,7 +25,20 @@ namespace Vistas
 
         private void mostrarPlaya(object sender, RoutedEventArgs e)
         {
-            VehiculosPlaya playa = new VehiculosPlaya();
+            Button clickedButton = (Button)sender;
+            VehiculosPlaya playa;
+            if (clickedButton.Content.ToString() == "Zona 1")
+            {
+                playa = new VehiculosPlaya(1);
+            }
+            else if (clickedButton.Content.ToString() == "Zona 2")
+            {
+                playa = new VehiculosPlaya(2);
+            }
+            else
+            {
+                playa = new VehiculosPlaya(3);
+            }
             playa.Show();
             this.Close();
         }

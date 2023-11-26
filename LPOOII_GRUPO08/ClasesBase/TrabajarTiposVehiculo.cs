@@ -30,8 +30,8 @@ namespace ClasesBase
             ObservableCollection<TipoVehiculo> vehiculos = new ObservableCollection<TipoVehiculo>();
 
             // Conexión a la base de datos
-            string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\maxi1\\OneDrive\\Documentos\\Programacion LPOO II\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
-            //string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\argca\\OneDrive\\Documentos\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
+            //string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\maxi1\\OneDrive\\Documentos\\Programacion LPOO II\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
+            string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\argca\\OneDrive\\Documentos\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
             SqlConnection conexion = new SqlConnection(conexionString);
             conexion.Open();
 
@@ -119,5 +119,41 @@ namespace ClasesBase
 
             return descripcion;
         }
+
+
+        //Obtención del tipo en base al codigo que se pasa por parametros
+        //Agregado por Carlos Sanchez
+        public TipoVehiculo ObtenerTipoPorCodigo(int cod)
+        {
+            TipoVehiculo tipo = new TipoVehiculo();
+
+            // Conexión a la base de datos
+            //string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\maxi1\\OneDrive\\Documentos\\Programacion LPOO II\\TP1LPOO II\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
+            //string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\Cuno\\Documents\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
+            string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\argca\\OneDrive\\Documentos\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
+            SqlConnection conexion = new SqlConnection(conexionString);
+            conexion.Open();
+
+            // Consulta a la base de datos
+            string consulta = "SELECT * FROM TipoVehiculo WHERE tv_codigo = @cod";
+            SqlCommand comando = new SqlCommand(consulta, conexion);
+            comando.Parameters.AddWithValue("@cod", cod);
+
+            SqlDataReader reader = comando.ExecuteReader();
+
+            // Verificación de existencia de resultados y obtención de la descripción
+            if (reader.Read())
+            {
+                tipo.Descripcion = reader["descripcion"].ToString();
+                tipo.Tarifa = decimal.Parse(reader["tarifa"].ToString());
+                tipo.TVCodigo = int.Parse(reader["tv_codigo"].ToString());
+            }
+
+            // Cierre de la conexión
+            conexion.Close();
+
+            return tipo;
+        }
+
     }
 }

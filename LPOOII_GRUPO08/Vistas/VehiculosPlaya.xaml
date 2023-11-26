@@ -15,38 +15,38 @@
             <RowDefinition Height="114*" />
         </Grid.RowDefinitions>
         <Border BorderBrush="Black" BorderThickness="1"  Height="60" Margin="12,12,0,0" Name="border1" VerticalAlignment="Top" CornerRadius="2" HorizontalAlignment="Left" Width="130" >
-            <Button Content="E1" Click="Button_click"  Name="e1" Background="Green"  Foreground="White" />
+            <Button Content="E1" Click="Button_click"  Name="e1" Background="Green"  Foreground="White" MouseEnter="e1_MouseEnter" />
         </Border>
         <Border BorderBrush="Black" BorderThickness="1"  Height="60" Margin="12,144,0,0" Name="border3" VerticalAlignment="Top" CornerRadius="2" HorizontalAlignment="Left" Width="130" >
-            <Button Content="E3" Click="Button_click" Name="e3" Background="Green" Foreground="White" />
+            <Button Content="E3" Click="Button_click" Name="e3" Background="Green" Foreground="White" MouseEnter="e1_MouseEnter" />
         </Border>
         <Border BorderBrush="Black" BorderThickness="1"  Height="60" Margin="12,210,0,0" Name="border4" VerticalAlignment="Top" CornerRadius="2" HorizontalAlignment="Left" Width="130" >
-            <Button Content="E4" Click="Button_click" Name="e4" Background="Gray" Foreground="White" />
+            <Button Content="E4" Click="Button_click" Name="e4" Background="Gray" Foreground="White" MouseEnter="e1_MouseEnter" />
         </Border>
         <Border BorderBrush="Black" BorderThickness="1"  Height="60" Margin="12,276,0,0" Name="border5" VerticalAlignment="Top" CornerRadius="2" HorizontalAlignment="Left" Width="130" >
-            <Button Content="E5" Click="Button_click" Name="e5" Background="Green" Foreground="White" />
+            <Button Content="E5" Click="Button_click" Name="e5" Background="Green" Foreground="White" MouseEnter="e1_MouseEnter" />
         </Border>
         <Label Content="Ocupado" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="29,11,0,0" Name="label1" VerticalAlignment="Top" Foreground="White" IsEnabled="True" FontSize="15" />
         <Label Content="Disponible" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="29,43,0,0" Name="label2" VerticalAlignment="Top" Foreground="White" FontSize="15" />
         <Label Content="Deshabilitado" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="29,75,0,0" Name="label3" VerticalAlignment="Top" Foreground="White" FontSize="15" />
         <Button Content="Salir" Grid.Row="1" Height="27" HorizontalAlignment="Right" Margin="0,77,12,0" Name="button1" VerticalAlignment="Top" Width="107" Padding="1" FontSize="14" Style="{StaticResource BotonAltaCliente}" Click="salir_Click" />
         <Border BorderBrush="Black" BorderThickness="1" Height="60" Name="border2" CornerRadius="2" Width="130" Margin="12,78,0,0" Background="Green" HorizontalAlignment="Left" VerticalAlignment="Top">
-            <Button Content="E2" Click="Button_click" Name="e2" Background="Green" Foreground="White" />
+            <Button Content="E2" Click="Button_click" Name="e2" Background="Green" Foreground="White" MouseEnter="e1_MouseEnter" />
         </Border>
         <Border BorderBrush="Black" BorderThickness="1" Height="60" HorizontalAlignment="Right" Margin="0,12,27,0" Name="border6" VerticalAlignment="Top" Width="130">
-            <Button Content="E6" Click="Button_click" Name="e6" Background="Green" Foreground="White" />
+            <Button Content="E6" Click="Button_click" Name="e6" Background="Green" Foreground="White" MouseEnter="e1_MouseEnter" />
         </Border>
         <Border BorderBrush="Black" BorderThickness="1" Height="60" HorizontalAlignment="Right" Margin="0,78,27,0" Name="border7" VerticalAlignment="Top" Width="130">
-            <Button Content="E7" Click="Button_click" Name="e7"  Background="Green" Foreground="White" BorderBrush="Black" />
+            <Button Content="E7" Click="Button_click" Name="e7"  Background="Green" Foreground="White" BorderBrush="Black" MouseEnter="e1_MouseEnter" />
         </Border>
         <Border BorderBrush="Black" BorderThickness="1" Height="60" HorizontalAlignment="Right" Margin="0,144,27,0" Name="border8" VerticalAlignment="Top" Width="130" >
-            <Button Content="E8" Click="Button_click" Name="e8" Background="Green" Foreground="White" BorderBrush="Black" />
+            <Button Content="E8" Click="Button_click" Name="e8" Background="Green" Foreground="White" BorderBrush="Black" MouseEnter="e1_MouseEnter" />
         </Border>
         <Border BorderBrush="Black" BorderThickness="1" Height="60" HorizontalAlignment="Right" Margin="0,210,27,0" Name="border9" VerticalAlignment="Top" Width="130" >
-            <Button Content="E9" Click="Button_click"  Name="e9" Background="Green" Foreground="White" BorderBrush="Black"  />
+            <Button Content="E9" Click="Button_click"  Name="e9" Background="Green" Foreground="White" BorderBrush="Black" MouseEnter="e1_MouseEnter"  />
         </Border>
         <Border BorderBrush="Black" BorderThickness="1" Height="60" HorizontalAlignment="Right" Margin="0,276,27,0" Name="border10" VerticalAlignment="Top" Width="130">
-            <Button Content="E10" Click="Button_click" Name="e10" Background="Green" Foreground="White" />
+            <Button Content="E10" Click="Button_click" Name="e10" Background="Green" Foreground="White" MouseEnter="e1_MouseEnter" />
         </Border>
         <Border BorderBrush="Silver" BorderThickness="1" Height="26" HorizontalAlignment="Left" Margin="145,13,0,0" Name="border11" VerticalAlignment="Top" Width="42" Grid.Row="1" Background="Red" />
         <Border BorderBrush="Silver" BorderThickness="1" Grid.Row="1" Height="26" HorizontalAlignment="Left" Margin="145,77,0,0" Name="border12" VerticalAlignment="Top" Width="42" Background="Gray" />

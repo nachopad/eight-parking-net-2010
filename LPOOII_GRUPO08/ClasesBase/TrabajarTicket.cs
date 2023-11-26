@@ -11,8 +11,8 @@ namespace ClasesBase
     {
         public void registrarTicket(Ticket ticket)
         {
-            string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\maxi1\\OneDrive\\Documentos\\Programacion LPOO II\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
-            //string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\argca\\OneDrive\\Documentos\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
+            //string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\maxi1\\OneDrive\\Documentos\\Programacion LPOO II\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
+            string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\argca\\OneDrive\\Documentos\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
             SqlConnection cnn = new SqlConnection(conexionString);
             SqlCommand cmd = new SqlCommand();
             cmd.CommandText = "RegistrarTicket";
@@ -107,6 +107,69 @@ namespace ClasesBase
                 {
                     // Manejo de excepciones si ocurre alguna
                     Console.WriteLine("Error al buscar ticket por sector: " + ex.Message);
+                }
+            }
+
+            return ticketEncontrado;
+        }
+
+
+        //Metodo para obtener el ultimo ticket para verficiar, si el sector esta ocupado o no.
+        //La busqueda y obtencion se realiza de acuerdo el sector
+        public Ticket obtenerUltimoTicketPorSector(int sectorCod)
+        {
+
+            Ticket ticketEncontrado = null;
+
+            // Conexión a la base de datos
+            //string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\maxi1\\OneDrive\\Documentos\\Programacion LPOO II\\TP1LPOO II\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
+            //string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\Cuno\\Documents\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
+            string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\argca\\OneDrive\\Documentos\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
+            using (SqlConnection conexion = new SqlConnection(conexionString))
+            {
+                string consulta = "SELECT TOP 1 * FROM Ticket WHERE sector_codigo = @sectorCodigo ORDER BY fecha_hora_ent DESC";
+                SqlCommand comando = new SqlCommand(consulta, conexion);
+                comando.Parameters.AddWithValue("@sectorCodigo", sectorCod);
+
+                try
+                {
+                    conexion.Open();
+                    SqlDataReader reader = comando.ExecuteReader();
+
+                    if (reader.Read())
+                    {
+                        ticketEncontrado = new Ticket();
+                        // Asignación de valores al ticket encontrado
+                        ticketEncontrado.TicketNro = int.Parse(reader["nro_ticket"].ToString());
+                        ticketEncontrado.FechaHoraEnt = DateTime.Parse(reader["fecha_hora_ent"].ToString());
+
+                        // Comprueba si fecha_hora_sal es null
+                        if (!reader.IsDBNull(reader.GetOrdinal("fecha_hora_sal")))
+                        {
+                            ticketEncontrado.FechaHoraSal = DateTime.Parse(reader["fecha_hora_sal"].ToString());
+                        }
+                        else
+                        {
+                            // Asigna una fecha cualquiera cuando fecha_hora_sal es null
+                            ticketEncontrado.FechaHoraSal = new DateTime(0001, 1, 1);
+                        }
+
+                        ticketEncontrado.ClienteDNI = reader["cliente_dni"].ToString();
+                        ticketEncontrado.TvCodigo = int.Parse(reader["tv_codigo"].ToString());
+                        ticketEncontrado.Patente = reader["patente"].ToString();
+                        ticketEncontrado.SectorCodigo = int.Parse(reader["sector_codigo"].ToString());
+                        ticketEncontrado.Duracion = double.Parse(reader["duracion"].ToString());
+                        ticketEncontrado.Tarifa = decimal.Parse(reader["tarifa"].ToString());
+                        ticketEncontrado.Total = decimal.Parse(reader["total"].ToString());
+                    }
+
+                    reader.Close();
+                }
+                catch (Exception ex)
+                {
+                    // Manejo de excepciones si ocurre alguna
+                    Console.WriteLine("Error al buscar ticket por sector: " + sectorCod + "  " + ex.Message);
+
                 }
             }
 
