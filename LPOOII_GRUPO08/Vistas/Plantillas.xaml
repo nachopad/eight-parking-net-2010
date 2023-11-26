@@ -43,5 +43,27 @@
         </Setter>
     </Style>
 
+    <Style x:Key="EstiloBoton" TargetType="Button">
+        <Setter Property="Background" Value="#FF343434" />
+        <Setter Property="Foreground" Value="White" />
+        <Setter Property="Height" Value="18" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="#202020" />
+                <Setter Property="Foreground" Value="OrangeRed" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
 
 </ResourceDictionary>

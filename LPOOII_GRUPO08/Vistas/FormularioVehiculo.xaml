@@ -1,8 +1,13 @@
 ﻿<Window x:Class="Vistas.FormularioVehiculo"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-         Title="Formulario Alta Tipo de Vehiculos" Height="300" Width="336" WindowStartupLocation="CenterScreen">
-
+        Title="Formulario Alta Tipo de Vehiculos" 
+        Height="400" 
+        Width="370" 
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanMinimize"
+        >
+    
     <!-- Se hace referencia al diccionario de Plantillas -->
     <Window.Resources>
         <ResourceDictionary>
@@ -13,28 +18,39 @@
     </Window.Resources>
 
     <DockPanel Background="#FF101010" Grid.ColumnSpan="3" Grid.RowSpan="3">
-        <Border BorderBrush="Silver" BorderThickness="1" Height="40" VerticalAlignment="Top" DockPanel.Dock="Top">
+        <Border BorderBrush="Silver" BorderThickness="0 0 0 1" Height="40" VerticalAlignment="Top" DockPanel.Dock="Top">
             <Label Content="Registro de Vehiculo" FontWeight="Bold" Height="37" Name="label1" Foreground="#FFF5EFEF" VerticalContentAlignment="Center" FlowDirection="LeftToRight" HorizontalContentAlignment="Center" FontSize="14" />
         </Border>
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="auto" />
-                <RowDefinition Height="auto" />
-                <RowDefinition Height="auto" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="60" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="154*" />
-                <ColumnDefinition Width="160*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
             </Grid.ColumnDefinitions>
             <!-- Descripcion -->
-            <Label Content="Descripción" Grid.Row="0" Height="25" HorizontalAlignment="Right" Name="lblDescripcion" VerticalAlignment="center" Width="74" Foreground="#FFFFF2F2" />
-            <TextBox Grid.Column="1" Height="23" HorizontalAlignment="Left" Name="txtDescripcion" VerticalAlignment="center" Width="120"  Background="#FF696161" Foreground="White" Margin="0,19,0,15" />          
+            <Label Content="Descripción" Grid.Column="0" Grid.Row="0" Height="25" HorizontalAlignment="Right" Name="lblDescripcion" VerticalAlignment="center" Width="74" Foreground="#FFFFF2F2" />
+            <TextBox Grid.Column="1" Height="23" HorizontalAlignment="Left" Name="txtDescripcion" VerticalAlignment="center" Width="120"  Background="#FF696161" Foreground="White"/>          
+            
             <!-- Tarifa -->
             <Label Content="Tarifa" Grid.Row="1" Height="25" HorizontalAlignment="Right" Name="lblTarifa" VerticalAlignment="Center" Width="40" Foreground="#FFFFFCFC" /> 
             <TextBox Grid.Column="1" Grid.Row="1" Height="23" HorizontalAlignment="Left" Name="txtTarifa" VerticalAlignment="Center" Width="120"  Background="#FF696161" Foreground="White" />           
+            
+            <!-- Imagen -->
+            <Label Content="Imagen" Grid.Row="2" Height="25" HorizontalAlignment="Right" Name="lblCargarImagen" VerticalAlignment="center" Width="52" Foreground="#FFFFF2F2" Margin="0,8" />
+            <Button Content="Cargar Imagen" Grid.Column="1" Grid.Row="2" Height="25" HorizontalAlignment="Left" Name="button1" VerticalAlignment="Center" Width="120" Click="button1_Click" Margin="0,3" Style="{StaticResource EstiloBoton}"/>
+            <Image Grid.Row="3" Height="120" HorizontalAlignment="Center" Name="imgPrev" Stretch="UniformToFill" VerticalAlignment="Center" Width="120" Grid.ColumnSpan="2" />
+            
             <!-- Botones -->
-            <Button Grid.Row="2" Width="40" Height="40" Name="btnRegistrar" HorizontalAlignment="Right" VerticalAlignment="Center" Click="btnRegistrar_Click" Style="{StaticResource EstiloBotonTildado}" Margin="0,50,9,50" Cursor="Hand" />
-            <Button Grid.Row="2" Width="40" Height="40" Name="btnSalir" HorizontalAlignment="Left" VerticalAlignment="Center" Click="btnSalir_Click" Style="{StaticResource EstiloBotonCancelado}" Grid.Column="1" Margin="10,50,0,50" Cursor="Hand" />
+            <Button Grid.Row="4" Width="40" Height="40" Name="btnRegistrar" HorizontalAlignment="Right" VerticalAlignment="Center" Click="btnRegistrar_Click" Style="{StaticResource EstiloBotonTildado}" Cursor="Hand" Margin="0,10,6,10" />
+            <Button Grid.Row="4" Width="40" Height="40" Name="btnSalir" HorizontalAlignment="Left" VerticalAlignment="Center" Click="btnSalir_Click" Style="{StaticResource EstiloBotonCancelado}" Grid.Column="1" Cursor="Hand" Margin="6,10,0,10" />
+            
+            
         </Grid>
     </DockPanel>
 </Window>

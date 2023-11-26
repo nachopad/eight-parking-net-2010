@@ -1,7 +1,9 @@
 ﻿<Window x:Class="Vistas.MenuPrincipal"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Menú Principal" Height="372" Width="562" WindowStartupLocation="CenterScreen">
+        Title="Menú Principal" Height="372" Width="562" WindowStartupLocation="CenterScreen"
+        ResizeMode="CanMinimize"
+        >
 
 <!-- Se hace referencia al diccionario (el estiloBoton fue colocado en Estilos.xaml) --> 
     <Window.Resources>
@@ -17,8 +19,10 @@
             <TextBlock DockPanel.Dock="Top" Foreground="White" Height="50" Padding="14" TextAlignment="Center" FontWeight="Regular" FontSize="16" FontFamily="Segoe UI Emoji" Background="#FF2E2E2E">EIGHT</TextBlock>
             <Button Height="50" DockPanel.Dock="Bottom" BorderBrush="{x:Null}" Style="{StaticResource BotonCerrarSesion}" Name="btnCerrarSesion" Click="Button_CerrarSesion" Cursor="Hand">Cerrar Sesion</Button>
             <StackPanel Orientation="Vertical">
-                <Button Height="50" Style="{StaticResource BotonOpcionesMenuPrincipal}" Name="btnOperador" Click="btnOperador_Click" Cursor="Hand">Operador</Button>
-                <Button Height="50" Style="{StaticResource BotonOpcionesMenuPrincipal}" Name="btnAdministrador" Click="btnAdministrador_Click" Cursor="Hand">Administrador</Button>
+                <Button Height="50" Style="{StaticResource BotonOpcionesMenuPrincipal}" Name="btnOperador" Click="btnOperador_Click">Operador</Button>
+                <Button Height="50" Style="{StaticResource BotonOpcionesMenuPrincipal}" Name="btnAdministrador" Click="btnAdministrador_Click">Administrador</Button>
+                <Button Height="50" Style="{StaticResource BotonOpcionesMenuPrincipal}" Name="btnNosotros" Click="btnNosotros_Click">Nosotros</Button>
+                <Button Height="50" Style="{StaticResource BotonOpcionesMenuPrincipal}" Name="btnPresentacion" Click="btnPresentacion_Click">Presentacion</Button>
             </StackPanel>
         </DockPanel>
         <Grid DockPanel.Dock="Top" ShowGridLines="False">

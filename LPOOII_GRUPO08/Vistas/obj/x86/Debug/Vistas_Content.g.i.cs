@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("tiempos.xml")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("multimedia/cancionpresentacion.wav")]
 
 

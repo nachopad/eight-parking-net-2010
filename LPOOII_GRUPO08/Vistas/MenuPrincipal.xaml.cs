@@ -18,11 +18,11 @@ namespace Vistas
     /// </summary>
     public partial class MenuPrincipal : Window
     {
-        public MenuPrincipal()
-        { 
-        } 
+
+        private string rol;
         public MenuPrincipal(String rol)
         {
+            this.rol = rol;
             InitializeComponent();
             if(rol.Equals("1")){
                 //Administrador
@@ -32,7 +32,11 @@ namespace Vistas
                 canv_Estacionamiento.Visibility = Visibility.Hidden;
                 canv_Cliente.Visibility = Visibility.Hidden;              
                 btnAdministrador.Visibility = Visibility.Visible;
-                btnOperador.Visibility = Visibility.Hidden;
+                Color color = (Color)ColorConverter.ConvertFromString("#FFCB4E00");
+                btnAdministrador.Background = new SolidColorBrush(color);
+                btnOperador.IsEnabled = false;
+                btnOperador.Foreground = Brushes.Gray;
+                
             }else if(rol.Equals("2")){
                 //Operador
                 canv_Sectore.Visibility = Visibility.Hidden;
@@ -40,8 +44,11 @@ namespace Vistas
                 canv_usuario.Visibility = Visibility.Hidden;
                 canv_Estacionamiento.Visibility = Visibility.Visible;
                 canv_Cliente.Visibility = Visibility.Visible;
-                btnAdministrador.Visibility = Visibility.Hidden;
+                btnAdministrador.IsEnabled = false;
+                btnAdministrador.Foreground = Brushes.Gray;
                 btnOperador.Visibility = Visibility.Visible;
+                Color color = (Color)ColorConverter.ConvertFromString("#FFCB4E00");
+                btnOperador.Background = new SolidColorBrush(color);
             }
         }
 
@@ -102,6 +109,20 @@ namespace Vistas
         {
             ABMUsuarios abmUsuario = new ABMUsuarios();
             abmUsuario.Show();
+            this.Close();
+        }
+
+        private void btnNosotros_Click(object sender, RoutedEventArgs e)
+        {
+            AcercaDe acercaDe = new AcercaDe(rol);
+            acercaDe.Show();
+            this.Close();
+        }
+
+        private void btnPresentacion_Click(object sender, RoutedEventArgs e)
+        {
+            Presentacion pres = new Presentacion(rol);
+            pres.Show();
             this.Close();
         }
     }

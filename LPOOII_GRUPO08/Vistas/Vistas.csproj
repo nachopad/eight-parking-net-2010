@@ -58,6 +58,9 @@
     <Compile Include="ABMUsuarios.xaml.cs">
       <DependentUpon>ABMUsuarios.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AcercaDe.xaml.cs">
+      <DependentUpon>AcercaDe.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ConversorDeEstados.cs" />
     <Compile Include="EstadoSector.xaml.cs">
       <DependentUpon>EstadoSector.xaml</DependentUpon>
@@ -92,6 +95,9 @@
     <Compile Include="ModificarCliente.xaml.cs">
       <DependentUpon>ModificarCliente.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Presentacion.xaml.cs">
+      <DependentUpon>Presentacion.xaml</DependentUpon>
+    </Compile>
     <Compile Include="RegistroEntrada.xaml.cs">
       <DependentUpon>RegistroEntrada.xaml</DependentUpon>
     </Compile>
@@ -112,6 +118,10 @@
       <DependentUpon>Zona.xaml</DependentUpon>
     </Compile>
     <Page Include="ABMUsuarios.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AcercaDe.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -176,6 +186,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Plantillas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Presentacion.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -247,9 +261,16 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Multimedia\Porsche-992-GT3-Touring.wmv" />
     <Resource Include="Tiempos.xml">
       <SubType>Designer</SubType>
     </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Multimedia\CancionPresentacion.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\delorean.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

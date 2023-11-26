@@ -6,6 +6,7 @@
         <Setter Property="Foreground" Value="White" />
         <Setter Property="FontSize" Value="14" />
         <Setter Property="FontWeight" Value="Normal" />
+        
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="Button">
@@ -50,6 +51,7 @@
         <Setter Property="Background" Value="#FF101010" />
         <Setter Property="Foreground" Value="White" />
         <Setter Property="BorderBrush" Value="{x:Null}"/>
+        <Setter Property="Cursor" Value="Hand" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="Button">
@@ -71,6 +73,7 @@
         <Setter Property="Background" Value="#FF343434" />
         <Setter Property="Foreground" Value="White" />
         <Setter Property="Height" Value="18" />
+        <Setter Property="Cursor" Value="Hand" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="Button">
