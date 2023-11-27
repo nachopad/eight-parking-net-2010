@@ -81,46 +81,6 @@ namespace ClasesBase
         }
 
 
-        public List<object> ObtenerDatosDeLaBaseDeDatos()
-        {
-            var listaDatos = new List<object>();
-
-            // Crear una instancia de TrabajarSector para obtener los sectores
-            var trabajarSector = new ClasesBase.TrabajarSector();
-            var sectores = trabajarSector.TraerSectoresOcupados();
-            var trabajarTicket = new ClasesBase.TrabajarTicket();
-            var trabajarCliente = new ClasesBase.TrabajarCliente();
-            var trabajarTipoVehiculo = new ClasesBase.TrabajarTiposVehiculo();
-
-            foreach (var sector in sectores)
-            {
-                if (!sector.Habilitado) // Si el sector no está habilitado (false)
-                {
-                    
-                    var ticket = trabajarTicket.buscarTicketPorSector(1);// ver en la base de datos porque no se asocia el ticket con el codigo_sector
-                    var cliente = trabajarCliente.ObtenerClientePorDni(ticket.ClienteDNI);
-                    var descripcion = trabajarTipoVehiculo.ObtenerDescripcionPorTarifa(ticket.Tarifa);
-
-                    TimeSpan tiempoTranscurrido = DateTime.Now - ticket.FechaHoraEnt;
-                    var datos = new
-                    {
-                        Zona = "A", 
-                        Sector = sector.SectorCodigo, 
-                        ApellidoYNombre = cliente.Nombre+" "+cliente.Apellido, 
-                        FechaHoraEntrada = ticket.FechaHoraEnt,
-                        TipoVehiculo = descripcion,
-                        Patente = ticket.Patente,                  
-                        TiempoTranscurrido = tiempoTranscurrido,
-                    };
-
-                    listaDatos.Add(datos);
-                }
-            }
-
-            return listaDatos;
-        }
-
-
         //Obtiene todos los sectores correspondientes a una zona.
         public ObservableCollection<Sector> TraerTodosLosSectores(int codigoZona)
         {
