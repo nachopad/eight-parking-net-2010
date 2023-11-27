@@ -83,6 +83,9 @@
     <Compile Include="ListadoDeSectores.xaml.cs">
       <DependentUpon>ListadoDeSectores.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ListadoVentas.xaml.cs">
+      <DependentUpon>ListadoVentas.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
@@ -154,6 +157,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ListadoDeSectores.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ListadoVentas.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

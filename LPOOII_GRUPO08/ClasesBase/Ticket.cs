@@ -18,6 +18,13 @@ namespace ClasesBase
         private decimal tarifa;
         private decimal total;
 
+        // Propiedades para información de otras tablas
+        private string clienteApellido;
+        private string clienteNombre;
+        private string tipoVehiculo;
+        private string sector;
+        private string zona;
+
         public int TicketNro
         {
             get { return ticketNro; }
@@ -76,6 +83,36 @@ namespace ClasesBase
         {
             get { return total; }
             set { total = value; }
+        }
+
+        public string ClienteApellido
+        {
+            get { return clienteApellido + ", " + clienteNombre; }
+            set { clienteApellido = value; }
+        }
+
+        public string ClienteNombre
+        {
+            get { return clienteNombre; }
+            set { clienteNombre = value; }
+        }
+
+        public string TipoVehiculo
+        {
+            get { return tipoVehiculo; }
+            set { tipoVehiculo = value; }
+        }
+
+        public string Sector
+        {
+            get { return sector; }
+            set { sector = value; }
+        }
+
+        public string Zona
+        {
+            get { return zona; }
+            set { zona = value; }
         }
     }
 }

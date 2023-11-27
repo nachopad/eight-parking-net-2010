@@ -1,0 +1,77 @@
+﻿<Window x:Class="Vistas.ListadoVentas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:svc="clr-namespace:ClasesBase;assembly=ClasesBase"
+        xmlns:scm="clr-namespace:System.ComponentModel;assembly=WindowsBase"
+        Title="Lista de ventas" Loaded="Window_Loaded" Height="365" Width="988">
+
+    <Window.Resources>
+        <ObjectDataProvider x:Key="LIST_TICKET" ObjectType="{x:Type svc:TrabajarTicket}" MethodName="TraerTickets"></ObjectDataProvider>
+        <CollectionViewSource x:Key="VIEW_LIST_TICKETS" Source="{StaticResource ResourceKey= LIST_TICKET}">
+            <CollectionViewSource.SortDescriptions>
+                <scm:SortDescription PropertyName="FechaHoraEnt" Direction="Ascending"></scm:SortDescription>
+            </CollectionViewSource.SortDescriptions>
+        </CollectionViewSource>
+    </Window.Resources>
+
+    <!--<Grid Name="grid_content" Background="Black">
+        <ListView Name="dataGrid1"  ItemsSource="{Binding Source= {StaticResource ResourceKey= VIEW_LIST_TICKETS}}" Margin="12,74,16,42" Background="LightGray">
+            <ListView.View>
+                <GridView>
+                    <GridView.Columns>
+                        <GridViewColumn Header="N°" DisplayMemberBinding="{Binding Path= TicketNro}" Width="40" ></GridViewColumn>
+                        <GridViewColumn Header="Zona" DisplayMemberBinding="{Binding Path= Zona }" Width="40" ></GridViewColumn>
+                        <GridViewColumn Header="Sector" DisplayMemberBinding="{Binding Path= Sector}" Width="40" ></GridViewColumn>
+                        <GridViewColumn Header="Fecha/Hora Entrada" DisplayMemberBinding="{Binding Path=FechaHoraEnt, StringFormat=\{0:dd/MM/yy HH:mm:ss\}}" Width="148" />
+                        <GridViewColumn Header="Fecha/Hora Salida" DisplayMemberBinding="{Binding Path=FechaHoraSal, StringFormat=\{0:dd/MM/yy HH:mm:ss\}}" Width="148" />
+                        <GridViewColumn Header="Cliente" DisplayMemberBinding="{Binding Path= ClienteApellido}" Width="150" ></GridViewColumn>
+                        <GridViewColumn Header="Tipo vehiculo" DisplayMemberBinding="{Binding Path= TipoVehiculo}" Width="75" ></GridViewColumn>
+                        <GridViewColumn Header="Patente" DisplayMemberBinding="{Binding Path= Patente}" Width="75" ></GridViewColumn>
+                        <GridViewColumn Header="Duracion" DisplayMemberBinding="{Binding Path=Duracion, StringFormat={}{0:F1} hs}" Width="75" />
+                        <GridViewColumn Header="Tarifa" DisplayMemberBinding="{Binding Path=Tarifa, StringFormat={}{0:C}}" Width="75" />
+                        <GridViewColumn Header="Total" DisplayMemberBinding="{Binding Path=Total, StringFormat={}{0:C}}" Width="75" />
+                    </GridView.Columns>
+                </GridView>
+            </ListView.View>
+        </ListView>
+   -->
+
+    <Grid Name="grid_content" Background="Black">
+        <FlowDocumentReader Name="flowDocumentReader" Width="auto">
+            <FlowDocument Name="DocMain">
+                <BlockUIContainer>
+                    <ListView Name="dataGrid1" ItemsSource="{Binding Source= {StaticResource ResourceKey= VIEW_LIST_TICKETS}}" Margin="0,70,0,0" Background="LightGray" VerticalAlignment="Center" HorizontalAlignment="Center" HorizontalContentAlignment="Center">
+                        <ListView.View>
+                            <GridView>
+                                <GridView.Columns>
+                                    <GridViewColumn Header="N°" DisplayMemberBinding="{Binding Path= TicketNro}" Width="40" ></GridViewColumn>
+                                    <GridViewColumn Header="Zona" DisplayMemberBinding="{Binding Path= Zona }" Width="40" ></GridViewColumn>
+                                    <GridViewColumn Header="Sector" DisplayMemberBinding="{Binding Path= Sector}" Width="40" ></GridViewColumn>
+                                    <GridViewColumn Header="Fecha/Hora Entrada" DisplayMemberBinding="{Binding Path=FechaHoraEnt, StringFormat=\{0:dd/MM/yy  HH:mm\} hs}" Width="148" />
+                                    <GridViewColumn Header="Fecha/Hora Salida" DisplayMemberBinding="{Binding Path=FechaHoraSal, StringFormat=\{0:dd/MM/yy  HH:mm\} hs}" Width="148" />
+                                    <GridViewColumn Header="Cliente" DisplayMemberBinding="{Binding Path= ClienteApellido}" Width="150" ></GridViewColumn>
+                                    <GridViewColumn Header="Tipo vehiculo" DisplayMemberBinding="{Binding Path= TipoVehiculo}" Width="75" ></GridViewColumn>
+                                    <GridViewColumn Header="Patente" DisplayMemberBinding="{Binding Path= Patente}" Width="75" ></GridViewColumn>
+                                    <GridViewColumn Header="Duracion" DisplayMemberBinding="{Binding Path=Duracion, StringFormat={}{0:F1} hs}" Width="75" />
+                                    <GridViewColumn Header="Tarifa" DisplayMemberBinding="{Binding Path=Tarifa, StringFormat={}{0:C}}" Width="75" />
+                                    <GridViewColumn Header="Total" DisplayMemberBinding="{Binding Path=Total, StringFormat={}{0:C}}" Width="75" />
+                                </GridView.Columns>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </BlockUIContainer>
+            </FlowDocument>
+        </FlowDocumentReader>
+
+        <TextBlock Name="totalAmountTextBlock" Text="Monto Total: " HorizontalAlignment="Center" VerticalAlignment="Top" Margin="22,225,60,0" Foreground="White" />
+        <Button Content="Filtrar" Height="23" HorizontalAlignment="Right" Margin="0,31,291,0" Name="btnFiltro" VerticalAlignment="Top" Width="89" Background="#FFFF5C00" Foreground="White" Click="btnFiltro_Click"/>
+        <DatePicker Height="25" HorizontalAlignment="Left" Margin="197,31,0,0" Name="datePicker1" VerticalAlignment="Top" Width="163"/>
+        <DatePicker Height="25" HorizontalAlignment="Left" Margin="405,31,0,0" Name="datePicker2" VerticalAlignment="Top" Width="163" />
+        <Label Content="Fecha de Entrada" Height="28" HorizontalAlignment="Left" Margin="197,5,0,0" Name="label1" VerticalAlignment="Top" Width="163" Foreground="White" HorizontalContentAlignment="Center" />
+        <Label Content="Fecha de Salida" Foreground="White" Height="28" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="405,5,0,0" Name="label2" VerticalAlignment="Top" Width="163" />
+        <Button Content="Mostrar todo" Height="23" HorizontalAlignment="Right" Margin="0,31,196,0" Name="btnMostrarTodo" VerticalAlignment="Top" Width="89" Background="#FFFF5C00" Foreground="White" Click="btnMostrarTodo_Click" />
+        <Button Content="Imprimir" Height="23" HorizontalAlignment="Right" Margin="0,291,503,0" Name="btnImprimir" VerticalAlignment="Top" Width="89" Background="#FFFF5C00" Foreground="White" Click="btnImprimir_Click" />
+        <Button Background="#FFFF5C00" Content="Volver" Foreground="White" Height="23" HorizontalAlignment="Right" Margin="0,291,376,0" Name="btnVolver" VerticalAlignment="Top" Width="89" Click="btnVolver_Click" />
+    </Grid>
+
+</Window>
