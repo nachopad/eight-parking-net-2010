@@ -22,11 +22,18 @@ namespace Vistas
         public formularioUsuario()
         {
             InitializeComponent();
+            Loaded += formularioUsuario_Loaded; // Agrega el manejador de eventos Loaded
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void formularioUsuario_Loaded(object sender, RoutedEventArgs e)
+        {
+            // Establecer un valor predeterminado en el ComboBox
+            cmbRol.SelectedIndex = 0; // 0 para "Administrador", 1 para "Operador"
         }
 
         private void btnSalir_Click(object sender, RoutedEventArgs e)
@@ -43,7 +50,9 @@ namespace Vistas
             usuario.Apellido = txtApellido.Text;
             usuario.UserName = txtUserName.Text;
             usuario.Password = txtPassword.Text;
-            usuario.Rol = txtRol.Text;
+            // Obtener el Rol seleccionado del ComboBox
+            ComboBoxItem selectedItem = (ComboBoxItem)cmbRol.SelectedItem;
+            usuario.Rol = selectedItem.Content.ToString();
 
             // Verificar si todos los campos están llenos
             if (string.IsNullOrWhiteSpace(usuario.Nombre) ||
@@ -52,7 +61,7 @@ namespace Vistas
                 string.IsNullOrWhiteSpace(usuario.Password) ||
                 string.IsNullOrWhiteSpace(usuario.Rol))
             {
-                MessageBox.Show("Debe completar todos los campos para realizar el registro", "Advertencia", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("Por favor, complete todos los campos antes de realizar el registro.", "Advertencia", MessageBoxButton.OK, MessageBoxImage.Error);
             }
             else
             {
@@ -61,11 +70,36 @@ namespace Vistas
                 if (result == MessageBoxResult.Yes)
                 {
                     TrabajarUsuarios.registrarUsuario(usuario);
-                    MessageBox.Show("El usuario se ha registrado correctamente", "Notificación", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBox.Show("El usuario se ha registrado correctamente.", "Registro exitoso.", MessageBoxButton.OK, MessageBoxImage.Information);
 
                 }
             }
 
+        }
+
+        private void txtNombre_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            // Verificar que solo se ingresen letras
+            e.Handled = !ContieneSoloLetras(e.Text);
+        }
+
+        private void txtApellido_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            // Verificar que solo se ingresen letras
+            e.Handled = !ContieneSoloLetras(e.Text);
+        }
+
+        // Función para verificar si una cadena contiene solo letras
+        private bool ContieneSoloLetras(string texto)
+        {
+            foreach (char c in texto)
+            {
+                if (!char.IsLetter(c))
+                {
+                    return false;
+                }
+            }
+            return true;
         }
     }
 }

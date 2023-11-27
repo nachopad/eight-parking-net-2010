@@ -25,7 +25,7 @@ namespace Vistas
         public ABMUsuarios()
         {
             InitializeComponent();
-            
+
         }
 
         CollectionView Vista;
@@ -37,6 +37,15 @@ namespace Vistas
             ObjectDataProvider odp = (ObjectDataProvider)this.Resources["LIST_USER"];
             listUsuario = odp.Data as ObservableCollection<Usuario>;
             Vista = (CollectionView)CollectionViewSource.GetDefaultView(grid_content.DataContext);
+
+            // Verificar si el ComboBox ya tiene elementos
+            if (cmbRoles.Items.Count == 0)
+            {
+                // Agregar roles directamente al ComboBox
+                cmbRoles.Items.Add("Administrador");
+                cmbRoles.Items.Add("Operador");
+                // Agrega otros roles según sea necesario
+            }
         }
 
         private void btnPrimero_Click(object sender, RoutedEventArgs e)
@@ -93,6 +102,7 @@ namespace Vistas
             {
                 TrabajarUsuarios.eliminarUsuario(listUsuario[index].IdUsuario);
                 listUsuario.RemoveAt(index);
+                MessageBox.Show("El usuario seleccionado se ha eliminado correctamente.", "Eliminación exitosa", MessageBoxButton.OK, MessageBoxImage.Information);
             }
         }
 
@@ -104,14 +114,47 @@ namespace Vistas
                 if (listUsuario[index].Nombre != "" && listUsuario[index].Apellido != "" && listUsuario[index].UserName != "" && listUsuario[index].Password != "" && listUsuario[index].Rol != "")
                 {
                     TrabajarUsuarios.modificarUsuario(listUsuario[index]);
+                    MessageBox.Show("El usuario seleccionado se ha modificado correctamente.", "Modificación exitosa", MessageBoxButton.OK, MessageBoxImage.Information);
                 }
                 else
                 {
-                    MessageBox.Show("Debe completar todos los campos para realizar la modificación", "Advertencia", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    MessageBox.Show("Por favor, complete todos los campos antes de realizar la modificación.", "Advertencia", MessageBoxButton.OK, MessageBoxImage.Error);
 
                 }
             }
         }
-        
+
+        private void txtNombre_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            // Verificar que solo se ingresen letras
+            e.Handled = !ContieneSoloLetras(e.Text);
+        }
+
+        private void txtApellido_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            // Verificar que solo se ingresen letras
+            e.Handled = !ContieneSoloLetras(e.Text);
+        }
+
+        // Función para verificar si una cadena contiene solo letras
+        private bool ContieneSoloLetras(string texto)
+        {
+            foreach (char c in texto)
+            {
+                if (!char.IsLetter(c))
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        private void btnCancelar_Click(object sender, RoutedEventArgs e)
+        {
+            MenuPrincipal menuPrincipal = new MenuPrincipal("Administrador");
+            menuPrincipal.Show();
+            this.Close();
+        }
+
     }
 }

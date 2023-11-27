@@ -3,29 +3,30 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:svc="clr-namespace:ClasesBase;assembly=ClasesBase"
         Title="Gestión de Usuarios" Height="346" Width="630" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
-    
+
     <Window.Resources>
-        <ObjectDataProvider x:Key="LIST_USER" ObjectType="{x:Type svc:TrabajarUsuarios}" MethodName="TraerUsuario"> </ObjectDataProvider>
+        <ObjectDataProvider x:Key="LIST_USER" ObjectType="{x:Type svc:TrabajarUsuarios}" MethodName="TraerUsuario"></ObjectDataProvider>
     </Window.Resources>
-    
+
     <Grid Name="grid_content"  Background="Black" DataContext="{Binding Source={StaticResource ResourceKey=LIST_USER}}">
         <Button Content="Nuevo" Height="23" HorizontalAlignment="Left" Margin="12,12,0,0" Name="btnNuevo" VerticalAlignment="Top" Width="75" Foreground="White" Background="#FF40AA2E" Click="btnNuevo_Click" />
         <Button Content="Eliminar" Height="23" Margin="93,12,0,0" Name="btnEliminar" VerticalAlignment="Top" Background="Red" Foreground="White" HorizontalAlignment="Left" Width="75" Click="btnEliminar_Click" />
-        <Button Content="Cancelar" Height="23" HorizontalAlignment="Left" Margin="174,12,0,0" Name="btnCancelar" VerticalAlignment="Top" Width="75" Background="#FFAFAFAF" Foreground="White"/>
+        <Button Content="Cancelar" Height="23" HorizontalAlignment="Left" Margin="174,12,0,0" Name="btnCancelar" VerticalAlignment="Top" Width="75" Background="#FFAFAFAF" Foreground="White" Click="btnCancelar_Click" />
         <Button Content="Guardar" Height="23" HorizontalAlignment="Left" Margin="255,12,0,0" Name="btnGuardar" VerticalAlignment="Top" Width="75" Background="#FF00BDFF" Foreground="White" Click="btnGuardar_Click" />
         <Button Content="|&lt;" Height="23" HorizontalAlignment="Left" Margin="364,12,0,0" Name="btnPrimero" VerticalAlignment="Top" Width="53" Background="#FFFF5C00" Foreground="White" Click="btnPrimero_Click" />
         <Button Content="&lt;" Height="23" HorizontalAlignment="Left" Margin="423,12,0,0" Name="btnAnterior" VerticalAlignment="Top" Width="53" Background="#FFFF5C00" Foreground="White" Click="btnAnterior_Click" />
         <Button Content=">" Height="23" HorizontalAlignment="Left" Margin="482,12,0,0" Name="btnSiguiente" VerticalAlignment="Top" Width="53" Background="#FFFF5C00" Foreground="White" Click="btnSiguiente_Click" />
         <Button Content=">|" Height="23" HorizontalAlignment="Left" Margin="541,12,0,0" Name="btnUltimo" VerticalAlignment="Top" Width="53" Background="#FFFF5C00" Foreground="White" Click="btnUltimo_Click" />
         <Label Content="Apellido" Height="28" HorizontalAlignment="Left" Margin="12,58,0,0" Name="lblApellido" VerticalAlignment="Top" Foreground="White"/>
-        <TextBox Text="{Binding Apellido}" Height="23" HorizontalAlignment="Left" Margin="364,62,0,0" Name="txtApellido" VerticalAlignment="Top" Width="230" Background="#FF696161" Foreground="White" TextAlignment="Center" />
+        <TextBox Text="{Binding Apellido}" Height="23" HorizontalAlignment="Left" Margin="364,62,0,0" Name="txtApellido" VerticalAlignment="Top" Width="230" Background="#FF696161" Foreground="White" TextAlignment="Center" PreviewTextInput="txtApellido_PreviewTextInput"/>
         <Label Content="Nombre" Height="28" HorizontalAlignment="Left" Margin="12,96,0,0" Name="lblNombre" VerticalAlignment="Top" Foreground="White" />
-        <TextBox Text="{Binding Nombre}" Height="23" HorizontalAlignment="Left" Margin="364,100,0,0" Name="txtNombre" VerticalAlignment="Top" Width="230" Background="#FF696161" Foreground="White" TextAlignment="Center"/>
+        <TextBox Text="{Binding Nombre}" Height="23" HorizontalAlignment="Left" Margin="364,100,0,0" Name="txtNombre" VerticalAlignment="Top" Width="230" Background="#FF696161" Foreground="White" TextAlignment="Center" PreviewTextInput="txtNombre_PreviewTextInput"/>
         <Label Content="User Name" Height="28" HorizontalAlignment="Left" Margin="12,135,0,0" Name="lblUsername" VerticalAlignment="Top" Foreground="White" />
         <TextBox Text="{Binding UserName}" Height="23" Margin="364,139,0,0" Name="txtUsername" VerticalAlignment="Top" HorizontalAlignment="Left" Width="230" Background="#FF696161" Foreground="White" TextAlignment="Center"/>
         <TextBox Text="{Binding Password}" Height="23" HorizontalAlignment="Left" Margin="364,178,0,0" Name="txtPassword" VerticalAlignment="Top" Width="230" Background="#FF696161" Foreground="White" TextAlignment="Center"/>
         <Label Content="Password" Height="28" HorizontalAlignment="Left" Margin="12,174,0,0" Name="lblPassword" VerticalAlignment="Top" Foreground="White"/>
-        <TextBox Text="{Binding Rol}" Height="23" HorizontalAlignment="Left" Margin="364,214,0,0" Name="txtRol" VerticalAlignment="Top" Width="230" Background="#FF696161" Foreground="White" TextAlignment="Center"/>
+        <ComboBox SelectedValue="{Binding Rol}" Height="23" HorizontalAlignment="Left" Margin="364,214,0,0" Name="cmbRoles" VerticalAlignment="Top" Width="230" Background="#FF6961" Foreground="Black"></ComboBox>
         <Label Content="Rol" Height="28" HorizontalAlignment="Left" Margin="12,214,0,0" Name="label1" VerticalAlignment="Top" Width="54" Foreground="White"/>
+
     </Grid>
 </Window>

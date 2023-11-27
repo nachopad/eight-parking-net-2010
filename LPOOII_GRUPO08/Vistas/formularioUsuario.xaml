@@ -35,13 +35,16 @@
             <Label Content="User Name" Foreground="#FFFFFCFC" Height="28" HorizontalAlignment="Left" Margin="46,10,0,0" Name="label2" VerticalAlignment="Top" Width="94" Grid.Row="3" />
             <Label Content="Password" Foreground="#FFFFFCFC" Height="28" HorizontalAlignment="Left" Margin="46,10,0,0" Name="label3" VerticalAlignment="Top" Width="94" Grid.Row="4" />
             <Label Content="Rol" Foreground="#FFFFFCFC" Height="28" HorizontalAlignment="Left" Margin="46,10,0,0" Name="label4" VerticalAlignment="Top" Width="94" Grid.Row="5" />
-            
-            
-            <TextBox Grid.Column="1" Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="24,4,0,0" Name="txtApellido" VerticalAlignment="Top" Width="120"  Background="#FF696161" Foreground="White" />
-            <TextBox Grid.Column="1" Grid.Row="2" Height="23" HorizontalAlignment="Left" Margin="24,6,0,0" Name="txtNombre" VerticalAlignment="Top" Width="120"  Background="#FF696161" Foreground="White" />
+
+
+            <TextBox Grid.Column="1" Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="24,4,0,0" Name="txtApellido" VerticalAlignment="Top" Width="120"  Background="#FF696161" Foreground="White" PreviewTextInput="txtApellido_PreviewTextInput" />
+            <TextBox Grid.Column="1" Grid.Row="2" Height="23" HorizontalAlignment="Left" Margin="24,6,0,0" Name="txtNombre" VerticalAlignment="Top" Width="120"  Background="#FF696161" Foreground="White" PreviewTextInput="txtNombre_PreviewTextInput"/>
             <TextBox Background="#FF696161" Foreground="White" Height="23" HorizontalAlignment="Left" Margin="24,11,0,0" Name="txtUserName" VerticalAlignment="Top" Width="120" Grid.Column="1" Grid.Row="3" />
             <TextBox Background="#FF696161" Foreground="White" Height="23" HorizontalAlignment="Left" Margin="24,10,0,0" Name="txtPassword" VerticalAlignment="Top" Width="120" Grid.Column="1" Grid.Row="4" />
-            <TextBox Background="#FF696161" Foreground="White" Height="23" HorizontalAlignment="Left" Margin="24,10,0,0" Name="txtRol" VerticalAlignment="Top" Width="120" Grid.Column="1" Grid.Row="5" />
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="24,10,0,0" Name="cmbRol" VerticalAlignment="Top" Width="120" Grid.Column="1" Grid.Row="5">
+                <ComboBoxItem Content="Administrador" />
+                <ComboBoxItem Content="Operador" />
+            </ComboBox>
             <Button Content="Registrar" HorizontalAlignment="Right" Margin="0,14,20,0" Name="btnRegistrar" Style="{StaticResource BotonAltaCliente}" Width="75" Grid.Row="6" Click="btnRegistrar_Click" />
             <Button Content="Salir" HorizontalAlignment="Left" Margin="24,14,0,37" Name="btnSalir" Style="{StaticResource BotonAltaCliente}" Width="75" Grid.Column="1" Grid.Row="6" Grid.RowSpan="2" Click="btnSalir_Click" />
         </Grid>
