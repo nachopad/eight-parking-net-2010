@@ -331,3 +331,15 @@ C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\
 C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\RegistroSalida.baml
 C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoVentas.g.cs
 C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\RegistroSalida.g.cs
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\AcercaDe.baml
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FixedDocs.baml
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoDeSectores.baml
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoVentas.baml
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Presentacion.baml
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\RegistroSalida.baml
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\AcercaDe.g.cs
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FixedDocs.g.cs
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoDeSectores.g.cs
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoVentas.g.cs
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Presentacion.g.cs
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\RegistroSalida.g.cs

@@ -74,6 +74,46 @@ namespace ClasesBase
             cnn.Close();
         }
 
+        //editar
+        //eliminar
+
+        
+        public void eliminarVehiculo(int tvCodigo)
+        {
+            string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\lenovo\\Documents\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
+            //string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\maxi1\\OneDrive\\Documentos\\Programacion LPOO II\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
+            //string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\argca\\OneDrive\\Documentos\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
+            SqlConnection cnn = new SqlConnection(conexionString);
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandText = "EliminarVehiculo";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Connection = cnn;
+            cmd.Parameters.AddWithValue("@tvCodigo", tvCodigo);
+            cnn.Open();
+            cmd.ExecuteNonQuery();
+            cnn.Close();
+        }
+
+        public static void modificarVehiculo(TipoVehiculo vehiculo)
+        {
+            string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\lenovo\\Documents\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
+            //string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\maxi1\\OneDrive\\Documentos\\Programacion LPOO II\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
+            //string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\argca\\OneDrive\\Documentos\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
+            SqlConnection cnn = new SqlConnection(conexionString);
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandText = "ModificarVehiculo";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Connection = cnn;
+            cmd.Parameters.AddWithValue("@tvCodigo", vehiculo.TVCodigo);
+            cmd.Parameters.AddWithValue("@descripcion", vehiculo.Descripcion);
+            cmd.Parameters.AddWithValue("@tarifa", vehiculo.Tarifa);
+            cmd.Parameters.AddWithValue("@imagen", vehiculo.Imagen);
+            cnn.Open();
+            cmd.ExecuteNonQuery();
+            cnn.Close();
+        }
+        
+
         public static int obtenerCodigoMasGrande()
         {
             string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\maxi1\\OneDrive\\Documentos\\Programacion LPOO II\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";

@@ -9,10 +9,18 @@ namespace ClasesBase
 {
     public class Cliente:IDataErrorInfo
     {
+        private int idCliente; 
         private string clienteDNI;
         private string apellido;
         private string nombre;
         private string telefono;
+
+        public int IdCliente
+        {
+            get { return idCliente; }
+            set { idCliente = value; }
+        }
+
 
         public string ClienteDNI
         {
