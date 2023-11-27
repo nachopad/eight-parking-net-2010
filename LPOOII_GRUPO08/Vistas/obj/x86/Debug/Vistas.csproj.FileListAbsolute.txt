@@ -327,3 +327,7 @@ C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Lista
 C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Presentacion.g.cs
 C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoVentas.baml
 C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoVentas.g.cs
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoVentas.baml
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\RegistroSalida.baml
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoVentas.g.cs
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\RegistroSalida.g.cs

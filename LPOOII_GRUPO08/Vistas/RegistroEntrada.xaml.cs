@@ -20,9 +20,17 @@ namespace Vistas
     /// </summary>
     public partial class RegistroEntrada : Window
     {
-        public RegistroEntrada()
+        Sector sector = new Sector();
+
+        public RegistroEntrada(Sector s)
         {
             InitializeComponent();
+            txtSector.Text = s.Identificador;
+            sector = s;
+            DateTime fechaDeHoy = DateTime.Now;
+            dtpFechaIngreso.SelectedDate = fechaDeHoy.Date;
+            txtHoraEntrada.Text = fechaDeHoy.Hour.ToString();
+            txtMinutosEntrada.Text = fechaDeHoy.Minute.ToString();
         }
 
         Ticket ticket = new Ticket();
@@ -32,7 +40,7 @@ namespace Vistas
             TrabajarCliente trabajarCliente = new TrabajarCliente();
             TrabajarTicket trabajarTicket = new TrabajarTicket();
 
-            if (cmbSector.SelectedItem != null && txtTotal.Text != "" && txtDniCliente.Text != "" && txtPatente.Text != "")
+            if (txtDniCliente.Text != "" && txtPatente.Text != "" && txtTarifa.Text != "")
             {
                 Cliente buscado = trabajarCliente.ObtenerClientePorDni(txtDniCliente.Text);
                 if (buscado.ClienteDNI != null)
@@ -45,8 +53,18 @@ namespace Vistas
                     ticket.Patente = txtPatente.Text;
                     TipoVehiculo tipoVehiculoSeleccionado = (TipoVehiculo)cmbTipoVehiculo.SelectedItem;
                     ticket.TvCodigo = tipoVehiculoSeleccionado.TVCodigo;
-                    Sector sector = (Sector)cmbSector.SelectedItem;
+
                     ticket.SectorCodigo = sector.SectorCodigo;
+
+                    //Faltante
+                    DateTime fechaEntrada = dtpFechaIngreso.SelectedDate ?? DateTime.Now.Date;
+                    int selectedHour = int.Parse((txtHoraEntrada.Text).ToString());
+                    int selectedMinute = int.Parse((txtMinutosEntrada.Text).ToString());
+                    DateTime fechaCompletaEntrada = fechaEntrada.AddHours(selectedHour).AddMinutes(selectedMinute);
+                    ticket.FechaHoraEnt = fechaCompletaEntrada;
+                    ticket.Tarifa = decimal.Parse(txtTarifa.Text);
+
+                    MessageBox.Show(ticket.SectorCodigo.ToString());
                     trabajarTicket.registrarTicket(ticket);
                     FixedDocs vistaTicket = new FixedDocs();
                     vistaTicket.Show();
@@ -70,7 +88,7 @@ namespace Vistas
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             txtTarifa.IsEnabled = false;
-            txtTotal.IsEnabled = false;
+            txtSector.IsEnabled = false;
             ObjectDataProvider odp = (ObjectDataProvider)this.Resources["LIST_VEHICULOS"];
             listVehiculos = odp.Data as ObservableCollection<TipoVehiculo>;
             Vista = (CollectionView)CollectionViewSource.GetDefaultView(grid_content.DataContext);
@@ -84,122 +102,54 @@ namespace Vistas
                 // Accede a la propiedad que quieres mostrar
                 TipoVehiculo tipoVehiculoSeleccionado = (TipoVehiculo)cmbTipoVehiculo.SelectedItem;
                 txtTarifa.Text = tipoVehiculoSeleccionado.Tarifa.ToString();
-                if (validarCampos() == true)
-                {
-                    calcularTotal();
-                }
+                //if (validarCampos() == true)
+                //{
+                //    calcularTotal();
+                //}
             }
             dtpFechaIngreso.IsEnabled = true;
 
         }
 
-        private void calcularTotal()
-        {
-            try
-            {
-                //Este codigo debe implementar luego NO OLVIDAR
-                DateTime fechaEntrada = dtpFechaIngreso.SelectedDate ?? DateTime.Now.Date;
+        //private void calcularTotal()
+        //{
+        //    try
+        //    {
+        //        //Este codigo debe implementar luego NO OLVIDAR
+        //        DateTime fechaEntrada = dtpFechaIngreso.SelectedDate ?? DateTime.Now.Date;
 
-                int selectedHour = int.Parse((txtHoraEntrada.Text).ToString());
-                int selectedMinute = int.Parse((txtMinutosEntrada.Text).ToString());
-                DateTime fechaCompletaEntrada = fechaEntrada.AddHours(selectedHour).AddMinutes(selectedMinute);
+        //        int selectedHour = int.Parse((txtHoraEntrada.Text).ToString());
+        //        int selectedMinute = int.Parse((txtMinutosEntrada.Text).ToString());
+        //        DateTime fechaCompletaEntrada = fechaEntrada.AddHours(selectedHour).AddMinutes(selectedMinute);
 
 
-                DateTime fechaSalida = dtpFechaSalida.SelectedDate ?? DateTime.Now.Date;
+        //        DateTime fechaSalida = dtpFechaSalida.SelectedDate ?? DateTime.Now.Date;
 
-                int horaSalidaSeleccionada = int.Parse((txtHoraSalida.Text).ToString());
-                int minutosSalidaSeleccionada = int.Parse((txtMinutosSalida.Text).ToString());
-                DateTime fechaCompletaSalida = fechaEntrada.AddHours(horaSalidaSeleccionada).AddMinutes(minutosSalidaSeleccionada);
-                TimeSpan duracion = fechaCompletaSalida - fechaCompletaEntrada;
-                double duracionEnDouble = duracion.Hours + (duracion.Minutes / 60.0); ;
+        //        int horaSalidaSeleccionada = int.Parse((txtHoraSalida.Text).ToString());
+        //        int minutosSalidaSeleccionada = int.Parse((txtMinutosSalida.Text).ToString());
+        //        DateTime fechaCompletaSalida = fechaEntrada.AddHours(horaSalidaSeleccionada).AddMinutes(minutosSalidaSeleccionada);
+        //        TimeSpan duracion = fechaCompletaSalida - fechaCompletaEntrada;
+        //        double duracionEnDouble = duracion.Hours + (duracion.Minutes / 60.0); ;
 
-                double totalAPagar = duracionEnDouble * double.Parse(txtTarifa.Text);
+        //        double totalAPagar = duracionEnDouble * double.Parse(txtTarifa.Text);
 
-                txtTotal.Text = totalAPagar.ToString();
+        //        txtTotal.Text = totalAPagar.ToString();
 
-                //Asignamos los valores al objeto Ticket
-                ticket.Duracion = duracionEnDouble;
-                ticket.FechaHoraEnt = fechaCompletaEntrada;
-                ticket.FechaHoraSal = fechaCompletaSalida;
-                ticket.Total = decimal.Parse(totalAPagar.ToString());
-                ticket.Tarifa = decimal.Parse(txtTarifa.Text);
+        //        //Asignamos los valores al objeto Ticket
+        //        ticket.Duracion = duracionEnDouble;
+        //        ticket.FechaHoraEnt = fechaCompletaEntrada;
+        //        ticket.FechaHoraSal = fechaCompletaSalida;
+        //        ticket.Total = decimal.Parse(totalAPagar.ToString());
+        //        ticket.Tarifa = decimal.Parse(txtTarifa.Text);
 
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Hubo un error, vuelva a intentarlo");
-            }
+        //    }
+        //    catch (Exception)
+        //    {
+        //        MessageBox.Show("Hubo un error, vuelva a intentarlo");
+        //    }
 
-        }
+        //}
 
-        private bool validarCampos()
-        {
-
-            // Comprueba si las fechas están seleccionadas
-            if (dtpFechaIngreso.SelectedDate == null || dtpFechaSalida.SelectedDate == null || cmbTipoVehiculo.SelectedItem == null)
-            {
-                txtTotal.Text = "";
-                return false;
-            }
-
-            // Comprueba si las horas y los minutos están ingresados
-            if (string.IsNullOrEmpty(txtHoraEntrada.Text) || string.IsNullOrEmpty(txtMinutosEntrada.Text) ||
-                string.IsNullOrEmpty(txtHoraSalida.Text) || string.IsNullOrEmpty(txtMinutosSalida.Text))
-            {
-                txtTotal.Text = "";
-                return false;
-            }
-
-            return true;
-        }
-
-        private void dtpFechaIngreso_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
-        {
-            if (validarCampos() == true)
-            {
-                calcularTotal();
-            }
-        }
-
-        private void txtHoraEntrada_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if (validarCampos() == true)
-            {
-                calcularTotal();
-            }
-        }
-
-        private void txtMinutosEntrada_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if (validarCampos() == true)
-            {
-                calcularTotal();
-            }
-        }
-
-        private void dtpFechaSalida_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
-        {
-            if (validarCampos() == true)
-            {
-                calcularTotal();
-            }
-        }
-
-        private void txtHoraSalida_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if (validarCampos() == true)
-            {
-                calcularTotal();
-            }
-        }
-
-        private void txtMinutosSalida_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if (validarCampos() == true)
-            {
-                calcularTotal();
-            }
-        }
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {

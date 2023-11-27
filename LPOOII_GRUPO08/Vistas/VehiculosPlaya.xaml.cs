@@ -88,17 +88,40 @@ namespace Vistas
         {
             Button clickedButton = (Button)sender;
             SolidColorBrush backgroundBrush = clickedButton.Background as SolidColorBrush;
-
+            int indice = 0;
+            for (int i = 0; i < listaSectores.Count(); i++)
+            {
+                if (listaSectores[i].Identificador == clickedButton.Content)
+                {
+                    indice = i;
+                }
+            }
+            MessageBoxResult result;
             switch (backgroundBrush.Color.ToString())
             {
                 case disponible:
-                    MessageBox.Show("Sector Disponible, registrar entrada", "Disponible", MessageBoxButton.OK, MessageBoxImage.Information);
+                    result = MessageBox.Show("Sector Disponible, ¿desea registrar la entrada?", "Disponible", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                    if (result == MessageBoxResult.Yes)
+                    {
+                        RegistroEntrada registro = new RegistroEntrada(listaSectores[indice]);
+                        registro.Show();
+                    }
                     break;
                 case deshabilitado:
                     MessageBox.Show("Sector deshabilitado", "Deshabilitado", MessageBoxButton.OK, MessageBoxImage.Information);
                     break;
                 case ocupado:
-                    MessageBox.Show("Sector Ocupado, registrar salida", "Ocupado", MessageBoxButton.OK, MessageBoxImage.Information);
+                    result = MessageBox.Show("Sector Ocupado, ¿desea registrar la salida?", "Disponible", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                    if (result == MessageBoxResult.Yes)
+                    {
+                        TrabajarTicket trabajarTicket = new TrabajarTicket();
+                        Ticket ticketObtenido = new Ticket();
+                        ticketObtenido = trabajarTicket.obtenerUltimoTicketPorSector(listaSectores[indice].SectorCodigo);
+                        //Agregar LA VENTANA REGISTRAR SALIDA:
+
+                        RegistroSalida registroSalida = new RegistroSalida(ticketObtenido, listaSectores[indice]);
+                        registroSalida.Show();
+                    }
                     break;
             }
         }

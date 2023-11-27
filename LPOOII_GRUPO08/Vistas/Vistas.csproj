@@ -104,6 +104,9 @@
     <Compile Include="RegistroEntrada.xaml.cs">
       <DependentUpon>RegistroEntrada.xaml</DependentUpon>
     </Compile>
+    <Compile Include="RegistroSalida.xaml.cs">
+      <DependentUpon>RegistroSalida.xaml</DependentUpon>
+    </Compile>
     <Compile Include="TiposVehiculoWindow.xaml.cs">
       <DependentUpon>TiposVehiculoWindow.xaml</DependentUpon>
     </Compile>
@@ -201,6 +204,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="RegistroEntrada.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RegistroSalida.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
