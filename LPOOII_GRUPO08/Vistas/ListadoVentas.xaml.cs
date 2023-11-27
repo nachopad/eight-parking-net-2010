@@ -30,7 +30,7 @@ namespace Vistas
             decimal montoTotal;
             // Llame al método TraerTickets para obtener todas las ventas
             TrabajarTicket trabajarTicket = new TrabajarTicket();
-            ObservableCollection<Ticket> tickets = trabajarTicket.TraerTickets(out montoTotal);
+            ObservableCollection<Ticket> tickets = trabajarTicket.TraerTicketsAbiertos(out montoTotal);
 
             // Actualice la lista de ventas
             dataGrid1.ItemsSource = tickets;
@@ -79,7 +79,7 @@ namespace Vistas
         {
             decimal montoTotal;
             TrabajarTicket trabajarTicket = new TrabajarTicket();
-            ObservableCollection<Ticket> tickets = trabajarTicket.TraerTickets(out montoTotal);
+            ObservableCollection<Ticket> tickets = trabajarTicket.TraerTicketsAbiertos(out montoTotal);
 
             // Actualice la lista de ventas
             dataGrid1.ItemsSource = tickets;

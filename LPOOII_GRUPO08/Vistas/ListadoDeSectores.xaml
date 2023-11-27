@@ -3,39 +3,36 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:svc="clr-namespace:ClasesBase;assembly=ClasesBase"
         xmlns:scm="clr-namespace:System.ComponentModel;assembly=WindowsBase"
-        Title="Lista de ventas" Loaded="Window_Loaded" Height="365" Width="988">
+        Title="Lista de sectores" Loaded="Window_Loaded" Height="360" Width="988">
 
     <Window.Resources>
-        <ObjectDataProvider x:Key="LIST_TICKET" ObjectType="{x:Type svc:TrabajarTicket}" MethodName="TraerTickets"></ObjectDataProvider>
-        <CollectionViewSource x:Key="VIEW_LIST_TICKETS" Source="{StaticResource ResourceKey= LIST_TICKET}">
+        <ObjectDataProvider x:Key="LIST_TICKET" ObjectType="{x:Type svc:TrabajarTicket}" MethodName="TraerTicketsAbiertos"></ObjectDataProvider>
+        <CollectionViewSource x:Key="VIEW_LIST_TICKETS" Source="{StaticResource LIST_TICKET}">
             <CollectionViewSource.SortDescriptions>
                 <scm:SortDescription PropertyName="FechaHoraEnt" Direction="Ascending"></scm:SortDescription>
             </CollectionViewSource.SortDescriptions>
         </CollectionViewSource>
     </Window.Resources>
 
-
     <Grid Name="grid_content" Background="Black">
        
-            <ListView Name="dataGrid1" ItemsSource="{Binding Source= {StaticResource ResourceKey= VIEW_LIST_TICKETS}}" Margin="64,46,57,0" Background="LightGray" VerticalAlignment="Top" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Height="95" Width="845" SelectedIndex="-1">
-                <ListView.View>
-                    <GridView>
-                        <GridView.Columns>
-                          
-                            <GridViewColumn Header="Zona" DisplayMemberBinding="{Binding Path= Zona }" Width="40" ></GridViewColumn>
-                            <GridViewColumn Header="Sector" DisplayMemberBinding="{Binding Path= Sector}" Width="40" ></GridViewColumn>
-                            <GridViewColumn Header="Fecha/Hora Entrada" DisplayMemberBinding="{Binding Path=FechaHoraEnt, StringFormat=\{0:dd/MM/yy  HH:mm\} hs}" Width="148" />
-                            <GridViewColumn Header="Fecha/Hora Salida" DisplayMemberBinding="{Binding Path=FechaHoraSal, StringFormat=\{0:dd/MM/yy  HH:mm\} hs}" Width="148" />
-                            <GridViewColumn Header="N/A de Cliente" DisplayMemberBinding="{Binding Path= ClienteApellido}" Width="150" ></GridViewColumn>
-                            <GridViewColumn Header="Tipo vehiculo" DisplayMemberBinding="{Binding Path= TipoVehiculo}" Width="75" ></GridViewColumn>
-                            <GridViewColumn Header="Patente" DisplayMemberBinding="{Binding Path= Patente}" Width="75" ></GridViewColumn>
-                            <GridViewColumn Header="Tiempo Transcurrido" Width="168" ></GridViewColumn>
-                        </GridView.Columns>
-                    </GridView>
-                </ListView.View>
-            </ListView>
-        
-        <Button Content="Imprimir" Height="23" HorizontalAlignment="Left" Margin="27,255,0,0" Name="button1" VerticalAlignment="Top" Width="75" Click="button1_Click" />
+                    <ListView Name="dataGrid1" ItemsSource="{Binding Source={StaticResource VIEW_LIST_TICKETS}}" Margin="64,46,57,0" Background="LightGray" VerticalAlignment="Top" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Height="95" Width="845" SelectedIndex="-1" FlowDirection="LeftToRight">
+            <ListView.View>               
+                        <GridView>
+                            <GridView.Columns>
+                        <GridViewColumn Header="Zona" DisplayMemberBinding="{Binding Path=Zona}" Width="40"></GridViewColumn>
+                        <GridViewColumn Header="Sector" DisplayMemberBinding="{Binding Path=Sector}" Width="40"></GridViewColumn>
+                        <GridViewColumn Header="Fecha/Hora Entrada" DisplayMemberBinding="{Binding Path=FechaHoraEnt, StringFormat=\{0:dd/MM/yy  HH:mm\} hs}" Width="148" />
+                        <GridViewColumn Header="N/A de Cliente" DisplayMemberBinding="{Binding Path=ClienteApellido}" Width="150"></GridViewColumn>
+                        <GridViewColumn Header="Tipo vehiculo" DisplayMemberBinding="{Binding Path=TipoVehiculo}" Width="75"></GridViewColumn>
+                        <GridViewColumn Header="Patente" DisplayMemberBinding="{Binding Path=Patente}" Width="75"></GridViewColumn>
+                        <GridViewColumn Header="Tiempo Transcurrido" DisplayMemberBinding="{Binding Path=Duracion, StringFormat={}{0} hs}" Width="168"></GridViewColumn>
+                    </GridView.Columns>                  
+                </GridView>               
+            </ListView.View>
+        </ListView>
+        <Button Content="Imprimir" Height="29" HorizontalAlignment="Left" Margin="27,249,0,0" Name="button1" VerticalAlignment="Top" Width="75" Click="button1_Click" />
         <Label Content="Listado de Sectores Ocupados" Height="28" HorizontalAlignment="Left" Margin="27,12,0,0" Name="Listado" VerticalAlignment="Top" Width="328" Foreground="White" DataContext="{Binding}" FontSize="15" FontWeight="Bold" FontFamily="Tahoma" ContentStringFormat="" IsEnabled="True" />
+        <Button Content="Volver" Height="29" HorizontalAlignment="Left" Margin="117,249,0,0" Name="Buttom2" VerticalAlignment="Top" Width="83" Click="button2_Click" />
     </Grid>
 </Window>

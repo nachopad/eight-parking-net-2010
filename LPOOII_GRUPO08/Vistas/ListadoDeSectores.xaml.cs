@@ -39,7 +39,7 @@ namespace Vistas
             decimal montoTotal;
             // Llame al método TraerTickets para obtener todas las ventas
             TrabajarTicket trabajarTicket = new TrabajarTicket();
-            ObservableCollection<Ticket> tickets = trabajarTicket.TraerTickets(out montoTotal);
+            ObservableCollection<Ticket> tickets = trabajarTicket.TraerTicketsAbiertos(out montoTotal);
 
             // Actualice la lista de ventas
             dataGrid1.ItemsSource = tickets;
@@ -51,31 +51,25 @@ namespace Vistas
             PrintDialog printDialog = new PrintDialog();
             if (printDialog.ShowDialog() == true)
             {
-                // Capturar la ventana actual como una imagen
                 RenderTargetBitmap renderTargetBitmap = new RenderTargetBitmap((int)grid_content.ActualWidth, (int)grid_content.ActualHeight, 96, 96, PixelFormats.Pbgra32);
                 renderTargetBitmap.Render(grid_content);
 
-                // Codificar la imagen capturada en un formato imprimible
                 BitmapEncoder bitmapEncoder = new PngBitmapEncoder();
                 bitmapEncoder.Frames.Add(BitmapFrame.Create(renderTargetBitmap));
 
-                // Guardar la imagen en un flujo de memoria
                 using (MemoryStream stream = new MemoryStream())
                 {
                     bitmapEncoder.Save(stream);
                     stream.Seek(0, SeekOrigin.Begin);
 
-                    // Crear una imagen a partir del flujo de memoria
                     BitmapImage bitmapImage = new BitmapImage();
                     bitmapImage.BeginInit();
                     bitmapImage.StreamSource = stream;
                     bitmapImage.EndInit();
 
-                    // Crear un Image para mostrar la imagen en la ventana antes de imprimir
                     Image image = new Image();
                     image.Source = bitmapImage;
 
-                    // Mostrar la imagen en un nuevo diálogo antes de imprimir
                     Window imageWindow = new Window
                     {
                         Title = "Vista previa de impresión",
@@ -85,12 +79,24 @@ namespace Vistas
                     };
                     imageWindow.ShowDialog();
 
-                    // Imprimir la imagen
                     printDialog.PrintVisual(image, "Imprimir contenido de la ventana");
                 }
             }
         }
 
+  
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            // Crear una instancia de la ventana Zona.xaml
+            Zona ventanaZona = new Zona();
+
+            // Mostrar la ventana Zona.xaml
+            ventanaZona.Show();
+
+            // Cerrar la ventana actual (ListadoDeSectores)
+            this.Close();
+        }
 
         
     }

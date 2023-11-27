@@ -114,5 +114,14 @@ namespace ClasesBase
             get { return zona; }
             set { zona = value; }
         }
+
+        public double CalcularDuracion()
+        {
+            TimeSpan tiempoTranscurrido = DateTime.Now - FechaHoraEnt;
+            double duracionEnHoras = tiempoTranscurrido.TotalHours;
+
+            return Math.Round(duracionEnHoras, 2); // Redondea a dos decimales
+        }
+
     }
 }

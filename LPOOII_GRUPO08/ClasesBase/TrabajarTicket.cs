@@ -238,6 +238,75 @@ namespace ClasesBase
             return tickets;
         }
 
+
+        public ObservableCollection<Ticket> TraerTicketsAbiertos(out decimal montoTotal)
+        {
+            ObservableCollection<Ticket> tickets = new ObservableCollection<Ticket>();
+            montoTotal = 0; // Inicializamos el monto total a cero
+
+            // Conexión a la base de datos
+            string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\Cuno\\Documents\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
+            //string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\maxi1\\OneDrive\\Documentos\\Programacion LPOO II\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
+            SqlConnection conexion = new SqlConnection(conexionString);
+            conexion.Open();
+
+            // Consulta a la base de datos
+            string consulta = "SELECT t.nro_ticket, t.fecha_hora_ent, t.fecha_hora_sal, t.cliente_dni, t.tv_codigo, c.apellido, " +
+            "c.nombre, tv.descripcion AS TipoVehiculo, s.sector_codigo AS Sector, z.zona_Codigo AS Zona, t.patente, t.sector_codigo, " +
+            "t.duracion, t.tarifa, t.total " +
+            "FROM Ticket t " +
+            "INNER JOIN Cliente c ON t.cliente_dni = c.cliente_dni " +
+            "INNER JOIN TipoVehiculo tv ON t.tv_codigo = tv.tv_codigo " +
+            "INNER JOIN Sector s ON t.sector_codigo = s.sector_codigo " +
+            "INNER JOIN Zona z ON s.zona_codigo = z.zona_Codigo " +
+            "WHERE t.fecha_hora_sal IS NULL"; // Filtrar por fecha_hora_sal igual a NULL
+
+
+            SqlCommand comando = new SqlCommand(consulta, conexion);
+            SqlDataReader reader = comando.ExecuteReader();
+
+            // Llenado de la colección
+            while (reader.Read())
+            {
+                Ticket ticket = new Ticket();
+                ticket.TicketNro = int.Parse(reader["nro_ticket"].ToString());
+                ticket.FechaHoraEnt = DateTime.Parse(reader["fecha_hora_ent"].ToString());
+
+                if (reader["fecha_hora_sal"] != DBNull.Value)
+                {
+                    ticket.FechaHoraSal = DateTime.Parse(reader["fecha_hora_sal"].ToString());
+                }
+                else
+                {
+                    ticket.FechaHoraSal = DateTime.MinValue; // Usar un valor predeterminado para representar null
+                }
+               
+                ticket.ClienteDNI = reader["cliente_dni"].ToString();
+                ticket.TvCodigo = int.Parse(reader["tv_codigo"].ToString());
+                ticket.Patente = reader["patente"].ToString();
+                ticket.SectorCodigo = int.Parse(reader["sector_codigo"].ToString());
+                ticket.Tarifa = decimal.Parse(reader["tarifa"].ToString());
+                ticket.Duracion = ticket.CalcularDuracion();
+                // Nuevas asignaciones para datos de otras tablas
+                ticket.ClienteApellido = reader["apellido"].ToString();
+                ticket.ClienteNombre = reader["nombre"].ToString();
+                ticket.TipoVehiculo = reader["TipoVehiculo"].ToString();
+                ticket.Sector = reader["Sector"].ToString();
+                ticket.Zona = reader["Zona"].ToString();
+
+                tickets.Add(ticket);
+
+                // Acumular el total
+                montoTotal += ticket.Total;
+            }
+
+            // Cierre de la conexión
+            conexion.Close();
+
+            return tickets;
+        }
+
+
         public ObservableCollection<Ticket> TraerTicketsPorFecha(DateTime fechaInicio, DateTime fechaFin, out decimal montoTotal)
         {
             ObservableCollection<Ticket> tickets = new ObservableCollection<Ticket>();
