@@ -343,3 +343,7 @@ C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoDe
 C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoVentas.g.cs
 C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Presentacion.g.cs
 C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\RegistroSalida.g.cs
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ABMClientes.baml
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ABMVehiculos.baml
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ABMClientes.g.cs
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ABMVehiculos.g.cs

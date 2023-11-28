@@ -55,8 +55,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ABMClientes.xaml.cs">
+      <DependentUpon>ABMClientes.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ABMUsuarios.xaml.cs">
       <DependentUpon>ABMUsuarios.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ABMVehiculos.xaml.cs">
+      <DependentUpon>ABMVehiculos.xaml</DependentUpon>
     </Compile>
     <Compile Include="AcercaDe.xaml.cs">
       <DependentUpon>AcercaDe.xaml</DependentUpon>
@@ -123,7 +129,15 @@
     <Compile Include="Zona.xaml.cs">
       <DependentUpon>Zona.xaml</DependentUpon>
     </Compile>
+    <Page Include="ABMClientes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ABMUsuarios.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ABMVehiculos.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

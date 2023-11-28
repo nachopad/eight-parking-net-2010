@@ -93,8 +93,8 @@ namespace Vistas
 
         private void btnGestionarClientes_Click(object sender, RoutedEventArgs e)
         {
-            FormularioCliente formCliente = new FormularioCliente();
-            formCliente.Show();
+            ABMClientes abmClientes = new ABMClientes();
+            abmClientes.Show();
             this.Close();
         }
 
