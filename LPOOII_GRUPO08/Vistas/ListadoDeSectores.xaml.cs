@@ -47,54 +47,31 @@ namespace Vistas
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
-        {
+       {
             PrintDialog printDialog = new PrintDialog();
+
             if (printDialog.ShowDialog() == true)
             {
-                RenderTargetBitmap renderTargetBitmap = new RenderTargetBitmap((int)grid_content.ActualWidth, (int)grid_content.ActualHeight, 96, 96, PixelFormats.Pbgra32);
-                renderTargetBitmap.Render(grid_content);
+                var document = flowDocumentReader.Document as FlowDocument;
 
-                BitmapEncoder bitmapEncoder = new PngBitmapEncoder();
-                bitmapEncoder.Frames.Add(BitmapFrame.Create(renderTargetBitmap));
-
-                using (MemoryStream stream = new MemoryStream())
+                if (document != null)
                 {
-                    bitmapEncoder.Save(stream);
-                    stream.Seek(0, SeekOrigin.Begin);
+                    var paginator = ((IDocumentPaginatorSource)document).DocumentPaginator;
 
-                    BitmapImage bitmapImage = new BitmapImage();
-                    bitmapImage.BeginInit();
-                    bitmapImage.StreamSource = stream;
-                    bitmapImage.EndInit();
-
-                    Image image = new Image();
-                    image.Source = bitmapImage;
-
-                    Window imageWindow = new Window
-                    {
-                        Title = "Vista previa de impresión",
-                        Content = image,
-                        Width = bitmapImage.PixelWidth,
-                        Height = bitmapImage.PixelHeight
-                    };
-                    imageWindow.ShowDialog();
-
-                    printDialog.PrintVisual(image, "Imprimir contenido de la ventana");
+                    printDialog.PrintDocument(paginator, "Impresión Documento Dinámico");
                 }
             }
         }
+        
 
   
 
         private void button2_Click(object sender, RoutedEventArgs e)
         {
-            // Crear una instancia de la ventana Zona.xaml
             Zona ventanaZona = new Zona();
 
-            // Mostrar la ventana Zona.xaml
             ventanaZona.Show();
 
-            // Cerrar la ventana actual (ListadoDeSectores)
             this.Close();
         }
 
