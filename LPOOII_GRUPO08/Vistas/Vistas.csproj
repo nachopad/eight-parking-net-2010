@@ -113,6 +113,9 @@
     <Compile Include="RegistroSalida.xaml.cs">
       <DependentUpon>RegistroSalida.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TicketSalida.xaml.cs">
+      <DependentUpon>TicketSalida.xaml</DependentUpon>
+    </Compile>
     <Compile Include="TiposVehiculoWindow.xaml.cs">
       <DependentUpon>TiposVehiculoWindow.xaml</DependentUpon>
     </Compile>
@@ -222,6 +225,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="RegistroSalida.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TicketSalida.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

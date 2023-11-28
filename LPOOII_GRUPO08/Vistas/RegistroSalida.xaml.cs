@@ -26,7 +26,7 @@ namespace Vistas
         {
             InitializeComponent();
             TrabajarTiposVehiculo trabajaTipo = new TrabajarTiposVehiculo();
-
+            ticketGlobal = ticket;
             TipoVehiculo tipoVehiculo = trabajaTipo.ObtenerTipoPorCodigo(ticket.TvCodigo);
             txtDniCliente.Text = ticket.ClienteDNI;
 
@@ -70,7 +70,9 @@ namespace Vistas
         {
             TrabajarTicket trabajarTicket = new TrabajarTicket();
             trabajarTicket.registrarTicketSalida(ticketGlobal);
-            MessageBox.Show("Registro completado");
+            TicketSalida ts = new TicketSalida();
+            ts.cargar(ticketGlobal);
+            ts.Show();
         }
 
     }

@@ -28,9 +28,9 @@ namespace Vistas
         {
             TrabajarTicket tt = new TrabajarTicket();
             Ticket ticket = new Ticket();
-            ticket = tt.obtenerUltimoTicket();
-            txbNombrePlayaEstacionamiento.Text = "PLAYA DE ESTACIONAMIENTO GRUPO 08";
-            txbDireccion.Text = "DOMICILIO: " + "Alberdi 777  S.S De Jujuy";
+            ticket = tt.obtenerUltimoTicket();            
+            txbDireccion.Text = "Alberdi 777";
+            txbLocalidad.Text = "S.S De Jujuy";
             txbCuit.Text = "CUIT: " + "30-88888888-9";
             txbIibb.Text = "IIBB: " + "999";
             txbNumeroTicket.Text = "TICKET #" + ticket.TicketNro;

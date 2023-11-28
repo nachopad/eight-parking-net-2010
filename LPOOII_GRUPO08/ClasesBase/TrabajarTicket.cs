@@ -67,14 +67,12 @@ namespace ClasesBase
             // Se asignan valores
             ticket.TicketNro = int.Parse(reader["nro_ticket"].ToString());
             ticket.FechaHoraEnt = DateTime.Parse(reader["fecha_hora_ent"].ToString());
-            ticket.FechaHoraSal = DateTime.Parse(reader["fecha_hora_sal"].ToString());
             ticket.ClienteDNI = reader["cliente_dni"].ToString();
             ticket.TvCodigo = int.Parse(reader["tv_codigo"].ToString());
             ticket.Patente = reader["patente"].ToString();
             ticket.SectorCodigo = int.Parse(reader["sector_codigo"].ToString());
-            ticket.Duracion = double.Parse(reader["duracion"].ToString());
             ticket.Tarifa = decimal.Parse(reader["tarifa"].ToString());
-            ticket.Total = decimal.Parse(reader["total"].ToString());
+            
 
             // Cierre de la conexión
             conexion.Close();
