@@ -416,3 +416,9 @@ C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas
 C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.Properties.Resources.resources
 C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ABMClientes.baml
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ABMVehiculos.baml
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\TicketSalida.baml
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ABMClientes.g.cs
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ABMVehiculos.g.cs
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\TicketSalida.g.cs

@@ -104,6 +104,48 @@ namespace ClasesBase
             cnn.Close();
         }
 
+        public Usuario obtenerUsuarioLogin(string nombreUser, string password)
+        {
+            Usuario usuario = null;
+
+            // Conexión a la base de datos
+            //string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\maxi1\\OneDrive\\Documentos\\Programacion LPOO II\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
+            //string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\Cuno\\Documents\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
+            string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\argca\\OneDrive\\Documentos\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
+            using (SqlConnection conexion = new SqlConnection(conexionString))
+            {
+                string consulta = "SELECT * FROM Usuario WHERE username=@user AND password=@pass";
+                SqlCommand comando = new SqlCommand(consulta, conexion);
+                comando.Parameters.AddWithValue("@user", nombreUser);
+                comando.Parameters.AddWithValue("@pass", password);
+
+                try
+                {
+                    conexion.Open();
+                    SqlDataReader reader = comando.ExecuteReader();
+
+                    if (reader.Read())
+                    {
+                        usuario = new Usuario();
+                        usuario.IdUsuario = int.Parse(reader["id_usuario"].ToString());
+                        usuario.UserName = reader["username"].ToString();
+                        usuario.Password = reader["password"].ToString();
+                        usuario.Apellido = reader["apellido"].ToString();
+                        usuario.Nombre = reader["nombre"].ToString();
+                        usuario.Rol = reader["rol"].ToString();
+                    }
+
+                    reader.Close();
+                }
+                catch (Exception ex)
+                {
+                    // Manejo de excepciones si ocurre alguna
+                    Console.WriteLine("No existe el usuario o el password es incorrecto: " + ex.Message);
+                }
+            }
+
+            return usuario;
+        }
     }
 }
 

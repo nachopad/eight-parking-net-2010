@@ -24,7 +24,8 @@ namespace Vistas
         {
             this.rol = rol;
             InitializeComponent();
-            if(rol.Equals("1")){
+            if (rol.Equals("Administrador"))
+            {
                 //Administrador
                 canv_Sectore.Visibility = Visibility.Visible;
                 canv_Vehiculo.Visibility = Visibility.Visible;
@@ -36,8 +37,10 @@ namespace Vistas
                 btnAdministrador.Background = new SolidColorBrush(color);
                 btnOperador.IsEnabled = false;
                 btnOperador.Foreground = Brushes.Gray;
-                
-            }else if(rol.Equals("2")){
+
+            }
+            else if (rol.Equals("Operador"))
+            {
                 //Operador
                 canv_Sectore.Visibility = Visibility.Hidden;
                 canv_Vehiculo.Visibility = Visibility.Hidden;
