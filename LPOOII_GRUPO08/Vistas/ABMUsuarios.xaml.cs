@@ -151,7 +151,7 @@ namespace Vistas
 
         private void btnCancelar_Click(object sender, RoutedEventArgs e)
         {
-            MenuPrincipal menuPrincipal = new MenuPrincipal("Administrador");
+            MenuPrincipal menuPrincipal = new MenuPrincipal("1");
             menuPrincipal.Show();
             this.Close();
         }

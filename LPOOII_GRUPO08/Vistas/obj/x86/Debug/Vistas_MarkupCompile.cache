@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\
 Vistas
 none
 false
 DEBUG;TRACE
-C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\App.xaml
-27-1509101246
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\App.xaml
+28-1355604169
 
-311821093676
-131463176476
-ABMClientes.xaml;ABMUsuarios.xaml;ABMVehiculos.xaml;AcercaDe.xaml;EstadoSector.xaml;Estilos.xaml;FixedDocs.xaml;FlowDocs.xaml;FormularioCliente.xaml;formularioUsuario.xaml;FormularioVehiculo.xaml;ListadoDeSectores.xaml;ListadoVentas.xaml;Login.xaml;loginControl.xaml;MainWindow.xaml;MenuPrincipal.xaml;ModificarCliente.xaml;Plantillas.xaml;Presentacion.xaml;RegistroEntrada.xaml;RegistroSalida.xaml;TiposVehiculoWindow.xaml;ValidarCliente.xaml;VehiculosPlaya.xaml;ListadoDeUsuarios.xaml;Zona.xaml;
+32-821583730
+13271049302
+ABMClientes.xaml;ABMUsuarios.xaml;ABMVehiculos.xaml;AcercaDe.xaml;EstadoSector.xaml;Estilos.xaml;FixedDocs.xaml;FlowDocs.xaml;FormularioCliente.xaml;formularioUsuario.xaml;FormularioVehiculo.xaml;ListadoDeSectores.xaml;ListadoVentas.xaml;Login.xaml;loginControl.xaml;MainWindow.xaml;MenuPrincipal.xaml;ModificarCliente.xaml;Plantillas.xaml;Presentacion.xaml;RegistroEntrada.xaml;RegistroSalida.xaml;TicketSalida.xaml;TiposVehiculoWindow.xaml;ValidarCliente.xaml;VehiculosPlaya.xaml;ListadoDeUsuarios.xaml;Zona.xaml;
 
 False
 

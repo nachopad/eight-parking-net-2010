@@ -76,9 +76,9 @@ namespace Vistas
 
         private void btnNuevo_Click(object sender, RoutedEventArgs e)
         {
-            formularioUsuario formularioUsuario = new formularioUsuario();
+            FormularioCliente form = new FormularioCliente();
             this.Hide();
-            formularioUsuario.Show();
+            form.Show();
         }
 
         private void btnEliminar_Click(object sender, RoutedEventArgs e)
@@ -137,7 +137,7 @@ namespace Vistas
 
         private void btnCancelar_Click(object sender, RoutedEventArgs e)
         {
-            MenuPrincipal menuPrincipal = new MenuPrincipal("Administrador");
+            MenuPrincipal menuPrincipal = new MenuPrincipal("2");
             menuPrincipal.Show();
             this.Close();
         }

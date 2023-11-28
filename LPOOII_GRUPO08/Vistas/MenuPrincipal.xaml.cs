@@ -100,8 +100,8 @@ namespace Vistas
 
         private void btnGestionarVehiculos_Click(object sender, RoutedEventArgs e)
         {
-            FormularioVehiculo formVehiculo = new FormularioVehiculo();
-            formVehiculo.Show();
+            ABMVehiculos abmVehiculos = new ABMVehiculos();
+            abmVehiculos.Show();
             this.Close();
         }
 
