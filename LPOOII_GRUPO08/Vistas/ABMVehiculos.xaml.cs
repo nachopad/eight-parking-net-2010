@@ -38,19 +38,21 @@ namespace Vistas
             ObjectDataProvider odp = (ObjectDataProvider)this.Resources["LIST_VEHICULO"];
             listVehiculos = odp.Data as ObservableCollection<TipoVehiculo>;
             Vista = (CollectionView)CollectionViewSource.GetDefaultView(grid_content.DataContext);
-
+            cargarImagen(index);
         }
 
         private void btnPrimero_Click(object sender, RoutedEventArgs e)
         {
             Vista.MoveCurrentToFirst();
             index = 0;
+            cargarImagen(index);
         }
 
         private void btnUltimo_Click(object sender, RoutedEventArgs e)
         {
             Vista.MoveCurrentToLast();
             index = listVehiculos.Count - 1;
+            cargarImagen(index);
         }
 
         private void btnAnterior_Click(object sender, RoutedEventArgs e)
@@ -65,6 +67,7 @@ namespace Vistas
             {
                 index--;
             }
+            cargarImagen(index);
         }
 
         private void btnSiguiente_Click(object sender, RoutedEventArgs e)
@@ -79,7 +82,19 @@ namespace Vistas
             {
                 index++;
             }
+            cargarImagen(index);
         }
+
+        private void cargarImagen(int index)
+        {
+            string appPath = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
+            string imagesPath = System.IO.Path.Combine(appPath, "..\\..\\Images");
+            string newImagePath = System.IO.Path.Combine(imagesPath, listVehiculos[index].Imagen);
+
+            var image = new BitmapImage(new Uri(newImagePath, UriKind.Absolute));
+            imgVehiculo.Source = image;
+        }
+
 
         private void btnNuevo_Click(object sender, RoutedEventArgs e)
         {
@@ -109,6 +124,7 @@ namespace Vistas
                 {
                     TrabajarTiposVehiculo.modificarVehiculo(listVehiculos[index]);
                     MessageBox.Show("El vehiculo seleccionado se ha modificado correctamente.", "Modificación exitosa", MessageBoxButton.OK, MessageBoxImage.Information);
+                    cargarImagen(index);
                 }
                 else
                 {
@@ -146,7 +162,7 @@ namespace Vistas
 
         private void btnCancelar_Click(object sender, RoutedEventArgs e)
         {
-            MenuPrincipal menuPrincipal = new MenuPrincipal("1");
+            MenuPrincipal menuPrincipal = new MenuPrincipal("Administrador");
             menuPrincipal.Show();
             this.Close();
         }

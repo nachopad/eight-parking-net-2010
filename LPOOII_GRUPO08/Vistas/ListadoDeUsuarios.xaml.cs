@@ -60,6 +60,13 @@ namespace Vistas
             vistaPrevia.Show();
         }
 
+        private void btn_Volver_Click(object sender, RoutedEventArgs e)
+        {
+            ABMUsuarios abmUsuario = new ABMUsuarios();
+            abmUsuario.Show();
+            this.Close();
+        }
+
 
     }
 }

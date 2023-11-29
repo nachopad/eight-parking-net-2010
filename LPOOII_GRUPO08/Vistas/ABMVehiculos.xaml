@@ -2,7 +2,13 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:svc="clr-namespace:ClasesBase;assembly=ClasesBase"
-        Title="Gestión de Vehiculos" Height="346" Width="630" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
+        Title="Gestión de Vehiculos" 
+        Height="346" 
+        Width="630" 
+        Loaded="Window_Loaded" 
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanMinimize"
+        >
 
     <Window.Resources>
         <ObjectDataProvider x:Key="LIST_VEHICULO" ObjectType="{x:Type svc:TrabajarTiposVehiculo}" MethodName="TraerTiposVehiculosObservable"></ObjectDataProvider>
@@ -21,9 +27,8 @@
         <TextBox Text="{Binding Descripcion}" Height="23" HorizontalAlignment="Left" Margin="364,62,0,0" Name="txtApellido" VerticalAlignment="Top" Width="230" Background="#FF696161" Foreground="White" TextAlignment="Center" PreviewTextInput="txtApellido_PreviewTextInput"/>
         <Label Content="Tarifa" Height="28" HorizontalAlignment="Left" Margin="12,96,0,0" Name="lblNombre" VerticalAlignment="Top" Foreground="White" />
         <TextBox Text="{Binding Tarifa}" Height="23" HorizontalAlignment="Left" Margin="364,100,0,0" Name="txtNombre" VerticalAlignment="Top" Width="230" Background="#FF696161" Foreground="White" TextAlignment="Center" PreviewTextInput="txtNombre_PreviewTextInput"/>
-        <Label Content="Imagen" Height="28" HorizontalAlignment="Left" Margin="12,135,0,0" Name="lblUsername" VerticalAlignment="Top" Foreground="White" />
-        <TextBox Text="{Binding Imagen}" Height="23" Margin="364,139,0,0" Name="txtUsername" VerticalAlignment="Top" HorizontalAlignment="Left" Width="230" Background="#FF696161" Foreground="White" TextAlignment="Center"/>
-
-
+        <Label Content="Imagen" Height="28" HorizontalAlignment="Left" Margin="12,135,0,0" Name="lblImagen" VerticalAlignment="Top" Foreground="White" />
+        <TextBox Text="{Binding Imagen}" Height="23" Margin="364,139,0,0" Name="txtImagen" VerticalAlignment="Top" HorizontalAlignment="Left" Width="230" Background="#FF696161" Foreground="White" TextAlignment="Center" IsReadOnly="False" IsEnabled="False" />
+        <Image Height="120" HorizontalAlignment="Left" Margin="103,167,0,0" Name="imgVehiculo" Stretch="Fill" VerticalAlignment="Top" Width="137" />
     </Grid>
 </Window>

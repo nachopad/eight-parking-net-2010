@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:svc="clr-namespace:ClasesBase;assembly=ClasesBase"
         xmlns:scm="clr-namespace:System.ComponentModel;assembly=WindowsBase"
-        Title="ListadoDeUsuarios" Height="300" Width="349" Loaded="Window_Loaded">
+        Title="ListadoDeUsuarios" Height="300" Width="349" Loaded="Window_Loaded" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
 
     <Window.Resources>
         <ObjectDataProvider x:Key="LIST_USER" ObjectType="{x:Type svc:TrabajarUsuarios}" MethodName="TraerUsuario"></ObjectDataProvider>
@@ -11,9 +11,8 @@
             <CollectionViewSource.SortDescriptions>
                 <scm:SortDescription PropertyName="UserName" Direction="Ascending"></scm:SortDescription>
             </CollectionViewSource.SortDescriptions>
-        </CollectionViewSource>
+        </CollectionViewSource>   
     </Window.Resources>
-
     <Grid Name="grid_content" Background="Black">
         <ListView Name="dataGrid1"  ItemsSource="{Binding Source= {StaticResource ResourceKey= VIEW_LIST_USERS}}" Margin="12,48,16,38" Background="LightGray">
             <ListView.View>
@@ -29,7 +28,8 @@
         </ListView>
         <TextBox Height="23" HorizontalAlignment="Left" Margin="30,12,0,0" Name="textBox1" VerticalAlignment="Top" Width="161" Text="" />
         <Button Content="Filtrar" Height="23" HorizontalAlignment="Right" Margin="0,12,32,0" Name="button1" VerticalAlignment="Top" Width="75" Click="button1_Click" />
-        <Button Content="Vista Previa" Height="23" Width="100"  Margin="114,226,114,0" Name="btnVistaPrevia" VerticalAlignment="Top" Click="btnVistaPrevia_Click" />
+        <Button Content="Vista Previa" Width="100"  Margin="62,0,0,9" Name="btnVistaPrevia" Click="btnVistaPrevia_Click" HorizontalAlignment="Left" Height="23" VerticalAlignment="Bottom" />
+        <Button Content="Volver" HorizontalAlignment="Right" Margin="0,0,55,9" Name="btn_Volver" Width="100" Click="btn_Volver_Click" Height="23" VerticalAlignment="Bottom" />
     </Grid>
 </Window>
 

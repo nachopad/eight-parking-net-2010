@@ -5,7 +5,7 @@
     <FixedDocument>
         <PageContent>
             <FixedPage>
-                <Grid Background="Gray">
+                <Grid Background="White">
                     <TextBlock Name="txbNombrePlayaEstacionamiento" HorizontalAlignment="Center" Margin="5,5,0,0" FontSize="14"><Bold>Playa de Estacionamiento 'TPFinal'</Bold></TextBlock>
                     <TextBlock Name="txbCuit" HorizontalAlignment="Right" Margin="5,30,0,0"></TextBlock>
                     <TextBlock Name="txbIibb" HorizontalAlignment="Right" Margin="5,50,0,0"></TextBlock>

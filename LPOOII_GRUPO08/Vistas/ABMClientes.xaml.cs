@@ -137,7 +137,7 @@ namespace Vistas
 
         private void btnCancelar_Click(object sender, RoutedEventArgs e)
         {
-            MenuPrincipal menuPrincipal = new MenuPrincipal("2");
+            MenuPrincipal menuPrincipal = new MenuPrincipal("Operador");
             menuPrincipal.Show();
             this.Close();
         }

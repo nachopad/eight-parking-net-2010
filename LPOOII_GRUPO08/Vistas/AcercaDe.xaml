@@ -92,6 +92,13 @@
                 Height="26" 
                 Margin="112,240,116,0" 
                 VerticalAlignment="Top"></Label>
+            <Label
+                Grid.Column="1" 
+                Foreground="White" 
+                Content="Parking Eight v1.0"
+                Height="26" 
+                Margin="112,270,116,0" 
+                VerticalAlignment="Top"></Label>
             <Button 
                 Content="Volver" 
                 Grid.Column="1"

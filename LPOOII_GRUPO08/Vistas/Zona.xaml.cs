@@ -49,5 +49,12 @@ namespace Vistas
             listadoDeSectoresPage.Show();
             this.Close();
         }
+
+        private void btnVolver_Click(object sender, RoutedEventArgs e)
+        {
+            MenuPrincipal menuPrincipal = new MenuPrincipal("Administrador");
+            menuPrincipal.Show();
+            this.Close();
+        }
     }
 }

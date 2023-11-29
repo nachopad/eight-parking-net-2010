@@ -15,7 +15,7 @@
     </Window.Resources>
 
     <Grid Name="grid_content" Background="Black">
-        <FlowDocumentReader Name="flowDocumentReader">
+        <FlowDocumentReader Name="flowDocumentReader" Foreground="White">
             <FlowDocument>
                 <Paragraph>
                     <ListView Name="dataGrid1" ItemsSource="{Binding Source={StaticResource VIEW_LIST_TICKETS}}" Margin="64,46,-500,0" Background="LightGray" VerticalAlignment="Top" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Height="95" Width="845" SelectedIndex="-1" FlowDirection="LeftToRight">

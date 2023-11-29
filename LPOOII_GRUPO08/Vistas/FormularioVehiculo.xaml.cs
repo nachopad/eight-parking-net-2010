@@ -64,8 +64,8 @@ namespace Vistas
 
         private void btnSalir_Click(object sender, RoutedEventArgs e)
         {
-            MenuPrincipal menuPrincipal = new MenuPrincipal("1");
-            menuPrincipal.Show();
+            ABMVehiculos abmVehiculos = new ABMVehiculos();
+            abmVehiculos.Show();
             this.Close();
         }
 
