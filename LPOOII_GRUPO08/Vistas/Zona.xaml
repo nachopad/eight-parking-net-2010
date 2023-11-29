@@ -1,7 +1,7 @@
 ﻿<Window x:Class="Vistas.Zona"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Zona" Height="300" 
+        Title="Lista de Zonas" Height="300" 
         Width="408" 
         WindowStartupLocation="CenterScreen"
         ResizeMode="CanMinimize" Background="#FF0A0A0A">

@@ -22,8 +22,8 @@
         <Label Content="Nombre" Height="28" HorizontalAlignment="Left" Margin="12,96,0,0" Name="lblNombre" VerticalAlignment="Top" Foreground="White" />
         <TextBox Text="{Binding Nombre}" Height="23" HorizontalAlignment="Left" Margin="364,100,0,0" Name="txtNombre" VerticalAlignment="Top" Width="230" Background="#FF696161" Foreground="White" TextAlignment="Center" PreviewTextInput="txtNombre_PreviewTextInput"/>
         <Label Content="Telefono" Height="28" HorizontalAlignment="Left" Margin="12,135,0,0" Name="lblUsername" VerticalAlignment="Top" Foreground="White" />
-        <TextBox Text="{Binding Telefono}" Height="23" Margin="364,139,0,0" Name="txtUsername" VerticalAlignment="Top" HorizontalAlignment="Left" Width="230" Background="#FF696161" Foreground="White" TextAlignment="Center"/>
-        <TextBox Text="{Binding ClienteDNI}" Height="23" HorizontalAlignment="Left" Margin="364,178,0,0" Name="txtPassword" VerticalAlignment="Top" Width="230" Background="#FF696161" Foreground="White" TextAlignment="Center"/>
+        <TextBox Text="{Binding Telefono, UpdateSourceTrigger=PropertyChanged}" Height="23" Margin="364,139,0,0" Name="txtTelefono" VerticalAlignment="Top" HorizontalAlignment="Left" Width="230" Background="#FF696161" Foreground="White" TextAlignment="Center" PreviewTextInput="txtTelefono_PreviewTextInput" />
+        <TextBox Text="{Binding ClienteDNI, UpdateSourceTrigger=PropertyChanged}" Height="23" HorizontalAlignment="Left" Margin="364,178,0,0" Name="txtDNI" VerticalAlignment="Top" Width="230" Background="#FF696161" Foreground="White" TextAlignment="Center" PreviewTextInput="txtDNI_PreviewTextInput" />
         <Label Content="Dni" Height="28" HorizontalAlignment="Left" Margin="12,174,0,0" Name="lblPassword" VerticalAlignment="Top" Foreground="White"/>
        
 

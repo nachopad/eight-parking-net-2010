@@ -23,8 +23,8 @@
         <Button Content="&lt;" Height="23" HorizontalAlignment="Left" Margin="423,12,0,0" Name="btnAnterior" VerticalAlignment="Top" Width="53" Background="#FFFF5C00" Foreground="White" Click="btnAnterior_Click" />
         <Button Content=">" Height="23" HorizontalAlignment="Left" Margin="482,12,0,0" Name="btnSiguiente" VerticalAlignment="Top" Width="53" Background="#FFFF5C00" Foreground="White" Click="btnSiguiente_Click" />
         <Button Content=">|" Height="23" HorizontalAlignment="Left" Margin="541,12,0,0" Name="btnUltimo" VerticalAlignment="Top" Width="53" Background="#FFFF5C00" Foreground="White" Click="btnUltimo_Click" />
-        <Label Content="Descripcion" Height="28" HorizontalAlignment="Left" Margin="12,58,0,0" Name="lblApellido" VerticalAlignment="Top" Foreground="White"/>
-        <TextBox Text="{Binding Descripcion}" Height="23" HorizontalAlignment="Left" Margin="364,62,0,0" Name="txtApellido" VerticalAlignment="Top" Width="230" Background="#FF696161" Foreground="White" TextAlignment="Center" PreviewTextInput="txtApellido_PreviewTextInput"/>
+        <Label Content="Descripción" Height="28" HorizontalAlignment="Left" Margin="12,58,0,0" Name="lblApellido" VerticalAlignment="Top" Foreground="White"/>
+        <TextBox Text="{Binding Descripcion}" Height="23" HorizontalAlignment="Left" Margin="364,62,0,0" Name="txtApellido" VerticalAlignment="Top" Width="230" Background="#FF696161" Foreground="White" TextAlignment="Center"/>
         <Label Content="Tarifa" Height="28" HorizontalAlignment="Left" Margin="12,96,0,0" Name="lblNombre" VerticalAlignment="Top" Foreground="White" />
         <TextBox Text="{Binding Tarifa}" Height="23" HorizontalAlignment="Left" Margin="364,100,0,0" Name="txtNombre" VerticalAlignment="Top" Width="230" Background="#FF696161" Foreground="White" TextAlignment="Center" PreviewTextInput="txtNombre_PreviewTextInput"/>
         <Label Content="Imagen" Height="28" HorizontalAlignment="Left" Margin="12,135,0,0" Name="lblImagen" VerticalAlignment="Top" Foreground="White" />

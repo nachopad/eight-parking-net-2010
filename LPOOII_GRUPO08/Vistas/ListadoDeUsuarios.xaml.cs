@@ -67,6 +67,11 @@ namespace Vistas
             this.Close();
         }
 
+        private void btnTodo_Click(object sender, RoutedEventArgs e)
+        {
+            CargarDatos();
+        }
+
 
     }
 }

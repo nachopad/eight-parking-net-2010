@@ -111,7 +111,18 @@ namespace Vistas
             MessageBoxResult result = MessageBox.Show("¿Estás seguro de que quieres modificar este usuario?", "Confirmación", MessageBoxButton.YesNo, MessageBoxImage.Warning);
             if (result == MessageBoxResult.Yes)
             {
-                if (listUsuario[index].Nombre != "" && listUsuario[index].Apellido != "" && listUsuario[index].UserName != "" && listUsuario[index].Password != "" && listUsuario[index].Rol != "")
+                // Obtén el nuevo nombre de usuario ingresado en el TextBox
+                string nuevoUsername = listUsuario[index].UserName;
+
+                // Verifica si ya existe un usuario con ese nombre de usuario
+                if (listUsuario.Any(u => u.UserName == nuevoUsername && u.IdUsuario != listUsuario[index].IdUsuario))
+                {
+                    MessageBox.Show("Ya existe un usuario con ese nombre de usuario. Por favor, elige otro.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return; // Sale del método sin realizar la modificación
+                }
+
+                // Continúa con la modificación solo si no hay un usuario con el mismo nombre de usuario
+                if (listUsuario[index].Nombre != "" && listUsuario[index].Apellido != "" && listUsuario[index].Password != "" && listUsuario[index].Rol != "")
                 {
                     TrabajarUsuarios.modificarUsuario(listUsuario[index]);
                     MessageBox.Show("El usuario seleccionado se ha modificado correctamente.", "Modificación exitosa", MessageBoxButton.OK, MessageBoxImage.Information);
@@ -119,7 +130,6 @@ namespace Vistas
                 else
                 {
                     MessageBox.Show("Por favor, complete todos los campos antes de realizar la modificación.", "Advertencia", MessageBoxButton.OK, MessageBoxImage.Error);
-
                 }
             }
         }

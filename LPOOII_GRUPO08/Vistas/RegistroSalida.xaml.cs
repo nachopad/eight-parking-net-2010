@@ -70,9 +70,13 @@ namespace Vistas
         {
             TrabajarTicket trabajarTicket = new TrabajarTicket();
             trabajarTicket.registrarTicketSalida(ticketGlobal);
+            MessageBox.Show("La salida del vehículo se ha registrado exitosamente.", "Salida registrada", MessageBoxButton.OK, MessageBoxImage.Information);
             TicketSalida ts = new TicketSalida();
+            Zona ventanaZona = new Zona();
+            ventanaZona.Show();
             ts.cargar(ticketGlobal);
             ts.Show();
+            this.Close();
         }
 
     }

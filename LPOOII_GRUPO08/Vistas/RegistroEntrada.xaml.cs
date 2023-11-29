@@ -48,7 +48,6 @@ namespace Vistas
                     /*
                  Aqui terminamos de asignarle todos los atributos del ticket para registrarlo en la BD;
                  */
-                    MessageBox.Show("Porque entro aqui");
                     ticket.ClienteDNI = txtDniCliente.Text;
                     ticket.Patente = txtPatente.Text;
                     TipoVehiculo tipoVehiculoSeleccionado = (TipoVehiculo)cmbTipoVehiculo.SelectedItem;
@@ -63,21 +62,20 @@ namespace Vistas
                     DateTime fechaCompletaEntrada = fechaEntrada.AddHours(selectedHour).AddMinutes(selectedMinute);
                     ticket.FechaHoraEnt = fechaCompletaEntrada;
                     ticket.Tarifa = decimal.Parse(txtTarifa.Text);
-
-                    MessageBox.Show(ticket.SectorCodigo.ToString());
                     trabajarTicket.registrarTicket(ticket);
+                    MessageBox.Show("La entrada del vehículo se ha registrado exitosamente.","Entrada registrada", MessageBoxButton.OK, MessageBoxImage.Information);
                     FixedDocs vistaTicket = new FixedDocs();
                     vistaTicket.Show();
                 }
                 else
                 {
-                    MessageBox.Show("El cliente con dni: " + txtDniCliente.Text + " no esta registrado");
+                    MessageBox.Show("El Cliente con DNI N° " + txtDniCliente.Text + " no está registrado en el sistema. Por favor, verifique la información ingresada o registre el cliente.","Cliente no registrado", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
 
             }
             else
             {
-                MessageBox.Show("Complete todos los campos, verifique que el DNI del cliente ingresado este registrado");
+                MessageBox.Show("Por favor, complete todos los campos requeridos y verifique que el DNI del cliente esté registrado en el sistema.", "Campos incompletos o DNI no registrado", MessageBoxButton.OK, MessageBoxImage.Error);
             }
 
         }
@@ -93,6 +91,11 @@ namespace Vistas
             listVehiculos = odp.Data as ObservableCollection<TipoVehiculo>;
             Vista = (CollectionView)CollectionViewSource.GetDefaultView(grid_content.DataContext);
 
+            // Verifica si hay al menos un vehículo en la lista antes de seleccionar el primero
+            if (listVehiculos.Count > 0)
+            {
+                cmbTipoVehiculo.SelectedItem = listVehiculos[0];
+            }
         }
 
         private void cmbTipoVehiculo_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -155,6 +158,14 @@ namespace Vistas
         {
             FormularioCliente formulario = new FormularioCliente();
             formulario.Show();
+            this.Close();
+        }
+
+        private void btnVolver_Click(object sender, RoutedEventArgs e)
+        {
+            Zona ventanaZona = new Zona();
+            ventanaZona.Show();
+            this.Close();
         }
 
     }

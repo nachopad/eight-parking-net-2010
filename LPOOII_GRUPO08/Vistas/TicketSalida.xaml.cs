@@ -35,15 +35,14 @@ namespace Vistas
             txbLocalidad.Text = "S.S De Jujuy";
             txbCuit.Text = "CUIT: " + "30-88888888-9";
             txbIibb.Text = "IIBB: " + "999";
-            txbNumeroTicket.Text = "Ticket #" + ticket.TicketNro;
-            txbPatente.Text = "Patente: " + ticket.Patente;
-            txbTipoVehiculo.Text = "Tipo Vehiculo" + ticket.TvCodigo;
-            txbCliente.Text = "Cliente: " + ticket.ClienteDNI;
-            txbIngreso.Text = "Ingreso: " + ticket.FechaHoraEnt;
-            txbSalida.Text = "Salida: " + ticket.FechaHoraSal;
-            txbTarifa.Text = "Tarifa: " + ticket.Tarifa;
-            txbTotal.Text = "Total: " + ticket.Total;
-            txbDuracion.Text = "Tiempo transcurrido: " + ticket.Duracion;
+            txbNumeroTicket.Text = "TICKET #" + ticket.TicketNro;
+            txbPatente.Text = "PATENTE: " + ticket.Patente;
+            txbTipoVehiculo.Text = "TIPO VEHICULO: " +TrabajarTiposVehiculo.ObtenerDescripcionPorCodigo((ticket.TvCodigo));
+            txbCliente.Text = "CLIENTE: " + ticket.ClienteDNI;
+            txbIngreso.Text = "INGRESO: " + ticket.FechaHoraEnt;
+            txbSalida.Text = "SALIDA: " + ticket.FechaHoraSal;
+            txbTarifa.Text = "TARIFA: " +"$"+ticket.Tarifa;
+            txbTotal.Text = "TOTAL: " + "$"+ticket.Total;
             txbUsuario.Text = "Usuario: " + "Operador";
         }
     }

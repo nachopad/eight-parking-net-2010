@@ -38,9 +38,9 @@
             <TextBox Grid.Column="1" Height="23" HorizontalAlignment="Left" Name="txtDescripcion" VerticalAlignment="center" Width="120"  Background="#FF696161" Foreground="White"/>          
             
             <!-- Tarifa -->
-            <Label Content="Tarifa" Grid.Row="1" Height="25" HorizontalAlignment="Right" Name="lblTarifa" VerticalAlignment="Center" Width="40" Foreground="#FFFFFCFC" /> 
-            <TextBox Grid.Column="1" Grid.Row="1" Height="23" HorizontalAlignment="Left" Name="txtTarifa" VerticalAlignment="Center" Width="120"  Background="#FF696161" Foreground="White" />           
-            
+            <Label Content="Tarifa" Grid.Row="1" Height="25" HorizontalAlignment="Right" Name="lblTarifa" VerticalAlignment="Center" Width="40" Foreground="#FFFFFCFC" />
+            <TextBox Grid.Column="1" Grid.Row="1" Height="23" HorizontalAlignment="Left" Name="txtTarifa" VerticalAlignment="Center" Width="120" Background="#FF696161" Foreground="White" PreviewTextInput="txtTarifa_PreviewTextInput" />
+
             <!-- Imagen -->
             <Label Content="Imagen" Grid.Row="2" Height="25" HorizontalAlignment="Right" Name="lblCargarImagen" VerticalAlignment="center" Width="52" Foreground="#FFFFF2F2" Margin="0,8" />
             <Button Content="Cargar Imagen" Grid.Column="1" Grid.Row="2" Height="25" HorizontalAlignment="Left" Name="button1" VerticalAlignment="Center" Width="120" Click="button1_Click" Margin="0,3" Style="{StaticResource EstiloBoton}"/>

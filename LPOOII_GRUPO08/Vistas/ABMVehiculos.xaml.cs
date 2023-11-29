@@ -137,26 +137,30 @@ namespace Vistas
 
         private void txtNombre_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
-            // Verificar que solo se ingresen letras
-            e.Handled = !ContieneSoloLetras(e.Text);
-        }
-
-        private void txtApellido_PreviewTextInput(object sender, TextCompositionEventArgs e)
-        {
-            // Verificar que solo se ingresen letras
-            e.Handled = !ContieneSoloLetras(e.Text);
-        }
-
-        // Función para verificar si una cadena contiene solo letras
-        private bool ContieneSoloLetras(string texto)
-        {
-            foreach (char c in texto)
+            // Permitir solo números y el separador decimal (punto)
+            if (!EsNumeroValido(e.Text))
             {
-                if (!char.IsLetter(c))
+                e.Handled = true;
+            }
+        }
+
+        private bool EsNumeroValido(string input)
+        {
+            // Verificar si la cadena es un número válido (puede contener solo dígitos y un punto decimal)
+            foreach (char c in input)
+            {
+                if (!char.IsDigit(c) && c != '.')
                 {
                     return false;
                 }
             }
+
+            // Verificar si hay más de un punto decimal
+            if (input.Count(c => c == '.') > 1)
+            {
+                return false;
+            }
+
             return true;
         }
 

@@ -40,22 +40,39 @@ namespace Vistas
                 cliente.Nombre = txtNombre.Text;
                 cliente.Apellido = txtApellido.Text;
                 cliente.Telefono = txtTelefono.Text;
+
+                // Verificar si el cliente ya existe
                 TrabajarCliente trabajarCliente = new TrabajarCliente();
-                trabajarCliente.registrarCliente(cliente);
-                MessageBox.Show("Nombre:  " + cliente.Nombre + " - Apellido: " + cliente.Apellido + " - DNI: " + cliente.ClienteDNI + " - Telefono: " + cliente.Telefono, "Datos registrados", MessageBoxButton.OK);
+                if (trabajarCliente.ClienteExisteEnBaseDeDatos(cliente.ClienteDNI))
+                {
+                    MessageBox.Show("Ya existe un cliente con ese DNI.", "Error de registro", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+                else
+                {
+                    trabajarCliente.registrarCliente(cliente);
+                    MessageBox.Show("Nombre:  " + cliente.Nombre + " - Apellido: " + cliente.Apellido + " - DNI: " + cliente.ClienteDNI + " - Telefono: " + cliente.Telefono, "Datos registrados", MessageBoxButton.OK);
+                }
             }
         }
 
         private void btnSalir_Click(object sender, RoutedEventArgs e)
         {
-            MenuPrincipal menuPrincipal = new MenuPrincipal("2");
-            menuPrincipal.Show();
+            Zona ventanaZona = new Zona();
+            ventanaZona.Show();
             this.Close();
         }
 
         private void txtDNI_TextChanged(object sender, TextChangedEventArgs e)
         {
 
+        }
+
+        private void txtNumericInput_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            if (!char.IsDigit(e.Text, e.Text.Length - 1))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

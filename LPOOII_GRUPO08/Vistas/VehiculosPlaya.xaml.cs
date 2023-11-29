@@ -100,18 +100,19 @@ namespace Vistas
             switch (backgroundBrush.Color.ToString())
             {
                 case disponible:
-                    result = MessageBox.Show("Sector Disponible, ¿desea registrar la entrada?", "Disponible", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                    result = MessageBox.Show("Sector Disponible, ¿Desea registrar la entrada?", "Sector Disponible", MessageBoxButton.YesNo, MessageBoxImage.Question);
                     if (result == MessageBoxResult.Yes)
                     {
                         RegistroEntrada registro = new RegistroEntrada(listaSectores[indice]);
                         registro.Show();
+                        this.Close();
                     }
                     break;
                 case deshabilitado:
                     MessageBox.Show("Sector deshabilitado", "Deshabilitado", MessageBoxButton.OK, MessageBoxImage.Information);
                     break;
                 case ocupado:
-                    result = MessageBox.Show("Sector Ocupado, ¿desea registrar la salida?", "Disponible", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                    result = MessageBox.Show("Sector Ocupado, ¿Desea registrar la salida?", "Sector Ocupado", MessageBoxButton.YesNo, MessageBoxImage.Question);
                     if (result == MessageBoxResult.Yes)
                     {
                         TrabajarTicket trabajarTicket = new TrabajarTicket();
@@ -121,6 +122,7 @@ namespace Vistas
 
                         RegistroSalida registroSalida = new RegistroSalida(ticketObtenido, listaSectores[indice]);
                         registroSalida.Show();
+                        this.Close();
                     }
                     break;
             }

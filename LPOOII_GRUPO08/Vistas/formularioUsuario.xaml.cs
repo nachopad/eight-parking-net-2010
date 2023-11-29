@@ -65,16 +65,21 @@ namespace Vistas
             }
             else
             {
+                // Verificar si ya existe un usuario con el mismo nombre de usuario en la base de datos
+                if (TrabajarUsuarios.UsuarioExisteEnBaseDeDatos(usuario.UserName))
+                {
+                    MessageBox.Show("Ya existe un usuario con ese nombre de usuario. Por favor, elige otro.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return; // Sale del método sin realizar el registro
+                }
+
                 // Confirmar el registro
                 MessageBoxResult result = MessageBox.Show("¿Estás seguro de que quieres registrar este usuario?", "Confirmación", MessageBoxButton.YesNo, MessageBoxImage.Question);
                 if (result == MessageBoxResult.Yes)
                 {
                     TrabajarUsuarios.registrarUsuario(usuario);
                     MessageBox.Show("El usuario se ha registrado correctamente.", "Registro exitoso.", MessageBoxButton.OK, MessageBoxImage.Information);
-
                 }
             }
-
         }
 
         private void txtNombre_PreviewTextInput(object sender, TextCompositionEventArgs e)

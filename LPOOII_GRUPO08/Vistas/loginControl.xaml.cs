@@ -45,7 +45,7 @@ namespace Vistas
                 usuarioObtenido = trabajarUsuario.obtenerUsuarioLogin(textBoxUser.Text, textBoxPsw.Password);
                 if (usuarioObtenido != null)
                 {
-                    MessageBox.Show("Bienvenido al Sistema " + usuarioObtenido.Nombre, "Acceso concedido", MessageBoxButton.OK);
+                    MessageBox.Show("¡Bienvenido al Sistema " + usuarioObtenido.Nombre + "!", "Acceso Concedido", MessageBoxButton.OK, MessageBoxImage.Information);
                     MenuPrincipal menuPrincipal = new MenuPrincipal(usuarioObtenido.Rol);
                     menuPrincipal.Show();
                     var parentWindow = Window.GetWindow(this);
@@ -53,12 +53,13 @@ namespace Vistas
                 }
                 else
                 {
-                    MessageBox.Show("El usuario y/o contraseña no son válidos. Vuelve a intentarlo.", "Error al iniciar sesión", MessageBoxButton.OK, MessageBoxImage.Hand);
+                    MessageBox.Show("El usuario y/o contraseña no son válidos. Vuelve a intentarlo.", "Error al iniciar sesión", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
             else
             {
-                MessageBox.Show("Debe ingresar el nombre de usuario y el password.", "Error al iniciar sesión", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("Por favor, ingrese tanto el nombre de usuario como la contraseña para iniciar sesión.", "Error al Iniciar Sesión", MessageBoxButton.OK, MessageBoxImage.Error);
+
             }
 
 

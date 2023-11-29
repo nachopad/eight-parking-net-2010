@@ -97,18 +97,29 @@ namespace Vistas
             MessageBoxResult result = MessageBox.Show("¿Estás seguro de que quieres modificar este usuario?", "Confirmación", MessageBoxButton.YesNo, MessageBoxImage.Warning);
             if (result == MessageBoxResult.Yes)
             {
-                if (listCliente[index].Nombre != "" && listCliente[index].Apellido != "" && listCliente[index].Telefono != "" && listCliente[index].ClienteDNI != "" )
+                if (listCliente[index].Nombre != "" && listCliente[index].Apellido != "" && listCliente[index].Telefono != "" && listCliente[index].ClienteDNI != "")
                 {
-                    TrabajarCliente.modificarCliente(listCliente[index]);
-                    MessageBox.Show("El cliente seleccionado se ha modificado correctamente.", "Modificación exitosa", MessageBoxButton.OK, MessageBoxImage.Information);
+                    // Crear una instancia de TrabajarCliente
+                    TrabajarCliente trabajarCliente = new TrabajarCliente();
+
+                    // Verificar si el nuevo DNI ya existe en la base de datos
+                    if (!trabajarCliente.ClienteExisteEnBaseDeDatos(listCliente[index].ClienteDNI))
+                    {
+                        TrabajarCliente.modificarCliente(listCliente[index]);
+                        MessageBox.Show("El cliente seleccionado se ha modificado correctamente.", "Modificación exitosa", MessageBoxButton.OK, MessageBoxImage.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("El DNI ingresado ya existe en la base de datos. Por favor, elija otro DNI.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    }
                 }
                 else
                 {
                     MessageBox.Show("Por favor, complete todos los campos antes de realizar la modificación.", "Advertencia", MessageBoxButton.OK, MessageBoxImage.Error);
-
                 }
             }
         }
+
 
         private void txtNombre_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
@@ -140,6 +151,31 @@ namespace Vistas
             MenuPrincipal menuPrincipal = new MenuPrincipal("Operador");
             menuPrincipal.Show();
             this.Close();
+        }
+
+        private void txtTelefono_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            // Verificar que solo se ingresen números
+            e.Handled = !ContieneSoloNumeros(e.Text);
+        }
+
+        private void txtDNI_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            // Verificar que solo se ingresen números y limitar a 8 dígitos
+            e.Handled = !ContieneSoloNumeros(e.Text) || (txtDNI.Text.Length >= 8 && !char.IsControl(e.Text[0]));
+        }
+
+        // Función para verificar si una cadena contiene solo números
+        private bool ContieneSoloNumeros(string texto)
+        {
+            foreach (char c in texto)
+            {
+                if (!char.IsDigit(c))
+                {
+                    return false;
+                }
+            }
+            return true;
         }
         
     }

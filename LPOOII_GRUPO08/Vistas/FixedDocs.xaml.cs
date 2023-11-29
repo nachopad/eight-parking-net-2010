@@ -35,10 +35,10 @@ namespace Vistas
             txbIibb.Text = "IIBB: " + "999";
             txbNumeroTicket.Text = "TICKET #" + ticket.TicketNro;
             txbPatente.Text = "PATENTE: " + ticket.Patente;
-            txbTipoVehiculo.Text = "TIPO VEHICULO: " + ticket.TvCodigo;
+            txbTipoVehiculo.Text = "TIPO VEHICULO: " + TrabajarTiposVehiculo.ObtenerDescripcionPorCodigo((ticket.TvCodigo));
             txbCliente.Text = "CLIENTE: " + ticket.ClienteDNI;
-            txbIngreso.Text = "HORA DE INGRESO: " + ticket.FechaHoraEnt;
-            txbTarifa.Text = "TARIFA: " + ticket.Tarifa;
+            txbIngreso.Text = "INGRESO: " + ticket.FechaHoraEnt+" hs";
+            txbTarifa.Text = "TARIFA: " + "$"+ticket.Tarifa;
             txbUsuario.Text = "USUARIO: " + "Operador";
         }
     }

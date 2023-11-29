@@ -34,7 +34,7 @@ namespace Vistas
             TipoVehiculo vehiculo = new TipoVehiculo();
             if (txtDescripcion.Text.Equals("") || txtTarifa.Text.Equals("") || fileName.Equals(""))
             {
-                MessageBox.Show("Debe ingresar todos los valores", "Datos incompletos", MessageBoxButton.OK, MessageBoxImage.Hand);
+                MessageBox.Show("Por favor, complete todos los campos antes de continuar.", "Datos Incompletos", MessageBoxButton.OK, MessageBoxImage.Error);
 
             }
             else
@@ -52,7 +52,7 @@ namespace Vistas
                 vehiculo.Imagen = fileName;
 
                 TrabajarTiposVehiculo.crearTipoVehiculo(vehiculo);
-                MessageBox.Show("Descripcion del vehiculo: " + vehiculo.Descripcion + " - Tarifa del vehiculo: " + vehiculo.Tarifa, "Datos registrados", MessageBoxButton.OK);
+                MessageBox.Show("Los datos del vehículo se han registrado exitosamente.", "Datos registrados", MessageBoxButton.OK);
             }
         }
 
@@ -80,6 +80,35 @@ namespace Vistas
                 // Obtén el nombre del archivo de la ruta de la imagen
                 fileName = System.IO.Path.GetFileName(imagePath);
             }
+        }
+
+        private void txtTarifa_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            // Permitir solo números y el separador decimal (punto)
+            if (!EsNumeroValido(e.Text))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private bool EsNumeroValido(string input)
+        {
+            // Verificar si la cadena es un número válido (puede contener solo dígitos y un punto decimal)
+            foreach (char c in input)
+            {
+                if (!char.IsDigit(c) && c != '.')
+                {
+                    return false;
+                }
+            }
+
+            // Verificar si hay más de un punto decimal
+            if (input.Count(c => c == '.') > 1)
+            {
+                return false;
+            }
+
+            return true;
         }
     }
 }
