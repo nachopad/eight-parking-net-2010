@@ -43,12 +43,7 @@ namespace Vistas
             this.Close();
         }
 
-        private void navigateToListadoDeSectores(object sender, RoutedEventArgs e)
-        {
-            ListadoDeSectores listadoDeSectoresPage = new ListadoDeSectores();
-            listadoDeSectoresPage.Show();
-            this.Close();
-        }
+      
 
         private void btnVolver_Click(object sender, RoutedEventArgs e)
         {

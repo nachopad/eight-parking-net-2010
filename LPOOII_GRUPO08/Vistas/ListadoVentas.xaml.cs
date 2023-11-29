@@ -99,8 +99,9 @@ namespace Vistas
 
         private void btnVolver_Click(object sender, RoutedEventArgs e)
         {
-            MenuPrincipal menuPrincipal = new MenuPrincipal("Administrador");
-            menuPrincipal.Show();
+            ListadosReportes list = new ListadosReportes();
+           // MenuPrincipal menuPrincipal = new MenuPrincipal("Administrador");
+            list.Show();
             this.Close();
         }
 

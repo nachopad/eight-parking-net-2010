@@ -57,9 +57,11 @@
             </Canvas>
             <!-- Gestionar Estacionamiento | Operador -->
             <Canvas Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" Name="canv_Estacionamiento">
-                <Label Foreground="White" Grid.ColumnSpan="2" Grid.Row="1">Gestión de Estacionamientos</Label>
+                <Label Foreground="White" Grid.ColumnSpan="2" Grid.Row="1" Height="26" Width="117" Canvas.Left="21">Listados y Reportes</Label>
                 <Image Source="/Images/estacionamienito.png" Width="35" Canvas.Top="25" Canvas.Left="57.5"></Image>
-                <Button Width="75" Canvas.Top="63" Canvas.Left="37.5" Name="btnGestionarEstacionamiento" Style="{StaticResource EstiloBoton}" Cursor="Hand">Gestionar</Button>        
+                <Button Width="75" Canvas.Top="63" Canvas.Left="37.5" Name="btnGestionarEstacionamiento" Click="btnGestionarEstacionamiento_Click" Style="{StaticResource EstiloBoton}" Cursor="Hand">Seleccionar</Button>
+
+                     
             </Canvas>
 
             <!-- Gestionar Vehiculos | Administrador -->

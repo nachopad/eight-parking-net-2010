@@ -68,7 +68,7 @@ namespace Vistas
 
         private void button2_Click(object sender, RoutedEventArgs e)
         {
-            Zona ventanaZona = new Zona();
+            ListadosReportes ventanaZona = new ListadosReportes();
 
             ventanaZona.Show();
 

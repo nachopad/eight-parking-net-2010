@@ -62,7 +62,7 @@ namespace Vistas
 
         private void btn_Volver_Click(object sender, RoutedEventArgs e)
         {
-            ABMUsuarios abmUsuario = new ABMUsuarios();
+            ListadosReportes abmUsuario = new ListadosReportes();
             abmUsuario.Show();
             this.Close();
         }

@@ -55,6 +55,11 @@ namespace Vistas
             }
         }
 
+        public MenuPrincipal()
+        {
+            // TODO: Complete member initialization
+        }
+
         private void Button_CerrarSesion(object sender, RoutedEventArgs e)
         {
             // Crear una nueva ventana
@@ -126,6 +131,12 @@ namespace Vistas
         {
             Presentacion pres = new Presentacion(rol);
             pres.Show();
+            this.Close();
+        }
+         private void btnGestionarEstacionamiento_Click(object sender, RoutedEventArgs e)
+        {
+            ListadosReportes list = new ListadosReportes();
+            list.Show();
             this.Close();
         }
     }
