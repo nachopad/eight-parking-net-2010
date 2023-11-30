@@ -94,20 +94,29 @@ namespace Vistas
 
         private void btnGuardar_Click(object sender, RoutedEventArgs e)
         {
-            MessageBoxResult result = MessageBox.Show("¿Estás seguro de que quieres modificar este usuario?", "Confirmación", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+            MessageBoxResult result = MessageBox.Show("¿Estás seguro de que quieres modificar este cliente?", "Confirmación", MessageBoxButton.YesNo, MessageBoxImage.Warning);
             if (result == MessageBoxResult.Yes)
             {
                 if (listCliente[index].Nombre != "" && listCliente[index].Apellido != "" && listCliente[index].Telefono != "" && listCliente[index].ClienteDNI != "")
                 {
                     TrabajarCliente trabajarCliente = new TrabajarCliente();
-                    if (!trabajarCliente.ClienteExisteEnBaseDeDatos(listCliente[index].ClienteDNI))
+
+                    if (listCliente[index].ClienteDNI != trabajarCliente.ObtenerClientePorId(listCliente[index].IdCliente).ClienteDNI)
                     {
-                        TrabajarCliente.modificarCliente(listCliente[index]);
-                        MessageBox.Show("El cliente seleccionado se ha modificado correctamente.", "Modificación exitosa", MessageBoxButton.OK, MessageBoxImage.Information);
+                        if (!trabajarCliente.ClienteExisteEnBaseDeDatos(listCliente[index].ClienteDNI))
+                        {
+                            TrabajarCliente.modificarCliente(listCliente[index]);
+                            MessageBox.Show("El cliente seleccionado se ha modificado correctamente.", "Modificación exitosa", MessageBoxButton.OK, MessageBoxImage.Information);
+                        }
+                        else
+                        {
+                            MessageBox.Show("El DNI ingresado ya existe en la base de datos. Por favor, elija otro DNI.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                        }
                     }
                     else
                     {
-                        MessageBox.Show("El DNI ingresado ya existe en la base de datos. Por favor, elija otro DNI.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                        TrabajarCliente.modificarCliente(listCliente[index]);
+                        MessageBox.Show("El cliente seleccionado se ha modificado correctamente.", "Modificación exitosa", MessageBoxButton.OK, MessageBoxImage.Information);
                     }
                 }
                 else

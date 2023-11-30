@@ -30,6 +30,7 @@ namespace ClasesBase
             conexion.Close();
             return clientes;
         }
+
         public Cliente ObtenerClientePorDni(string dni)
         {
             Cliente cliente = new Cliente();
@@ -69,6 +70,7 @@ namespace ClasesBase
             cnn.Close();
 
         }
+
         public static void eliminarCliente(int id)
         {
             SqlConnection cnn = new SqlConnection(ClasesBase.Properties.Settings.Default.playaConnectionString);
@@ -114,6 +116,27 @@ namespace ClasesBase
             }
         }
 
+        public Cliente ObtenerClientePorId(int id)
+        {
+            Cliente cliente = new Cliente();
+            using (SqlConnection connection = new SqlConnection(ClasesBase.Properties.Settings.Default.playaConnectionString))
+            {
+                connection.Open();
+                using (SqlCommand command = new SqlCommand("SELECT * FROM Cliente WHERE id_cliente = @id", connection))
+                {
+                    command.Parameters.AddWithValue("@id", id);
+                    SqlDataReader reader = command.ExecuteReader();
+                    if (reader.Read())
+                    {
+                        cliente.ClienteDNI = reader["cliente_dni"].ToString();
+                        cliente.Nombre = reader["nombre"].ToString();
+                        cliente.Apellido = reader["apellido"].ToString();
+                        cliente.Telefono = reader["telefono"].ToString();
+                    }
+                }
+            }
+            return cliente;
+        }
 
     }
 }
