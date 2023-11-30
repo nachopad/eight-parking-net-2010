@@ -4,11 +4,19 @@ Descubre la revolucionaria aplicación que simplificará por completo la adminis
 
 🌟 Características Destacadas:
 
-📅 Programación Inteligente: Optimiza la asignación de espacios para maximizar la capacidad y mejorar la experiencia del usuario.
-🚥 Control de Acceso: Gestiona el acceso de manera segura y eficaz, garantizando la seguridad en todo momento.
-📊 Informes Detallados: Obtén análisis precisos y actualizados para tomar decisiones informadas sobre la operación del estacionamiento.
-📱 Interfaz Intuitiva: Diseño amigable que facilita la navegación, incluso para usuarios sin experiencia técnica.
-🔧 Construido en .NET 2010:
+📅 Programación Inteligente: 
+Optimiza la asignación de espacios para maximizar la capacidad y mejorar la experiencia del usuario.
+
+🚥 Control de Acceso: 
+Gestiona el acceso de manera segura y eficaz, garantizando la seguridad en todo momento.
+
+📊 Informes Detallados: 
+Obtén análisis precisos y actualizados para tomar decisiones informadas sobre la operación del estacionamiento.
+
+📱 Interfaz Intuitiva: 
+Diseño amigable que facilita la navegación, incluso para usuarios sin experiencia técnica.
+
+🔧 Construido en .NET 2010: 
 Nuestra aplicación se basa en la robustez de la plataforma .NET 2010, brindando estabilidad, rendimiento y compatibilidad.
 
 🎥 Descubre "Eight Parking" en Acción:
