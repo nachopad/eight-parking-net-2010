@@ -1,0 +1,120 @@
+﻿<Window x:Class="Vistas.AcercaDe"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Acerca de Nosotros" Height="500" Width="800"
+        WindowStartupLocation="CenterScreen" 
+        Background="Black"
+        ResizeMode="CanMinimize" Loaded="Window_Loaded">
+    <!-- Se hace referencia al diccionario (el estiloBoton fue colocado en Estilos.xaml) -->
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Estilos.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <!-- TITULO -->
+        <Label Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"  FontSize="14">Nosotros</Label>
+        <!-- CONTENIDO -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>    
+            </Grid.ColumnDefinitions>
+            <Label 
+                Grid.Column="1" 
+                Foreground="White" 
+                HorizontalAlignment="Center" 
+                Margin="160,50,160,0" 
+                Height="28" 
+                VerticalAlignment="Top"
+                BorderBrush="Orange"
+                BorderThickness="0,0,0,2"
+                Content="Grupo 08"
+                >
+            </Label>
+            <Label
+                Grid.Column="1" 
+                Foreground="White" 
+                BorderBrush="Orange"
+                BorderThickness="1,0,0,0"
+                Content="Carrillo Maximiliano Joaquín"
+                Height="26" 
+                Margin="112,90,116,0" 
+                VerticalAlignment="Top"></Label>
+            <Label
+                Grid.Column="1" 
+                Foreground="White" 
+                BorderBrush="Orange"
+                BorderThickness="1,0,0,0"
+                Content="Padilla Ignacio Agustín"
+                Height="26" 
+                Margin="112,120,116,0" 
+                VerticalAlignment="Top"></Label>
+            <Label
+                Grid.Column="1" 
+                Foreground="White" 
+                BorderBrush="Orange"
+                BorderThickness="1,0,0,0"
+                Content="Sanchez Carlos Rodolfo"
+                Height="26" 
+                Margin="112,150,116,0" 
+                VerticalAlignment="Top"></Label>
+            <Label
+                Grid.Column="1" 
+                Foreground="White" 
+                BorderBrush="Orange"
+                BorderThickness="1,0,0,0"
+                Content="Mamani Carlos Fernando"
+                Height="26" 
+                Margin="112,180,116,0" 
+                VerticalAlignment="Top"></Label>
+            <Label
+                Grid.Column="1" 
+                Foreground="White" 
+                BorderBrush="Orange"
+                BorderThickness="1,0,0,0"
+                Content="Romero Facundo Benigno"
+                Height="26" 
+                Margin="112,210,116,0" 
+                VerticalAlignment="Top"></Label>
+            <Label
+                Grid.Column="1" 
+                Foreground="White" 
+                BorderBrush="Orange"
+                BorderThickness="1,0,0,0"
+                Content="Said Lilia Yazmin"
+                Height="26" 
+                Margin="112,240,116,0" 
+                VerticalAlignment="Top"></Label>
+            <Label
+                Grid.Column="1" 
+                Foreground="White" 
+                Content="Parking Eight v1.0"
+                Height="26" 
+                Margin="112,270,116,0" 
+                VerticalAlignment="Top"></Label>
+            <Button 
+                Content="Volver" 
+                Grid.Column="1"
+                Style="{StaticResource EstiloBoton}"
+                Height="23" 
+                HorizontalAlignment="Left" 
+                Margin="294,365,0,0" 
+                Name="btnVolver" 
+                Width="75" Click="btnVolver_Click" />
+            <MediaElement 
+                Name="Reproductor"
+                LoadedBehavior="Manual" 
+                Margin="26,35,313,104" 
+                Stretch="Fill" 
+                Grid.ColumnSpan="2" 
+                MediaEnded="Reproductor_MediaEnded" Source="Multimedia/Porsche-992-GT3-Touring.wmv" />
+        </Grid>
+    </Grid>
+</Window>

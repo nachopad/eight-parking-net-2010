@@ -1,0 +1,42 @@
+C:\Users\lenovo\Documents\APU\Asignaturas\LPOO2\Ejemplos\LPOOII_GRUPO08\ClasesBase\bin\Debug\ClasesBase.dll
+C:\Users\lenovo\Documents\APU\Asignaturas\LPOO2\Ejemplos\LPOOII_GRUPO08\ClasesBase\bin\Debug\ClasesBase.pdb
+C:\Users\lenovo\Documents\APU\Asignaturas\LPOO2\Ejemplos\LPOOII_GRUPO08\ClasesBase\obj\Debug\ClasesBase.dll
+C:\Users\lenovo\Documents\APU\Asignaturas\LPOO2\Ejemplos\LPOOII_GRUPO08\ClasesBase\obj\Debug\ClasesBase.pdb
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\bin\Debug\ClasesBase.dll
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\bin\Debug\ClasesBase.pdb
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\obj\Debug\ClasesBase.dll
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\obj\Debug\ClasesBase.pdb
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\bin\Debug\ClasesBase.dll
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\bin\Debug\ClasesBase.pdb
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\obj\Debug\ClasesBase.dll
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\obj\Debug\ClasesBase.pdb
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\bin\Debug\ClasesBase.dll
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\bin\Debug\ClasesBase.pdb
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\obj\Debug\ClasesBase.dll
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\obj\Debug\ClasesBase.pdb
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\obj\Debug\ClasesBase.csprojResolveAssemblyReference.cache
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\obj\Debug\ClasesBase.csprojResolveAssemblyReference.cache
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\bin\Debug\ClasesBase.dll
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\bin\Debug\ClasesBase.pdb
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\obj\Debug\ClasesBase.csprojResolveAssemblyReference.cache
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\obj\Debug\ClasesBase.dll
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\obj\Debug\ClasesBase.pdb
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\obj\Debug\ClasesBase.csprojResolveAssemblyReference.cache
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\obj\Debug\ClasesBase.csprojResolveAssemblyReference.cache
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\obj\Debug\ClasesBase.dll
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\obj\Debug\ClasesBase.pdb
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\bin\Debug\ClasesBase.dll
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\bin\Debug\ClasesBase.pdb
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\obj\Debug\ClasesBase.dll
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\bin\Debug\ClasesBase.dll
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\bin\Debug\ClasesBase.pdb
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\obj\Debug\ClasesBase.pdb
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\bin\Debug\ClasesBase.dll
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\bin\Debug\ClasesBase.pdb
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\obj\Debug\ClasesBase.dll
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\obj\Debug\ClasesBase.pdb
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\bin\Debug\playa.mdf
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\bin\Debug\playa_log.ldf
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\ClasesBase\bin\Debug\ClasesBase.dll.config

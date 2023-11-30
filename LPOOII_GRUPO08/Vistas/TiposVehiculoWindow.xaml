@@ -1,0 +1,22 @@
+﻿<Window x:Class="Vistas.TiposVehiculoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:svc="clr-namespace:ClasesBase;assembly=ClasesBase"
+        Title="Grilla Tipos de Vehiculo" Height="300" Width="300" Background="White">
+
+    <Window.Resources>
+        <ObjectDataProvider x:Key="dataGrid" ObjectType="{x:Type svc:TrabajarTiposVehiculo}" MethodName="TraerTiposVehiculo"/>
+    </Window.Resources>
+
+    <ListView ItemsSource="{Binding Source={StaticResource dataGrid}}" HorizontalContentAlignment="Center">
+        <ListView.View>
+            <GridView>
+                <GridView.Columns>
+                    <GridViewColumn  Header="Código"  DisplayMemberBinding="{Binding Path=tv_codigo}"/>
+                    <GridViewColumn  Header="Descripcion" DisplayMemberBinding="{Binding Path=descripcion}"/>
+                    <GridViewColumn  Header="Tarifa" DisplayMemberBinding="{Binding Path=tarifa}"/>
+                </GridView.Columns>
+            </GridView>
+        </ListView.View>
+    </ListView>
+</Window>

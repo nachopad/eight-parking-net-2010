@@ -1,0 +1,12 @@
+﻿<Window x:Class="Vistas.Login"
+                xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        
+        xmlns:UC="clr-namespace:Vistas"
+        
+        Title="Iniciar Sesión" Height="300" Width="300" BorderBrush="Black" Background="#FF696161" WindowStartupLocation="CenterScreen">
+
+    <Grid Background="Black">
+        <UC:loginControl HorizontalAlignment="left"/>
+    </Grid>
+</Window>

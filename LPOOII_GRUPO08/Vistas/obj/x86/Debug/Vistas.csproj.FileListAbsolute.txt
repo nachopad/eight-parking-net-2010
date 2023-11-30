@@ -1,0 +1,457 @@
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\bin\Debug\Vistas.exe
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\bin\Debug\Vistas.pdb
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\MainWindow.baml
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\MainWindow.g.cs
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\App.g.cs
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas_MarkupCompile.cache
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.g.resources
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.Properties.Resources.resources
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.csproj.GenerateResource.Cache
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.exe
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.pdb
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.exe
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.pdb
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\bin\Debug\Vistas.exe
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\bin\Debug\Vistas.pdb
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\MainWindow.baml
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\VehiculosPlaya.baml
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\MainWindow.g.cs
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\VehiculosPlaya.g.cs
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\App.g.cs
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas_MarkupCompile.cache
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.g.resources
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.Properties.Resources.resources
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.csproj.GenerateResource.Cache
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\VehiculosPlaya.baml
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\VehiculosPlaya.g.cs
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\MenuPrincipal.baml
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\MenuPrincipal.g.cs
+C:\Users\Lilia\Documents\Visual Studio 2010\Projects\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.exe
+C:\Users\Lilia\Documents\Visual Studio 2010\Projects\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.pdb
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.exe
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.pdb
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.csprojResolveAssemblyReference.cache
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Login.baml
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\MainWindow.baml
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\MenuPrincipal.baml
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\VehiculosPlaya.baml
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Login.g.cs
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\MainWindow.g.cs
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\MenuPrincipal.g.cs
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\VehiculosPlaya.g.cs
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\App.g.cs
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas_MarkupCompile.cache
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.g.resources
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.Properties.Resources.resources
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.csproj.GenerateResource.Cache
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\bin\Debug\Vistas.exe
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\bin\Debug\Vistas.pdb
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\bin\Debug\ClasesBase.dll
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\bin\Debug\ClasesBase.pdb
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.exe
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.pdb
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\bin\Debug\Vistas.exe
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\bin\Debug\Vistas.pdb
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\bin\Debug\ClasesBase.dll
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\bin\Debug\ClasesBase.pdb
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.csprojResolveAssemblyReference.cache
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Login.baml
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\MainWindow.baml
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\MenuPrincipal.baml
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\VehiculosPlaya.baml
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Login.g.cs
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\MainWindow.g.cs
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\MenuPrincipal.g.cs
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\VehiculosPlaya.g.cs
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\App.g.cs
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas_MarkupCompile.cache
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.g.resources
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.Properties.Resources.resources
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.csproj.GenerateResource.Cache
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FormularioVehiculo.baml
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FormularioVehiculo.g.cs
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FormularioCliente.baml
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FormularioCliente.g.cs
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\bin\Debug\ClasesBase.dll
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\bin\Debug\ClasesBase.pdb
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.csprojResolveAssemblyReference.cache
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FormularioCliente.baml
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FormularioVehiculo.baml
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Login.baml
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FormularioCliente.g.cs
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FormularioVehiculo.g.cs
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Login.g.cs
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Estilos.baml
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Estilos.baml
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FormularioCliente.baml
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FormularioVehiculo.baml
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Plantillas.baml
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FormularioCliente.g.cs
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FormularioVehiculo.g.cs
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.exe
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.pdb
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\bin\Debug\ClasesBase.dll
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\bin\Debug\ClasesBase.pdb
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.csprojResolveAssemblyReference.cache
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Estilos.baml
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FormularioCliente.baml
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FormularioVehiculo.baml
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Login.baml
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\MenuPrincipal.baml
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Plantillas.baml
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FormularioCliente.g.cs
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FormularioVehiculo.g.cs
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Login.g.cs
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\MenuPrincipal.g.cs
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Estilos.baml
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Plantillas.baml
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\loginControl.baml
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\loginControl.g.cs
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas_MarkupCompile.lref
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\loginControl.baml
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\loginControl.g.cs
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas_MarkupCompile.lref
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\TiposVehiculoWindow.baml
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\TiposVehiculoWindow.g.cs
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\loginControl.baml
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Plantillas.baml
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\TiposVehiculoWindow.baml
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\loginControl.g.cs
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\TiposVehiculoWindow.g.cs
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas_MarkupCompile.lref
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\EstadoSector.baml
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\loginControl.baml
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\TiposVehiculoWindow.baml
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\EstadoSector.g.cs
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\loginControl.g.cs
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\TiposVehiculoWindow.g.cs
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas_MarkupCompile.lref
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\EstadoSector.baml
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\TiposVehiculoWindow.baml
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ValidarCliente.baml
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\EstadoSector.g.cs
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\TiposVehiculoWindow.g.cs
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ValidarCliente.g.cs
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ValidarCliente.baml
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ValidarCliente.g.cs
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ModificarCliente.baml
+D:\NET\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ModificarCliente.g.cs
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ModificarCliente.baml
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ValidarCliente.baml
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\EstadoSector.g.cs
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ModificarCliente.g.cs
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ValidarCliente.g.cs
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\EstadoSector.baml
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ABMUsuarios.baml
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ABMUsuarios.g.cs
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ABMUsuarios.baml
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ModificarCliente.baml
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ABMUsuarios.g.cs
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ModificarCliente.g.cs
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\formularioUsuario.baml
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\formularioUsuario.g.cs
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ABMUsuarios.baml
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\formularioUsuario.baml
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ModificarCliente.baml
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ValidarCliente.baml
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ABMUsuarios.g.cs
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\EstadoSector.g.cs
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\formularioUsuario.g.cs
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ModificarCliente.g.cs
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ValidarCliente.g.cs
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\EstadoSector.baml
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\bin\Debug\Vistas.exe
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\bin\Debug\Vistas.pdb
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\bin\Debug\ClasesBase.dll
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\bin\Debug\ClasesBase.pdb
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.csprojResolveAssemblyReference.cache
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ABMUsuarios.baml
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Estilos.baml
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FormularioCliente.baml
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\formularioUsuario.baml
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FormularioVehiculo.baml
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\loginControl.baml
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\MainWindow.baml
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\MenuPrincipal.baml
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ModificarCliente.baml
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Plantillas.baml
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\TiposVehiculoWindow.baml
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ValidarCliente.baml
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\VehiculosPlaya.baml
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ABMUsuarios.g.cs
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\EstadoSector.g.cs
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FormularioCliente.g.cs
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\formularioUsuario.g.cs
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FormularioVehiculo.g.cs
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Login.g.cs
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\loginControl.g.cs
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\MenuPrincipal.g.cs
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ModificarCliente.g.cs
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\TiposVehiculoWindow.g.cs
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ValidarCliente.g.cs
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\VehiculosPlaya.g.cs
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\App.g.cs
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas_MarkupCompile.cache
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas_MarkupCompile.lref
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\EstadoSector.baml
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Login.baml
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.g.resources
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.Properties.Resources.resources
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.csproj.GenerateResource.Cache
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoDeUsuarios.baml
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoDeUsuarios.g.cs
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FlowDocs.baml
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\formularioUsuario.baml
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoDeUsuarios.baml
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FlowDocs.g.cs
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\formularioUsuario.g.cs
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoDeUsuarios.g.cs
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FlowDocs.baml
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoDeUsuarios.baml
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FlowDocs.g.cs
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoDeUsuarios.g.cs
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FlowDocs.baml
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\RegistroEntrada.baml
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoDeUsuarios.baml
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FlowDocs.g.cs
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\RegistroEntrada.g.cs
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoDeUsuarios.g.cs
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FlowDocs.baml
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\RegistroEntrada.baml
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FlowDocs.g.cs
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\RegistroEntrada.g.cs
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.exe
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.pdb
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\bin\Debug\Vistas.exe
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\bin\Debug\Vistas.pdb
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\bin\Debug\ClasesBase.dll
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\bin\Debug\ClasesBase.pdb
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ABMUsuarios.baml
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Estilos.baml
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FlowDocs.baml
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FormularioCliente.baml
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\formularioUsuario.baml
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FormularioVehiculo.baml
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\loginControl.baml
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\MainWindow.baml
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\MenuPrincipal.baml
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ModificarCliente.baml
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Plantillas.baml
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\RegistroEntrada.baml
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\TiposVehiculoWindow.baml
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ValidarCliente.baml
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\VehiculosPlaya.baml
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoDeUsuarios.baml
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Zona.baml
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ABMUsuarios.g.cs
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\EstadoSector.g.cs
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FlowDocs.g.cs
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FormularioCliente.g.cs
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\formularioUsuario.g.cs
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FormularioVehiculo.g.cs
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Login.g.cs
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\loginControl.g.cs
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\MainWindow.g.cs
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\MenuPrincipal.g.cs
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ModificarCliente.g.cs
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\RegistroEntrada.g.cs
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\TiposVehiculoWindow.g.cs
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ValidarCliente.g.cs
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\VehiculosPlaya.g.cs
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoDeUsuarios.g.cs
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Zona.g.cs
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\App.g.cs
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas_MarkupCompile.cache
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas_MarkupCompile.lref
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\EstadoSector.baml
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Login.baml
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.g.resources
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.Properties.Resources.resources
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FixedDocs.baml
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Zona.baml
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FixedDocs.g.cs
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Zona.g.cs
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoDeSectores.baml
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoDeSectores.g.cs
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FixedDocs.baml
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoDeSectores.baml
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\RegistroEntrada.baml
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Zona.baml
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FixedDocs.g.cs
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoDeSectores.g.cs
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\RegistroEntrada.g.cs
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Zona.g.cs
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\AcercaDe.baml
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\AcercaDe.g.cs
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Presentacion.baml
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Presentacion.g.cs
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\AcercaDe.baml
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FixedDocs.baml
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoDeSectores.baml
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Presentacion.baml
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Zona.baml
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\AcercaDe.g.cs
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FixedDocs.g.cs
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoDeSectores.g.cs
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Presentacion.g.cs
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Zona.g.cs
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\AcercaDe.baml
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FixedDocs.baml
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoDeSectores.baml
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Presentacion.baml
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\RegistroEntrada.baml
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Zona.baml
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\AcercaDe.g.cs
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FixedDocs.g.cs
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoDeSectores.g.cs
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Presentacion.g.cs
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\RegistroEntrada.g.cs
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Zona.g.cs
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoVentas.baml
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoVentas.g.cs
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\AcercaDe.baml
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoVentas.baml
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Presentacion.baml
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\AcercaDe.g.cs
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoVentas.g.cs
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Presentacion.g.cs
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoVentas.baml
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoVentas.g.cs
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoVentas.baml
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\RegistroSalida.baml
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoVentas.g.cs
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\RegistroSalida.g.cs
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\AcercaDe.baml
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FixedDocs.baml
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoDeSectores.baml
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoVentas.baml
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Presentacion.baml
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\RegistroSalida.baml
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\AcercaDe.g.cs
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FixedDocs.g.cs
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoDeSectores.g.cs
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoVentas.g.cs
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Presentacion.g.cs
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\RegistroSalida.g.cs
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ABMClientes.baml
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ABMVehiculos.baml
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ABMClientes.g.cs
+C:\Users\admin\lpoo\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ABMVehiculos.g.cs
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.exe
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.pdb
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\bin\Debug\Vistas.exe
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\bin\Debug\Vistas.pdb
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\bin\Debug\ClasesBase.dll
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\bin\Debug\ClasesBase.pdb
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ABMClientes.baml
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ABMUsuarios.baml
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ABMVehiculos.baml
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\AcercaDe.baml
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Estilos.baml
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FixedDocs.baml
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FlowDocs.baml
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FormularioCliente.baml
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\formularioUsuario.baml
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FormularioVehiculo.baml
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoDeSectores.baml
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoVentas.baml
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\loginControl.baml
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\MainWindow.baml
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\MenuPrincipal.baml
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ModificarCliente.baml
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Plantillas.baml
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Presentacion.baml
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\RegistroEntrada.baml
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\RegistroSalida.baml
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\TicketSalida.baml
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\TiposVehiculoWindow.baml
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ValidarCliente.baml
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\VehiculosPlaya.baml
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoDeUsuarios.baml
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Zona.baml
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ABMClientes.g.cs
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ABMUsuarios.g.cs
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ABMVehiculos.g.cs
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\AcercaDe.g.cs
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\EstadoSector.g.cs
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FixedDocs.g.cs
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FlowDocs.g.cs
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FormularioCliente.g.cs
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\formularioUsuario.g.cs
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\FormularioVehiculo.g.cs
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoDeSectores.g.cs
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoVentas.g.cs
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Login.g.cs
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\loginControl.g.cs
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\MainWindow.g.cs
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\MenuPrincipal.g.cs
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ModificarCliente.g.cs
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Presentacion.g.cs
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\RegistroEntrada.g.cs
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\RegistroSalida.g.cs
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\TicketSalida.g.cs
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\TiposVehiculoWindow.g.cs
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ValidarCliente.g.cs
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\VehiculosPlaya.g.cs
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadoDeUsuarios.g.cs
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Zona.g.cs
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\App.g.cs
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas_MarkupCompile.cache
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas_MarkupCompile.lref
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\EstadoSector.baml
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Login.baml
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.g.resources
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas.Properties.Resources.resources
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\admin\lpoo\v2\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ABMClientes.baml
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ABMVehiculos.baml
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\TicketSalida.baml
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ABMClientes.g.cs
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ABMVehiculos.g.cs
+C:\Users\argca\OneDrive\Documentos\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\TicketSalida.g.cs
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ABMClientes.baml
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ABMVehiculos.baml
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\RegistroSalida.baml
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\TicketSalida.baml
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ABMClientes.g.cs
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ABMVehiculos.g.cs
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\RegistroSalida.g.cs
+C:\Users\maxi1\OneDrive\Documentos\Programacion LPOO II\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\TicketSalida.g.cs
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ABMClientes.baml
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ABMVehiculos.baml
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\RegistroSalida.baml
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\TicketSalida.baml
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ABMClientes.g.cs
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ABMVehiculos.g.cs
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\RegistroSalida.g.cs
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\TicketSalida.g.cs
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ABMClientes.baml
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ABMVehiculos.baml
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\RegistroSalida.baml
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\TicketSalida.baml
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ABMClientes.g.cs
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ABMVehiculos.g.cs
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\RegistroSalida.g.cs
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\TicketSalida.g.cs
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadosReportes.baml
+C:\Users\Cuno\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadosReportes.g.cs
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadosReportes.baml
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\ListadosReportes.g.cs
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\bin\Debug\playa.mdf
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\bin\Debug\playa_log.ldf
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\bin\Debug\Multimedia\Porsche-992-GT3-Touring.wmv
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\bin\Debug\Multimedia\CancionPresentacion.wav
+C:\Users\lenovo\Documents\LPOOII_GRUPO08\LPOOII_GRUPO08\Vistas\obj\x86\Debug\Vistas_Content.g.cs

@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="Vistas.loginControl"
+            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="271" d:DesignWidth="300" >
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Estilos.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid Background="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Label Content="LOGIN" Name="label1" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" FontSize="15" Foreground="White"/>
+        <StackPanel Grid.Row="1" VerticalAlignment="Center">
+            <Image Height="43" Width="46" Name="image1" Stretch="Fill" Source="/Vistas;component/Images/cliente.png" HorizontalAlignment="Center"/>
+            <Label Content="Usuario" Name="label2" Foreground="White" HorizontalAlignment="Center"/>
+            <TextBox Height="23" Name="textBoxUser" Width="120" Background="#FF696161" FontSize="13" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"/>
+            <Label Content="Contraseña" Name="label3" Foreground="White" HorizontalAlignment="Center"/>
+            <PasswordBox Height="23" Name="textBoxPsw" Width="120" Background="#FF696161" FontSize="13" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Content="Ingresar" Name="buttonAceptar" Height="23" Width="75" Style="{StaticResource EstiloBoton}" Margin="10" Click="buttonAceptar_Click" Cursor="Hand" />
+            <Button Content="Salir" Name="button1" Height="23" Width="75" Style="{StaticResource EstiloBoton}" Margin="10" Click="button1_Click" Cursor="Hand" />
+        </StackPanel>
+    </Grid>
+</UserControl>
