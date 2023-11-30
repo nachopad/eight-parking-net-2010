@@ -7,6 +7,12 @@ using System.Collections.ObjectModel;
 
 namespace ClasesBase
 {
+    public static class SesionUsuario
+    {
+        public static Usuario UsuarioActual { get; set; }
+        public static string RolUsuarioActual { get; set; }
+    }
+
     public class TrabajarUsuarios
     {
 
@@ -107,6 +113,8 @@ namespace ClasesBase
                         usuario.Apellido = reader["apellido"].ToString();
                         usuario.Nombre = reader["nombre"].ToString();
                         usuario.Rol = reader["rol"].ToString();
+                        SesionUsuario.UsuarioActual = usuario;
+                        SesionUsuario.RolUsuarioActual = usuario.Rol;
                     }
                     reader.Close();
                 }

@@ -55,9 +55,18 @@ namespace Vistas
 
         private void btnSalir_Click(object sender, RoutedEventArgs e)
         {
-            ABMClientes abmclientes = new ABMClientes();
-            abmclientes.Show();
-            this.Close();
+            if (SesionUsuario.RolUsuarioActual == "Administrador")
+            {
+                Zona zona = new Zona();
+                zona.Show();
+                this.Close();
+            }
+            else if (SesionUsuario.RolUsuarioActual == "Operador")
+            {
+                ABMClientes abmClientes = new ABMClientes();
+                abmClientes.Show();
+                this.Close();
+            }
         }
 
         private void txtNumericInput_PreviewTextInput(object sender, TextCompositionEventArgs e)

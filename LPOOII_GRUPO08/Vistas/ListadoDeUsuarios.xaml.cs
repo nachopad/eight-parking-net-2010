@@ -48,9 +48,18 @@ namespace Vistas
 
         private void btn_Volver_Click(object sender, RoutedEventArgs e)
         {
-            ABMUsuarios abmUsuario = new ABMUsuarios();
-            TrabajarUsuarios trabajarUsuario = new TrabajarUsuarios();
-            abmUsuario.Show();
+            if (SesionUsuario.RolUsuarioActual == "Administrador")
+            {
+                ABMUsuarios ambUsuarios = new ABMUsuarios();
+                ambUsuarios.Show();
+                this.Close();
+            }
+            else if (SesionUsuario.RolUsuarioActual == "Operador")
+            {
+                ListadosReportes listaReportes = new ListadosReportes();
+                listaReportes.Show();
+                this.Close();
+            }
             this.Close();
         }
 
