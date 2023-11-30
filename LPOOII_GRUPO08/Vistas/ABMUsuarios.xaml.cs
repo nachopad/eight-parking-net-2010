@@ -25,7 +25,6 @@ namespace Vistas
         public ABMUsuarios()
         {
             InitializeComponent();
-
         }
 
         CollectionView Vista;
@@ -38,13 +37,10 @@ namespace Vistas
             listUsuario = odp.Data as ObservableCollection<Usuario>;
             Vista = (CollectionView)CollectionViewSource.GetDefaultView(grid_content.DataContext);
 
-            // Verificar si el ComboBox ya tiene elementos
             if (cmbRoles.Items.Count == 0)
             {
-                // Agregar roles directamente al ComboBox
                 cmbRoles.Items.Add("Administrador");
                 cmbRoles.Items.Add("Operador");
-                // Agrega otros roles según sea necesario
             }
         }
 
@@ -111,17 +107,14 @@ namespace Vistas
             MessageBoxResult result = MessageBox.Show("¿Estás seguro de que quieres modificar este usuario?", "Confirmación", MessageBoxButton.YesNo, MessageBoxImage.Warning);
             if (result == MessageBoxResult.Yes)
             {
-                // Obtén el nuevo nombre de usuario ingresado en el TextBox
                 string nuevoUsername = listUsuario[index].UserName;
 
-                // Verifica si ya existe un usuario con ese nombre de usuario
                 if (listUsuario.Any(u => u.UserName == nuevoUsername && u.IdUsuario != listUsuario[index].IdUsuario))
                 {
                     MessageBox.Show("Ya existe un usuario con ese nombre de usuario. Por favor, elige otro.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-                    return; // Sale del método sin realizar la modificación
+                    return;
                 }
 
-                // Continúa con la modificación solo si no hay un usuario con el mismo nombre de usuario
                 if (listUsuario[index].Nombre != "" && listUsuario[index].Apellido != "" && listUsuario[index].Password != "" && listUsuario[index].Rol != "")
                 {
                     TrabajarUsuarios.modificarUsuario(listUsuario[index]);
@@ -136,17 +129,14 @@ namespace Vistas
 
         private void txtNombre_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
-            // Verificar que solo se ingresen letras
             e.Handled = !ContieneSoloLetras(e.Text);
         }
 
         private void txtApellido_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
-            // Verificar que solo se ingresen letras
             e.Handled = !ContieneSoloLetras(e.Text);
         }
 
-        // Función para verificar si una cadena contiene solo letras
         private bool ContieneSoloLetras(string texto)
         {
             foreach (char c in texto)

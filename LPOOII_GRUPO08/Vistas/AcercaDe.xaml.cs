@@ -27,10 +27,6 @@ namespace Vistas
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            //Ruta relaiva
-            string relativePath = @"..\..\Multimedia\Porsche-992-GT3-Touring.wmv";
-            string absolutePath = System.IO.Path.GetFullPath(relativePath);
-            Reproductor.Source = new Uri(absolutePath);
             Reproductor.Play();
         }
 

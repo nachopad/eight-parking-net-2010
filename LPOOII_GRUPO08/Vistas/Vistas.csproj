@@ -303,13 +303,17 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Multimedia\Porsche-992-GT3-Touring.wmv" />
+    <Content Include="Multimedia\Porsche-992-GT3-Touring.wmv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Resource Include="Tiempos.xml">
       <SubType>Designer</SubType>
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Multimedia\CancionPresentacion.wav" />
+    <Content Include="Multimedia\CancionPresentacion.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\delorean.jpg" />

@@ -29,7 +29,6 @@ namespace Vistas
         private void btnRegistrar_Click(object sender, RoutedEventArgs e)
         {
             Cliente cliente = new Cliente();
-
             if (txtApellido.Text.Equals("") || txtDNI.Text.Equals("") || txtNombre.Text.Equals("") || txtTelefono.Text.Equals(""))
             {
                 MessageBox.Show("Debe ingresar todos los datos solicitados", "Datos incompletos", MessageBoxButton.OK, MessageBoxImage.Hand);
@@ -40,9 +39,8 @@ namespace Vistas
                 cliente.Nombre = txtNombre.Text;
                 cliente.Apellido = txtApellido.Text;
                 cliente.Telefono = txtTelefono.Text;
-
-                // Verificar si el cliente ya existe
                 TrabajarCliente trabajarCliente = new TrabajarCliente();
+
                 if (trabajarCliente.ClienteExisteEnBaseDeDatos(cliente.ClienteDNI))
                 {
                     MessageBox.Show("Ya existe un cliente con ese DNI.", "Error de registro", MessageBoxButton.OK, MessageBoxImage.Error);
@@ -57,14 +55,9 @@ namespace Vistas
 
         private void btnSalir_Click(object sender, RoutedEventArgs e)
         {
-            Zona ventanaZona = new Zona();
-            ventanaZona.Show();
+            ABMClientes abmclientes = new ABMClientes();
+            abmclientes.Show();
             this.Close();
-        }
-
-        private void txtDNI_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
         }
 
         private void txtNumericInput_PreviewTextInput(object sender, TextCompositionEventArgs e)
@@ -73,6 +66,11 @@ namespace Vistas
             {
                 e.Handled = true;
             }
+        }
+
+        private void txtDNI_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

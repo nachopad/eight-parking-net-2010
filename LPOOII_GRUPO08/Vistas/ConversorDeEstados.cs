@@ -12,36 +12,30 @@ namespace Vistas
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            
-
             if (value == null)
             {
-                return Brushes.Transparent; // O el color que quieras usar cuando el valor sea null o no sea un int
+                return Brushes.Transparent;
             }
-
-            
             string minutos2 = (string) value;
             int minutos = int.Parse(minutos2);
-
             Brush color;
 
             if (minutos == 0)
             {
-                return new SolidColorBrush(Colors.Green); // Sector libre
+                return new SolidColorBrush(Colors.Green);
             }
             else if (minutos > 0 && minutos <= 30)
             {
-                return new SolidColorBrush(Color.FromRgb(255, 230, 230)); // Sector ocupado - Rojo muy claro
+                return new SolidColorBrush(Color.FromRgb(255, 230, 230));
             }
             else if (minutos > 30 && minutos <= 60)
             {
-                return new SolidColorBrush(Color.FromRgb(255, 153, 153)); // Sector ocupado - Rojo claro
+                return new SolidColorBrush(Color.FromRgb(255, 153, 153));
             }
             else // minutos > 60
             {
-                return new SolidColorBrush(Color.FromRgb(204, 0, 0)); // Sector ocupado - Rojo oscuro
+                return new SolidColorBrush(Color.FromRgb(204, 0, 0));
             }
-
             return color;
         }
 

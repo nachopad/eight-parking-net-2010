@@ -18,15 +18,14 @@ namespace Vistas
     /// </summary>
     public partial class MenuPrincipal : Window
     {
-
         private string rol;
+
         public MenuPrincipal(String rol)
         {
             this.rol = rol;
             InitializeComponent();
             if (rol.Equals("Administrador"))
             {
-                //Administrador
                 canv_Sectore.Visibility = Visibility.Visible;
                 canv_Vehiculo.Visibility = Visibility.Visible;
                 canv_usuario.Visibility = Visibility.Visible;
@@ -37,11 +36,9 @@ namespace Vistas
                 btnAdministrador.Background = new SolidColorBrush(color);
                 btnOperador.IsEnabled = false;
                 btnOperador.Foreground = Brushes.Gray;
-
             }
             else if (rol.Equals("Operador"))
             {
-                //Operador
                 canv_Sectore.Visibility = Visibility.Hidden;
                 canv_Vehiculo.Visibility = Visibility.Hidden;
                 canv_usuario.Visibility = Visibility.Hidden;
@@ -55,23 +52,13 @@ namespace Vistas
             }
         }
 
-        public MenuPrincipal()
-        {
-            // TODO: Complete member initialization
-        }
-
         private void Button_CerrarSesion(object sender, RoutedEventArgs e)
         {
-            // Crear una nueva ventana
             Window nuevaVentana = new Window();
-            // Crear una instancia del control de usuario
             loginControl login = new loginControl();
-            // Establecer el contenido de la nueva ventana como el control de usuario
             nuevaVentana.Content = login;
-            // Mostrar la nueva ventana
             nuevaVentana.Show();
             this.Close();
-            
         }
 
         private void btnOperador_Click(object sender, RoutedEventArgs e)
@@ -133,11 +120,17 @@ namespace Vistas
             pres.Show();
             this.Close();
         }
+
          private void btnGestionarEstacionamiento_Click(object sender, RoutedEventArgs e)
         {
             ListadosReportes list = new ListadosReportes();
             list.Show();
             this.Close();
         }
+
+         public MenuPrincipal()
+         {
+             // TODO: Complete member initialization
+         }
     }
 }

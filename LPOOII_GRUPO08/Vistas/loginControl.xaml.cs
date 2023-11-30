@@ -21,8 +21,6 @@ namespace Vistas
     public partial class loginControl : UserControl
     {
 
-       
-
         public loginControl()
         {
             InitializeComponent();
@@ -30,13 +28,6 @@ namespace Vistas
 
         private void buttonAceptar_Click(object sender, RoutedEventArgs e)
         {
-            //Usuario administrador = new Usuario("administrador", "123", "admin", "admin", "1");
-            //Usuario operador = new Usuario("operador", "123", "oper", "oper", "2");
-            //List<Usuario> listUsers = new List<Usuario>();
-            //listUsers.Add(administrador);
-            //listUsers.Add(operador);
-
-            //Usuario buscarUsu = listUsers.Find(p => p.UserName.Equals(textBoxUser.Text));
             TrabajarUsuarios trabajarUsuario = new TrabajarUsuarios();
             Usuario usuarioObtenido = new Usuario();
 
@@ -59,9 +50,7 @@ namespace Vistas
             else
             {
                 MessageBox.Show("Por favor, ingrese tanto el nombre de usuario como la contraseña para iniciar sesión.", "Error al Iniciar Sesión", MessageBoxButton.OK, MessageBoxImage.Error);
-
             }
-
 
         }
 
@@ -69,7 +58,6 @@ namespace Vistas
         {
             Application.Current.Shutdown();
         }
-
 
     }
 }

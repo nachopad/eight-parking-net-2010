@@ -34,18 +34,12 @@ namespace Vistas
 
         private void txtDNI_TextChanged(object sender, TextChangedEventArgs e)
         {
-            // Crear una instancia de TrabajarClientes
             TrabajarCliente trabajador = new TrabajarCliente();
-
-            // Obtener el cliente con el DNI ingresado
             Cliente cliente = trabajador.ObtenerClientePorDni(txtDNI.Text);
-
-            // Actualizar los TextBox con los datos del cliente
             txtApellido.Text = cliente.Apellido;
             txtNombre.Text = cliente.Nombre;
             txtTelefono.Text = cliente.Telefono;
         }
-
 
     }
 }

@@ -29,38 +29,25 @@ namespace Vistas
             ticketGlobal = ticket;
             TipoVehiculo tipoVehiculo = trabajaTipo.ObtenerTipoPorCodigo(ticket.TvCodigo);
             txtDniCliente.Text = ticket.ClienteDNI;
-
             txtPatente.Text = ticket.Patente;
-
             txtTipoVehiculo.Text = tipoVehiculo.Descripcion;
-
             txtTarifa.Text = tipoVehiculo.Tarifa.ToString();
-
             txtFechaIngreso.Text = ticket.FechaHoraEnt.ToString();
-
             txtFechaSalida.Text = DateTime.Now.ToString();
-
-
             txtSector.Text = sector.Descripcion;
-
             txtTotal.Text = calcularTotal(ticket).ToString();
-
-            //Almacenara lo necesario para poder regitrar la salida:
             ticketGlobal.FechaHoraSal = DateTime.Now;
             ticketGlobal.TicketNro = ticket.TicketNro;
+            ticketGlobal.Tarifa = tipoVehiculo.Tarifa;
         }
 
         public double calcularTotal(Ticket ticketObtenido)
         {
             TimeSpan duracion;
             duracion = DateTime.Now - ticketObtenido.FechaHoraEnt;
-
             double duracionEnDouble = duracion.Hours + (duracion.Minutes / 60.0);
-
             double totalAPagar = duracionEnDouble * double.Parse(txtTarifa.Text);
             totalAPagar = Math.Round(totalAPagar, 2);
-
-            //Esto es lo permitira registrar luego el ticket
             ticketGlobal.Duracion = duracionEnDouble;
             ticketGlobal.Total = decimal.Parse(totalAPagar.ToString());
             return totalAPagar;

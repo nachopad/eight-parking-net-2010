@@ -25,10 +25,12 @@ namespace ClasesBase.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string Setting {
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.\\SQLEXPRESS;AttachDbFilename=|DataDirectory|\\playa.mdf;Integrated Se" +
+            "curity=True;User Instance=True")]
+        public string playaConnectionString {
             get {
-                return ((string)(this["Setting"]));
+                return ((string)(this["playaConnectionString"]));
             }
         }
     }

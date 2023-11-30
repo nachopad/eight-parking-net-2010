@@ -26,21 +26,16 @@ namespace Vistas
         private void Imprimir_Click(object sender, RoutedEventArgs e)
         {
             PrintDialog printDialog = new PrintDialog();
-
             if (printDialog.ShowDialog() == true)
             {
                 var document = flowDocumentReader.Document as FlowDocument;
-
                 if (document != null)
                 {
                     var paginator = ((IDocumentPaginatorSource)document).DocumentPaginator;
-
                     printDialog.PrintDocument(paginator, "Impresión Documento Dinámico");
                 }
             }
         }
-
-
 
     }
 }

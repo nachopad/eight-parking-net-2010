@@ -18,7 +18,6 @@ namespace ClasesBase
         private decimal tarifa;
         private decimal total;
 
-        // Propiedades para información de otras tablas
         private string clienteApellido;
         private string clienteNombre;
         private string tipoVehiculo;
@@ -119,8 +118,7 @@ namespace ClasesBase
         {
             TimeSpan tiempoTranscurrido = DateTime.Now - FechaHoraEnt;
             double duracionEnHoras = tiempoTranscurrido.TotalHours;
-
-            return Math.Round(duracionEnHoras, 2); // Redondea a dos decimales
+            return Math.Round(duracionEnHoras, 2);
         }
 
     }

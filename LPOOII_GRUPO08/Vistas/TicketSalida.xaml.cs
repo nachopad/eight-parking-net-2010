@@ -24,11 +24,6 @@ namespace Vistas
             InitializeComponent();
         }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         public void cargar(Ticket ticket)
         {
             txbDireccion.Text = "Alberdi 777";
@@ -44,6 +39,11 @@ namespace Vistas
             txbTarifa.Text = "TARIFA: " +"$"+ticket.Tarifa;
             txbTotal.Text = "TOTAL: " + "$"+ticket.Total;
             txbUsuario.Text = "Usuario: " + "Operador";
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

@@ -99,10 +99,7 @@ namespace Vistas
             {
                 if (listCliente[index].Nombre != "" && listCliente[index].Apellido != "" && listCliente[index].Telefono != "" && listCliente[index].ClienteDNI != "")
                 {
-                    // Crear una instancia de TrabajarCliente
                     TrabajarCliente trabajarCliente = new TrabajarCliente();
-
-                    // Verificar si el nuevo DNI ya existe en la base de datos
                     if (!trabajarCliente.ClienteExisteEnBaseDeDatos(listCliente[index].ClienteDNI))
                     {
                         TrabajarCliente.modificarCliente(listCliente[index]);
@@ -120,20 +117,16 @@ namespace Vistas
             }
         }
 
-
         private void txtNombre_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
-            // Verificar que solo se ingresen letras
             e.Handled = !ContieneSoloLetras(e.Text);
         }
 
         private void txtApellido_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
-            // Verificar que solo se ingresen letras
             e.Handled = !ContieneSoloLetras(e.Text);
         }
 
-        // Función para verificar si una cadena contiene solo letras
         private bool ContieneSoloLetras(string texto)
         {
             foreach (char c in texto)
@@ -155,17 +148,14 @@ namespace Vistas
 
         private void txtTelefono_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
-            // Verificar que solo se ingresen números
             e.Handled = !ContieneSoloNumeros(e.Text);
         }
 
         private void txtDNI_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
-            // Verificar que solo se ingresen números y limitar a 8 dígitos
             e.Handled = !ContieneSoloNumeros(e.Text) || (txtDNI.Text.Length >= 8 && !char.IsControl(e.Text[0]));
         }
 
-        // Función para verificar si una cadena contiene solo números
         private bool ContieneSoloNumeros(string texto)
         {
             foreach (char c in texto)

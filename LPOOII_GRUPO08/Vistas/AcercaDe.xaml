@@ -114,8 +114,7 @@
                 Margin="26,35,313,104" 
                 Stretch="Fill" 
                 Grid.ColumnSpan="2" 
-                MediaEnded="Reproductor_MediaEnded"
-                />
+                MediaEnded="Reproductor_MediaEnded" Source="Multimedia/Porsche-992-GT3-Touring.wmv" />
         </Grid>
     </Grid>
 </Window>

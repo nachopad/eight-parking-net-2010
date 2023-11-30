@@ -25,26 +25,26 @@ namespace Vistas
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            ListadoDeSectores ventanaSectores = new ListadoDeSectores(); // Reemplaza 'ListadoDeSectores' con el nombre de tu ventana
+            ListadoDeSectores ventanaSectores = new ListadoDeSectores();
             ventanaSectores.Show();
             this.Close();
         }
         private void button2_Click(object sender, RoutedEventArgs e)
         {
-            MenuPrincipal ventanaMenu = new MenuPrincipal("Operador"); // Reemplaza 'MenuPrincipal' con el nombre de tu ventana
+            MenuPrincipal ventanaMenu = new MenuPrincipal("Operador");
             ventanaMenu.Show();
             this.Close();
         }
         private void button3_Click(object sender, RoutedEventArgs e)
         {
-            ListadoVentas ventanaVentas = new ListadoVentas(); // Reemplaza 'ListadoVentas' con el nombre de tu ventana
+            ListadoVentas ventanaVentas = new ListadoVentas();
             ventanaVentas.Show();
             this.Close();
         }
 
         private void button4_Click(object sender, RoutedEventArgs e)
         {
-            ListadoDeUsuarios ventanaUsuarios = new ListadoDeUsuarios(); // Reemplaza 'ListadoDeUsuarios' con el nombre de tu ventana
+            ListadoDeUsuarios ventanaUsuarios = new ListadoDeUsuarios();
             ventanaUsuarios.Show();
             this.Close();
         }
@@ -53,7 +53,6 @@ namespace Vistas
         {
 
         }
-
 
     }
 }

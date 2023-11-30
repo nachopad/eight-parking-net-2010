@@ -26,7 +26,6 @@ namespace Vistas
         public ABMVehiculos()
         {
             InitializeComponent();
-
         }
 
         CollectionView Vista;
@@ -90,11 +89,9 @@ namespace Vistas
             string appPath = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
             string imagesPath = System.IO.Path.Combine(appPath, "..\\..\\Images");
             string newImagePath = System.IO.Path.Combine(imagesPath, listVehiculos[index].Imagen);
-
             var image = new BitmapImage(new Uri(newImagePath, UriKind.Absolute));
             imgVehiculo.Source = image;
         }
-
 
         private void btnNuevo_Click(object sender, RoutedEventArgs e)
         {
@@ -129,15 +126,12 @@ namespace Vistas
                 else
                 {
                     MessageBox.Show("Por favor, complete todos los campos antes de realizar la modificación.", "Advertencia", MessageBoxButton.OK, MessageBoxImage.Error);
-
-
                 }
             }
         }
 
         private void txtNombre_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
-            // Permitir solo números y el separador decimal (punto)
             if (!EsNumeroValido(e.Text))
             {
                 e.Handled = true;
@@ -146,7 +140,6 @@ namespace Vistas
 
         private bool EsNumeroValido(string input)
         {
-            // Verificar si la cadena es un número válido (puede contener solo dígitos y un punto decimal)
             foreach (char c in input)
             {
                 if (!char.IsDigit(c) && c != '.')
@@ -155,12 +148,10 @@ namespace Vistas
                 }
             }
 
-            // Verificar si hay más de un punto decimal
             if (input.Count(c => c == '.') > 1)
             {
                 return false;
             }
-
             return true;
         }
 

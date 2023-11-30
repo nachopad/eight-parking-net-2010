@@ -22,7 +22,7 @@ namespace Vistas
         public formularioUsuario()
         {
             InitializeComponent();
-            Loaded += formularioUsuario_Loaded; // Agrega el manejador de eventos Loaded
+            Loaded += formularioUsuario_Loaded;
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -32,8 +32,7 @@ namespace Vistas
 
         private void formularioUsuario_Loaded(object sender, RoutedEventArgs e)
         {
-            // Establecer un valor predeterminado en el ComboBox
-            cmbRol.SelectedIndex = 0; // 0 para "Administrador", 1 para "Operador"
+            cmbRol.SelectedIndex = 0; 
         }
 
         private void btnSalir_Click(object sender, RoutedEventArgs e)
@@ -50,11 +49,9 @@ namespace Vistas
             usuario.Apellido = txtApellido.Text;
             usuario.UserName = txtUserName.Text;
             usuario.Password = txtPassword.Text;
-            // Obtener el Rol seleccionado del ComboBox
             ComboBoxItem selectedItem = (ComboBoxItem)cmbRol.SelectedItem;
             usuario.Rol = selectedItem.Content.ToString();
 
-            // Verificar si todos los campos están llenos
             if (string.IsNullOrWhiteSpace(usuario.Nombre) ||
                 string.IsNullOrWhiteSpace(usuario.Apellido) ||
                 string.IsNullOrWhiteSpace(usuario.UserName) ||
@@ -65,14 +62,12 @@ namespace Vistas
             }
             else
             {
-                // Verificar si ya existe un usuario con el mismo nombre de usuario en la base de datos
                 if (TrabajarUsuarios.UsuarioExisteEnBaseDeDatos(usuario.UserName))
                 {
                     MessageBox.Show("Ya existe un usuario con ese nombre de usuario. Por favor, elige otro.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-                    return; // Sale del método sin realizar el registro
+                    return;
                 }
 
-                // Confirmar el registro
                 MessageBoxResult result = MessageBox.Show("¿Estás seguro de que quieres registrar este usuario?", "Confirmación", MessageBoxButton.YesNo, MessageBoxImage.Question);
                 if (result == MessageBoxResult.Yes)
                 {
@@ -84,17 +79,14 @@ namespace Vistas
 
         private void txtNombre_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
-            // Verificar que solo se ingresen letras
             e.Handled = !ContieneSoloLetras(e.Text);
         }
 
         private void txtApellido_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
-            // Verificar que solo se ingresen letras
             e.Handled = !ContieneSoloLetras(e.Text);
         }
 
-        // Función para verificar si una cadena contiene solo letras
         private bool ContieneSoloLetras(string texto)
         {
             foreach (char c in texto)
@@ -106,5 +98,6 @@ namespace Vistas
             }
             return true;
         }
+
     }
 }

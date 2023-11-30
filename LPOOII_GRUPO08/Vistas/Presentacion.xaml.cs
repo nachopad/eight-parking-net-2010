@@ -19,21 +19,11 @@ namespace Vistas
     public partial class Presentacion : Window
     {
         private string rol;
+
         public Presentacion(String rol)
         {
             InitializeComponent();
             this.rol = rol;
-        }
-
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-            string appPath = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
-
-            string soundPath = System.IO.Path.Combine(appPath, "..\\..\\Multimedia\\CancionPresentacion.wav");
-
-            System.Media.SoundPlayer sp = new System.Media.SoundPlayer();
-            sp.SoundLocation = soundPath;
-            sp.Play();
         }
 
         private void btnVolver_Click(object sender, RoutedEventArgs e)
@@ -44,5 +34,11 @@ namespace Vistas
             menu.Show();
             this.Close();
         }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
+
     }
 }

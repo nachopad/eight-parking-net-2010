@@ -57,5 +57,6 @@
             VerticalAlignment="Top" 
             Source="./Images/delorean.jpg"
             />
+        <MediaElement Name="MediaElementBackgroundMusic" Source="Multimedia/CancionPresentacion.wav" LoadedBehavior="Play" UnloadedBehavior="Stop" />
     </Grid>
 </Window>

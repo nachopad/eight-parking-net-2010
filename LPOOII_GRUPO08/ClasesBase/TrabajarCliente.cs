@@ -12,11 +12,7 @@ namespace ClasesBase
         public ObservableCollection<Cliente> TraerClientes()
         {
             ObservableCollection<Cliente> clientes = new ObservableCollection<Cliente>();
-
-            string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\lenovo\\Documents\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
-            //string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\maxi1\\OneDrive\\Documentos\\Programacion LPOO II\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
-            //string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\admin\\lpoo\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
-            SqlConnection conexion = new SqlConnection(conexionString);
+            SqlConnection conexion = new SqlConnection(ClasesBase.Properties.Settings.Default.playaConnectionString);
             conexion.Open();
             string consulta = "SELECT * FROM Cliente";
             SqlCommand comando = new SqlCommand(consulta, conexion);
@@ -29,35 +25,23 @@ namespace ClasesBase
                 cliente.Apellido = reader["apellido"].ToString();
                 cliente.ClienteDNI = reader["cliente_dni"].ToString();
                 cliente.Telefono = reader["telefono"].ToString();
-            
                 clientes.Add(cliente);
             }
-
-         
             conexion.Close();
-
             return clientes;
         }
         public Cliente ObtenerClientePorDni(string dni)
         {
             Cliente cliente = new Cliente();
-            string connectionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\lenovo\\Documents\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
-            //string connectionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\argca\\OneDrive\\Documentos\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
-            //string connectionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\maxi1\\OneDrive\\Documentos\\Programacion LPOO II\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
-            
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            using (SqlConnection connection = new SqlConnection(ClasesBase.Properties.Settings.Default.playaConnectionString))
             {
                 connection.Open();
-
                 using (SqlCommand command = new SqlCommand("SELECT * FROM Cliente WHERE cliente_dni = @Dni", connection))
                 {
                     command.Parameters.AddWithValue("@Dni", dni);
-
                     SqlDataReader reader = command.ExecuteReader();
-
                     if (reader.Read())
                     {
-
                         cliente.ClienteDNI = reader["cliente_dni"].ToString();
                         cliente.Nombre = reader["nombre"].ToString();
                         cliente.Apellido = reader["apellido"].ToString();
@@ -65,16 +49,12 @@ namespace ClasesBase
                     }
                 }
             }
-
             return cliente;
         }
 
         public void registrarCliente(Cliente cliente)
         {
-            string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\lenovo\\Documents\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
-            //string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\maxi1\\OneDrive\\Documentos\\Programacion LPOO II\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
-            //string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\argca\\OneDrive\\Documentos\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
-            SqlConnection cnn = new SqlConnection(conexionString);
+            SqlConnection cnn = new SqlConnection(ClasesBase.Properties.Settings.Default.playaConnectionString);
             SqlCommand cmd = new SqlCommand();
             cmd.CommandText = "RegistrarCliente";
             cmd.CommandType = CommandType.StoredProcedure;
@@ -91,10 +71,7 @@ namespace ClasesBase
         }
         public static void eliminarCliente(int id)
         {
-            string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\lenovo\\Documents\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
-            //string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\maxi1\\OneDrive\\Documentos\\Programacion LPOO II\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
-            //string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\argca\\OneDrive\\Documentos\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
-            SqlConnection cnn = new SqlConnection(conexionString);
+            SqlConnection cnn = new SqlConnection(ClasesBase.Properties.Settings.Default.playaConnectionString);
             SqlCommand cmd = new SqlCommand();
             cmd.CommandText = "EliminarCliente";
             cmd.CommandType = CommandType.StoredProcedure;
@@ -107,10 +84,7 @@ namespace ClasesBase
 
         public static void modificarCliente(Cliente cliente)
         {
-            string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\lenovo\\Documents\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
-            //string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\maxi1\\OneDrive\\Documentos\\Programacion LPOO II\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
-            //string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\argca\\OneDrive\\Documentos\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
-            SqlConnection cnn = new SqlConnection(conexionString);
+            SqlConnection cnn = new SqlConnection(ClasesBase.Properties.Settings.Default.playaConnectionString);
             SqlCommand cmd = new SqlCommand();
             cmd.CommandText = "ModificarCliente";
             cmd.CommandType = CommandType.StoredProcedure;
@@ -125,13 +99,11 @@ namespace ClasesBase
             cnn.Close();
         }
 
-        // Método para verificar si un cliente ya existe en la base de datos
         public bool ClienteExisteEnBaseDeDatos(string dni)
         {
-            using (SqlConnection conexion = new SqlConnection("Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\lenovo\\Documents\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True"))
+            using (SqlConnection conexion = new SqlConnection(ClasesBase.Properties.Settings.Default.playaConnectionString))
             {
                 conexion.Open();
-
                 string consulta = "SELECT COUNT(*) FROM Cliente WHERE cliente_dni = @dni";
                 using (SqlCommand comando = new SqlCommand(consulta, conexion))
                 {

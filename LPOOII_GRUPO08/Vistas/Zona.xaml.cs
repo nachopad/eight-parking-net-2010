@@ -43,8 +43,6 @@ namespace Vistas
             this.Close();
         }
 
-      
-
         private void btnVolver_Click(object sender, RoutedEventArgs e)
         {
             MenuPrincipal menuPrincipal = new MenuPrincipal("Administrador");

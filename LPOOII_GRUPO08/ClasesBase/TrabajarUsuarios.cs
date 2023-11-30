@@ -9,24 +9,16 @@ namespace ClasesBase
 {
     public class TrabajarUsuarios
     {
+
         public ObservableCollection<Usuario> TraerUsuario()
         {
             ObservableCollection<Usuario> usuarios = new ObservableCollection<Usuario>();
-
-            // Conexión a la base de datos
-            string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\lenovo\\Documents\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
-            //string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\maxi1\\OneDrive\\Documentos\\Programacion LPOO II\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
-            //string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\admin\\lpoo\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
-
-            SqlConnection conexion = new SqlConnection(conexionString);
+            SqlConnection conexion = new SqlConnection(ClasesBase.Properties.Settings.Default.playaConnectionString);
             conexion.Open();
-
-            // Consulta a la base de datos
             string consulta = "SELECT * FROM Usuario";
             SqlCommand comando = new SqlCommand(consulta, conexion);
             SqlDataReader reader = comando.ExecuteReader();
 
-            // Llenado de la colección
             while (reader.Read())
             {
                 Usuario usuario = new Usuario();
@@ -36,22 +28,15 @@ namespace ClasesBase
                 usuario.Apellido = reader["apellido"].ToString();
                 usuario.Nombre = reader["nombre"].ToString();
                 usuario.Rol = reader["rol"].ToString();
-
                 usuarios.Add(usuario);
             }
-
-            // Cierre de la conexión
             conexion.Close();
-
             return usuarios;
         }
 
         public static void eliminarUsuario(int id)
         {
-            string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\lenovo\\Documents\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
-            //string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\maxi1\\OneDrive\\Documentos\\Programacion LPOO II\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
-            //string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\argca\\OneDrive\\Documentos\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
-            SqlConnection cnn = new SqlConnection(conexionString);
+            SqlConnection cnn = new SqlConnection(ClasesBase.Properties.Settings.Default.playaConnectionString);
             SqlCommand cmd = new SqlCommand();
             cmd.CommandText = "EliminarUsuario";
             cmd.CommandType = CommandType.StoredProcedure;
@@ -65,10 +50,7 @@ namespace ClasesBase
 
         public static void modificarUsuario(Usuario usuario)
         {
-            string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\lenovo\\Documents\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
-            //string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\maxi1\\OneDrive\\Documentos\\Programacion LPOO II\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
-            //string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\argca\\OneDrive\\Documentos\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
-            SqlConnection cnn = new SqlConnection(conexionString);
+            SqlConnection cnn = new SqlConnection(ClasesBase.Properties.Settings.Default.playaConnectionString);
             SqlCommand cmd = new SqlCommand();
             cmd.CommandText = "ModificarUsuario";
             cmd.CommandType = CommandType.StoredProcedure;
@@ -86,10 +68,7 @@ namespace ClasesBase
 
         public static void registrarUsuario(Usuario usuario)
         {
-            string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\lenovo\\Documents\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
-            //string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\maxi1\\OneDrive\\Documentos\\Programacion LPOO II\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
-            //string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\argca\\OneDrive\\Documentos\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
-            SqlConnection cnn = new SqlConnection(conexionString);
+            SqlConnection cnn = new SqlConnection(ClasesBase.Properties.Settings.Default.playaConnectionString);
             SqlCommand cmd = new SqlCommand();
             cmd.CommandText = "RegistrarUsuario";
             cmd.CommandType = CommandType.StoredProcedure;
@@ -107,13 +86,7 @@ namespace ClasesBase
         public Usuario obtenerUsuarioLogin(string nombreUser, string password)
         {
             Usuario usuario = null;
-
-            // Conexión a la base de datos
-            string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\lenovo\\Documents\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
-            //string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\maxi1\\OneDrive\\Documentos\\Programacion LPOO II\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
-            //string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\Cuno\\Documents\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
-            //string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\argca\\OneDrive\\Documentos\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
-            using (SqlConnection conexion = new SqlConnection(conexionString))
+            using (SqlConnection conexion = new SqlConnection(ClasesBase.Properties.Settings.Default.playaConnectionString))
             {
                 string consulta = "SELECT * FROM Usuario WHERE username=@user AND password=@pass";
                 SqlCommand comando = new SqlCommand(consulta, conexion);
@@ -135,27 +108,21 @@ namespace ClasesBase
                         usuario.Nombre = reader["nombre"].ToString();
                         usuario.Rol = reader["rol"].ToString();
                     }
-
                     reader.Close();
                 }
                 catch (Exception ex)
                 {
-                    // Manejo de excepciones si ocurre alguna
                     Console.WriteLine("No existe el usuario o el password es incorrecto: " + ex.Message);
                 }
             }
-
             return usuario;
         }
 
-        // Método para verificar si un usuario ya existe en la base de datos
         public static bool UsuarioExisteEnBaseDeDatos(string userName)
         {
-            string conexionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\lenovo\\Documents\\LPOOII_GRUPO08\\LPOOII_GRUPO08\\playa.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
-            using (SqlConnection conexion = new SqlConnection(conexionString))
+            using (SqlConnection conexion = new SqlConnection(ClasesBase.Properties.Settings.Default.playaConnectionString))
             {
                 conexion.Open();
-
                 string consulta = "SELECT COUNT(*) FROM Usuario WHERE username = @userName";
                 using (SqlCommand comando = new SqlCommand(consulta, conexion))
                 {

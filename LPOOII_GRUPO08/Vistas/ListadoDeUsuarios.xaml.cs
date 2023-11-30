@@ -29,29 +29,15 @@ namespace Vistas
         private void CargarDatos()
         {
             var listaDeUsuarios = _trabajarUsuarios.TraerUsuario();
-            dataGrid1.ItemsSource = listaDeUsuarios.OrderBy(u => u.UserName);//Ordena la grilla de forma ascendente UserName
+            dataGrid1.ItemsSource = listaDeUsuarios.OrderBy(u => u.UserName);
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
             string filtro = textBox1.Text;
-
             var listaCompleta = _trabajarUsuarios.TraerUsuario();
-
             var listaFiltrada = listaCompleta.Where(u => u.UserName.Contains(filtro)).ToList();
-
             dataGrid1.ItemsSource = listaFiltrada;
-        }
-
-
-        private void dataGrid1_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-
         }
 
         private void btnVistaPrevia_Click(object sender, RoutedEventArgs e)
@@ -62,7 +48,8 @@ namespace Vistas
 
         private void btn_Volver_Click(object sender, RoutedEventArgs e)
         {
-            ListadosReportes abmUsuario = new ListadosReportes();
+            ABMUsuarios abmUsuario = new ABMUsuarios();
+            TrabajarUsuarios trabajarUsuario = new TrabajarUsuarios();
             abmUsuario.Show();
             this.Close();
         }
@@ -72,6 +59,15 @@ namespace Vistas
             CargarDatos();
         }
 
+        private void dataGrid1_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
 
     }
 }
